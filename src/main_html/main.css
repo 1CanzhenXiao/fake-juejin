@@ -13,9 +13,3 @@ body {
 div {
     display: block;
 }
-
-.view-nav {
-    position: fixed;
-    top: 5rem;
-    width: 100%;
-}
