@@ -1,0 +1,19 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+}
+
+.ctrl-box {
+    border: 1px #000000 solid;
+    width: 30px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.ctrl-box:hover {
+    width: 60px;
+    height: 20px;
+    opacity: 1;
+}
