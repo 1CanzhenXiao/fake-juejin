@@ -5,12 +5,19 @@
 }
 
 .view-nav {
-    /* display: flex; */
-    /* padding: 0 1rem; */
     left: 0;
     background-color: white;
     height: 10;
-    align-items: center;
+    align-items: center; 
+}
+
+.view-nav .nav-list {
+    left: 0;
+    max-width: 960px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 1;
 }
 
 .view-nav:before {
@@ -19,7 +26,6 @@
     position: absolute;
     height: 60%;
 }
-
 
 .nav-list .nav-item {
     display: fiex;
