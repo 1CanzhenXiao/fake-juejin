@@ -11,12 +11,16 @@
 </head>
 
 <body>
+    <!-- 设置多div组件的原因是有些样式不需要重复设置，一个选择器可以为多个元素设置基本样式。 -->
     <div id="__layout">
         <div id="juejin">
             <div class="view-container container">
                 <div class="main-header-box">
+                    <!-- header中有很多组件有样式变化 -->
                     <header class="main-header visible">
+
                         <div class="container">
+                            <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
                             <a href="/" class="logo"></a>
                             <nav role="navigation" class="main-nav">
                                 <ul class="nav-list">
@@ -68,8 +72,11 @@
                         </div>
                     </header>
                 </div>
+
+                <!-- 上导航栏与下文章列表的分割线 -->
                 <main class="container main-container with-view-nav">
                     <div class="view timeline-index-view">
+                        <!-- 文章列表的导航栏 -->
                         <nav role="navigation" class="view-nav">
                             <div class="nav-list left">
                                 <a href="" class="nav-item active">
@@ -145,12 +152,15 @@
                                             </nav>
                                         </header>
                                         <div class="entry-list-wrap">
+
+                                            <!-- 文章列表，内有多个文章块和广告快，但样式统一，只需用少量的选择器即可 -->
                                             <div class="entry-list list">
                                                 <li class="item">
+                                                    <!-- 广告块 -->
                                                     <div class="advertisement">
                                                         <div class="meta-container">
                                                             <div class="user-message">
-                                                                <a href="" target="_blank" class="userbox">
+                                                                <a href="#" target="_blank" class="userbox">
                                                                     <div class="popover-box user-popover">
                                                                         掘金酱
                                                                     </div>
@@ -182,6 +192,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- 侧边栏 -->
                                 <aside class="index-aside aside">
                                     <div class="signin-tip signin">
                                         <div class="first-line" style="opacity: 1;">
