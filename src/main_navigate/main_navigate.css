@@ -1,0 +1,40 @@
+.view-nav {
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+}
+
+.view-nav {
+    /* display: flex; */
+    /* padding: 0 1rem; */
+    left: 0;
+    background-color: white;
+    height: 10;
+    align-items: center;
+}
+
+.view-nav:before {
+    left: 0;
+    background-color: white;
+    position: absolute;
+    height: 60%;
+}
+
+
+.nav-list .nav-item {
+    display: fiex;
+    height: 100%;
+    padding: 0 2rem;
+    color: #71777c;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.nav-list {
+    padding: 0 1rem 0 0;
+    color: inherit;
+}
+
+.nav-item.active .nav-list:hover {
+    color: blue;
+}
