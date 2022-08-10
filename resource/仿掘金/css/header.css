@@ -1,0 +1,148 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: rgb(244,245,245);
+	margin:0px auto;
+	width:1920px;
+	
+}
+/*总体div,class*/
+.header {
+	position: relative;
+	/*width:1920px;*/
+	height: 90px;
+	background-color: rgb(255,255,255);
+}
+.header-ul li{
+	float: left;
+	/*display: flex;*/
+	list-style: none;
+	flex-direction: row;
+	/*align-content:flex-start;*/
+	/*justify-content:flex-start;*/
+	margin:40px 10px;
+	
+	font-size: 0.9rem;
+}
+.header-plug {
+	margin-right: 80px;
+}
+.header-right li{
+	list-style: none;
+	float: left;
+	margin-left: 30px;
+
+	
+}
+/*开头的LOGO*/
+.logo img{
+	position: absolute;
+	float: left;
+	height: 90px;
+	width: 150px;
+	margin-left: 25px;
+	height: 6rem;
+	width:7rem;
+	/*font-size: 1.33rem;*/
+}
+
+.header-ul a {
+	color: rgb(81,87,103);
+	text-decoration: none;
+}
+.header-ul a:hover {
+	border-bottom:dodgerblue solid 3px;
+	color: rgb(37,41,51);
+}
+li .shouye {
+	float: left;
+	color: rgb(30,128,255);
+	margin-left: 150px;
+}
+.search {
+	float: left;
+	position: relative;
+	width: 182px;
+	height: 36px;
+	margin-top: 15px;
+}
+.search-img {
+	/*float: right;*/
+	position: absolute;
+	/*margin: 20px;*/
+	width: 44px;
+	height: 30px;
+	margin-left: -50px;
+	margin-top: 20px;
+}
+.search-button {
+	position: absolute;
+	height: 34px;
+	width: 50px;
+	margin-left: -53px;
+	margin-top: 18px;
+	background-color: rgb(242,243,245);
+}
+/*创作者中心*/
+.header-select {
+	float: left;
+	
+	/*background-color: #1E90FF;*/
+	margin-top:33px;
+}
+.header-select button{
+	color: white;
+    width:100px;
+    height: 36px;
+    border: 1px solid #1e80ff;
+    background-color: #1e80ff;
+}
+.header-select button:hover{
+	background-color: royalblue;
+}
+.header-select a {
+	text-decoration: none;
+	
+	
+}
+.header-select-right{
+    width: 20px;
+    height: 36px;
+    /*line-height: 50px;*/
+   /*margin-top: -10px;*/
+    margin-left:-5px;
+    border-left-color: whitesmoke;
+    background-color: #1e80ff;
+ 
+}
+/*会员设定*/
+.header-vip {
+	color: rgb(81,87,103);
+	float:left;
+	margin: 20px 5px;
+}
+.header-vip span {
+	float: left;
+	margin: 22px auto;
+}
+.search input:focus {
+	width:350px;
+}
+.header-vip input {
+	float: fixed;
+}
+.header-massage {
+	margin-top:35px;
+	/*margin-left: 10px;*/
+}
+.header-log button{
+	background-color: white;
+    width: 80px;
+    height: 40px;
+    color: #1e80ff;
+    font-size: 1rem;
+    border: 1px solid #1e80ff;
+    margin-top: 30px;
+}
