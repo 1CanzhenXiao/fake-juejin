@@ -8,7 +8,7 @@
     left: 0;
     background-color: white;
     height: 10;
-    align-items: center; 
+    align-items: center;
 }
 
 .view-nav .nav-list {
@@ -37,10 +37,25 @@
 }
 
 .nav-list {
+    top: 0;
+    right: 0;
     padding: 0 1rem 0 0;
+    position: relative;
     color: inherit;
+    display: flex;
+    /* justify-content: space-between */
+    align-items: center;
+    line-height: 1
 }
 
 .nav-item.active .nav-list:hover {
     color: blue;
+}
+
+.view-nav .nav-list .nav-item:first-child {
+    padding: 0 1rem 0 0
+}
+
+.view-nav .nav-list .nav-item:last-child {
+    padding: 0 0 0 1rem
 }
