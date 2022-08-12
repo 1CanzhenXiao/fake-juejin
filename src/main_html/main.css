@@ -13,3 +13,15 @@ body {
 div {
     display: block;
 }
+
+.timeline-container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.list-header {
+    width: 68%;
+    height: 100%;
+    float: left;
+}
