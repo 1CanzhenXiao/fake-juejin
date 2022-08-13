@@ -1,105 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Infinity scroll</title>
-  <style>
-  .outer{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-    background: #aaa;
-  }
-  .outer .inner {
-    height: 150px;
-    color: #fff;
-    border:1px solid black;
-    line-height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .outer .loading {
-    text-align:center;
-    font-size: 12px;
-    color: #eee;
-    text-shadow: 0 0 2px rgba(0,0,0,0.5);
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../resource/jQuery/jquery.min.js"></script>
+    <style>
+        .outer{
+          margin: 0 auto;
+          width: 100%;
+          max-width: 960px;
+          background: #aaa;
+        }
+        .outer .inner {
+          height: 150px;
+          color: #fff;
+          border:1px solid black;
+          line-height: 50px;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .outer .loading {
+          text-align:center;
+          font-size: 12px;
+          color: #eee;
+          text-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+    </style>
 </head>
-
 <body>
-  <!--主要问题是，浏览器窗口的滑动块要到底时再让该组件继续加载-->
-  <div class="outer" id="outer"></div>
-</body>
-
-<script>
-  let outer = document.querySelector('#outer');
-  
-  //loading组件块创建
-  /* let loading = document.createElement('div');
-    //向类属性队列添加设置loading名
-    loading.classList.add('loading');
-    //向loading（div）组件添加文本
-    loading.textContent = '加载中'; */
-
-  let requestFlag = false; 
-
-  window.onload = function() {
-      rendering(15); // first page
-    }
-
-  //当窗口滚动时，原来这里设置的一直是outer组件的事件监听,得设置整个浏览器的事件监听。  
-  window.addEventListener('scroll', (e) => {
-    // 计算滚动条距离底部的距离
-    let scrollHeight = document.querySelector(".outer").scrollHeight;
-    console.log(scrollHeight);
-    let windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    console.log(windowHeight);
-    //浏览器兼容问题
-    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log(scrollTop);
+    <div class="outer" id="outer"></div>
     
-    let scrollBottom = scrollHeight - scrollTop - windowHeight;
-    if(scrollBottom < 20 && !requestFlag){
-      request();
-    }
-  })
- 
-  function request(){
-    let childrenLength = Array.from(outer.children).filter(it => it.className === 'inner').length;
-    requestFlag = true;
-    setTimeout(() => {// simulate request
-      requestFlag = false;
-      
-      /* 
-        if(childrenLength >= 300){ // max data size
-        requestFlag = true; 
-        
-        // all data return ，never set requestFlag false again
-        loading.textContent = 'all return';
-        return
-      } */
+</body>
+<script>
+    let requestFlag = false; 
 
-      //outer.removeChild(loading); // remove loading element
-      
-      rendering(15);
-    }, 500);// delay 1s to simulate request
-  }
- 
-  /**
-   * append child
-   */
-  function rendering(size){
-    for (let i = 0; i < size; i++) {
-      let div = document.createElement('div');
-      div.classList.add('inner');
-      div.textContent = i;
-      div.style.backgroundColor = `rgb(${parseInt(Math.random()*255)},${parseInt(Math.random()*255)},${parseInt(Math.random()*255)})`;
-      outer.appendChild(div);
+    $(function(){
+        rendering(17);
+    })
+
+    function rendering(size){
+        for (let i = 0; i < size; i++) {
+            let div = document.createElement('div');
+            div.classList.add('inner');
+            div.textContent = i;
+            div.style.backgroundColor = `rgb(${parseInt(Math.random()*255)},${parseInt(Math.random()*255)},${parseInt(Math.random()*255)})`;
+            outer.appendChild(div);
+        }
+        //最后添加loading组件块，自觉无必要。
+        //outer.append(loading);
     }
-    //最后添加loading组件块，自觉无必要。
-    //outer.append(loading);
-  }
+
+    $(window).scroll((e) => {
+        // 计算滚动条距离底部的距离
+        let scrollHeight = $(".outer").outerHeight();
+        console.log(scrollHeight);
+        let windowHeight = $(window).height();
+        console.log(windowHeight);
+        //浏览器兼容问题
+        let scrollTop = $(document).scrollTop();
+        console.log(scrollTop);
+        
+        let scrollBottom = scrollHeight - scrollTop - windowHeight;
+        if(scrollBottom < 20 && !requestFlag){
+          request();
+        }
+    })
+     
+    function request(){
+        let childrenLength = Array.from(outer.children).filter(it => it.className === 'inner').length;
+        requestFlag = true;
+        setTimeout(() => {// simulate request
+          requestFlag = false;
+          rendering(7);
+        }, 500);// delay 1s to simulate request
+    }
+
 </script>
 </html>
