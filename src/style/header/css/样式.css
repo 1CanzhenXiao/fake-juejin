@@ -1,0 +1,200 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: rgb(244,245,245);
+	margin:auto;
+	/*width:1920px;*/
+	width: 1300px;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: rgb(81,87,103);
+}
+.phone-hide a:hover {
+	border-bottom:dodgerblue solid 3px;
+	color: rgb(37,41,51);
+}
+.main-header-box {
+	/*position: relative;*/
+	/*width:1920px;*/
+	height: 60px;
+	width: 100%;
+	background-color: rgb(255,255,255);
+}
+.logo {
+	float: left;
+	/*height:20px;*/
+	/*width: 167px;*/
+	margin-left: 25px;
+	/*position: absolute;
+	top:25%*/
+	display: flex;
+  	align-items: center;
+	height: 4rem;
+	width:2rem;
+	margin-right: 100px;
+	/*max-width:100px;
+	max-height:40px*/
+}
+/*左边ul设置样式*/
+.nav-list li {
+	/*position: absolute;*/
+	float: left;
+	list-style: none;
+	margin-left:20px;
+	font-size: 0.9rem;
+	/*margin-top: 10px;*/
+}
+.phone-hide li {
+	margin-top: 20px;
+}
+ul .phone-hide .nav-item link-item route-active active{
+	color: rgb(30,128,255);
+}
+/*右边设置*/
+.right-side-nav {
+	margin-left:650px;
+}
+.right-side-nav li {
+	margin-left: 20px;
+}
+/*搜索框*/
+.search {
+	float: left;
+	position: relative;
+	width: 182px;
+	height: 36px;
+	margin-top: 4px;
+	/*max-width: 500px;*/
+}
+.nav-item search{
+	float: left;
+	position: relative;
+	width: 182px;
+	height: 36px;
+	margin-top: 15px;
+}
+.search-img {
+	/*float: right;*/
+	position: absolute;
+	/*margin: 20px;*/
+	width: 44px;
+	height: 30px;
+	margin-left: -50px;
+	margin-top: 10px;
+}
+.search-button {
+	position: absolute;
+	height: 34px;
+	width: 50px;
+	margin-left: -53px;
+	margin-top: 8px;
+	background-color: rgb(242,243,245);
+}
+/*创作者中心*/
+.header-select {
+	float: left;
+	/*position: fixed;*/
+	/*background-color: #1E90FF;*/
+	margin-top:10px;
+}
+.header-select button{
+	color: white;
+    width:100px;
+    height: 36px;
+    border: 1px solid #1e80ff;
+    background-color: #1e80ff;
+}
+.header-select button:hover{
+	background-color: royalblue;
+}
+.header-select a {
+	text-decoration: none;
+	
+	
+}
+.header-select-right{
+    width: 20px;
+    height: 36px;
+    /*line-height: 50px;*/
+   /*margin-top: -10px;*/
+    margin-left:-5px;
+    border-left-color: whitesmoke;
+    background-color: #1e80ff;
+ 
+}
+/*会员设定*/
+.header-vip {
+	color: rgb(81,87,103);
+	float:left;
+	margin: 10px 5px;
+}
+.header-vip span {
+	float: left;
+	margin: 15px auto;
+}
+.search input:focus {
+	width:320px;
+}
+.header-vip input {
+	float: fixed;
+}
+/*消息*/
+.header-massage {
+	margin-top:20px;
+	display: flex;
+  	align-items: center;
+	height: 1.7rem;
+	width:1.5rem;
+	/*margin-left: 10px;*/
+}
+/*登录*/
+.header-log button{
+	background-color: white;
+    width: 80px;
+    height: 40px;
+    color: #1e80ff;
+    font-size: 1rem;
+    border: 1px solid #1e80ff;
+    margin-top: 10px;
+}
+/*搜索框随着网页变化*/
+/*.right-side-nav {*/
+	/*display: flex;*/
+    /* 定位和弹性布局不冲突 */
+    /* 加了绝对定位后，宽高属性与父盒子无关，需要重新定义 */
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /* 上面是C3语法，为了兼容老版本浏览器加入下面这一句： */
+    /*-webkit-transform: translateX(-50%);*/
+    /* 重新设置宽高 */
+    /*width: 100%;*/
+    /* 拉伸的最大最小改变范围 */
+    /*min-width: 320px;*/
+    /*max-width: 600px;*/
+    /*height: 44px;*/
+    /* background-color: pink; */
+}
+/*.nav-item search {
+	
+	/* 为了放大镜图标加定位，不加图标可以省略 */
+    	/*position: relative;*/ 
+    /*height: 26px;*/
+    /*line-height: 24px;*/
+    /* 前面给了box-sizing后，边框就算进去了，不用减，所以量的时候量大一点 */
+    /*border: 1px solid #cccccc;*/
+    /* 父盒子给flex属性，子盒子给1即可 */
+    /*flex: 1;*/
+    /*margin: 7px 10px;*/
+    /* background-color: yellow; */
+    /*border-radius: 5px;
+    font-size: 14px;
+    padding-left: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+*/
