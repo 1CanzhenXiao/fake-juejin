@@ -1,3 +1,8 @@
+.view-nav, .view-nav:before {
+    left: 0;
+    background-color: #fff;
+}
+
 .view-nav {
     position: fixed;
     top: 5rem;
@@ -5,14 +10,23 @@
 }
 
 .view-nav {
-    left: 0;
-    background-color: white;
-    height: 10;
-    align-items: center;
+    height: 3.833rem;
+    z-index: 100;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    transition: all .2s;
+    transform: translateZ(0);
+}
+
+.view-nav:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200%;
+    z-index: -1;
 }
 
 .view-nav .nav-list {
-    left: 0;
     max-width: 960px;
     height: 100%;
     margin: auto;
@@ -27,13 +41,17 @@
     height: 60%;
 }
 
-.nav-list .nav-item {
-    display: fiex;
+.view-nav .nav-list .nav-item:first-child {
+    padding: 0 1rem 0 0;
+}
+
+.view-nav .nav-list .nav-item {
     height: 100%;
-    padding: 0 2rem;
-    color: #71777c;
-    font-size: 1rem;
     align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1.16rem;
+    color: #71777c;
 }
 
 .nav-list {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仿掘金主页</title>
+    <link rel="stylesheet" href="../style/header/css/样式.css">
     <link rel="stylesheet" href="../style/aside/aside.css">
     <link rel="stylesheet" href="../style/main_navigate/main_navigate.css">
     <link rel="stylesheet" href="main.css">
@@ -22,17 +23,21 @@
 
                         <div class="container">
                             <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
-                            <a href="/" class="logo"></a>
+                            <a href="/" class="logo"><img src="../../resource/need_image/juejin-logo.png" class="logo_big"/></a>
                             <nav role="navigation" class="main-nav">
                                 <ul class="nav-list">
+                                    <!--logo右边的第一个导航栏（下拉框）-->
                                     <li class="main-nav-list">
                                         <div class="phone-show-menu"></div>
                                         <ul class="phone-hide">
-                                            <li class="nav-item link-item route-active active"></li>
-                                            <li class="nav-item link-item activities"></li>
-                                            <li class="nav-item link-item book"></li>
-                                            <li class="nav-item link-item"></li>
-                                            <li class="nav-item link-item"></li>
+                                            <li class="nav-item link-item route-active active"><a href="#">首页</a></li>
+                                            <li class="nav-item link-item activities"><a href="#">沸点</a></li>
+                                            <li class="nav-item link-item book"><a href="#">课程</a></li>
+                                            <li class="nav-item link-item"><a href="#">直播</a></li>
+                                            <li class="nav-item link-item"><a href="#">活动</a></li>
+                                            <li><a href="">商城</a></li>
+											<li><a href="">APP</a></li>
+											<li><a href="" class="header-plug">插件</a></li>
                                         </ul>
                                     </li>
                                     <ul class="right-side-nav">
@@ -41,12 +46,12 @@
                                                 <li class="nav-item search">
                                                     <form role="search" class="search-form">
                                                         <input type="search" maxlength="32" placeholder="探索稀土掘金" class="search-input">
-                                                        <div class="search-icon-container"></div>
-                                                        <div class="typehead" style="display: none;"></div>
+                                                        <button class="search-button"></button>
+                                                        <img src="../../resource/need_image/input.png" class="search-img" />
                                                     </form>
                                                 </li>
                                                 <li class="nav-item add creator-item">
-                                                    <div class="add-group">
+                                                    <!-- <div class="add-group">
                                                         <div class="more"></div>
                                                         <ul class="more-list">
                                                             <li class="item">
@@ -59,13 +64,40 @@
                                                                 <span class="icon create-jcode"></span>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> -->
+                                                    <div class="header-select">
+														<button type="button">
+															<span id="">
+																<a href="#">创作者中心</a>
+															</span>
+														</button>
+														<select value="" class="header-select-right">
+														    <option value=""><a>写文章</a></option>
+														    <option value=""><a>写沸点</a></option>
+														    <option value=""><a>写代码</a></option>
+														</select>
+													</div>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item vip-entry"></li>
-                                        <li class="nav-item notification"></li>
-                                        <li class="nav-item menu"></li>
+                                        <li class="nav-item vip-entry">
+                                            <div class="header-vip">
+												<a href="#">
+												    <img src="../../resource/need_image/juejinVip.png" class="header-vip"/>
+												    <span class="header-vip-word">会员</span>
+												</a>
+											</div>
+                                        </li>
+                                        <li class="nav-item notification">
+                                            <a href="#">
+												<img src="../../resource/need_image/cloud__off.png" class="header-massage"/></li>
+											</a>
+                                        </li>
+                                        <li class="nav-item menu">
+                                            <span class="header-log">
+												<button type="button">登录</button>
+											</span>
+                                        </li>
                                     </ul>
                                 </ul>
                             </nav>
@@ -144,7 +176,7 @@
                                                     <li class="nav-item">
                                                         <a href="#">最新</a>
                                                     </li>
-                                                    <li class="nav-item" data-v-5c49fce6="">
+                                                    <li class="nav-item">
                                                         <a href="#">热榜</a>
                                                     </li>
                                                 </ul>
@@ -172,7 +204,7 @@
                                                         <div class="tag">广告</div>
                                                         <div class="main">
                                                             <div class="info-box">
-                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="title">
+                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="title" >
                                                                     「转发、评论有🎁」创作等级&amp;掘力值全新升级啦
                                                                 </a>
                                                                 <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="description">
@@ -241,7 +273,7 @@
                                     <div class="sidebar-block banner-block">
                                         <div class="banner banner">
                                             <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
-                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image">
+                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image" >
                                             </a>
                                             <div class="ctrl-box">
                                                 <i class="ion-close-round close-btn"></i>

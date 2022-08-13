@@ -1,44 +1,117 @@
-* {
-	margin: 0px;
-	padding: 0px;
-}
-body {
-	background-color: rgb(244,245,245);
-	margin:auto;
-	/*width:1920px;*/
-	width: 1300px;
+.main-header {
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #f1f1f1;
+    color: #909090;
+    height: 5rem;
+    z-index: 250;
 }
 
-.nav-list a {
-	text-decoration: none;
-	color: rgb(81,87,103);
+.main-header-box {
+	position: relative;
+	height: 5rem;
+	/* width: 100%; */ 
 }
+
+.main-header {
+	height: 4.33rem;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-header .container {
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+	position: relative;
+	display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+	height:22px;
+	width: auto;
+	margin-left: 0;
+	margin-right: 1rem;
+	display: inline-block;
+  	/* align-items: center; */
+	/* height: 4rem;
+	width:2rem; */
+	
+	/*max-width:100px;
+	max-height:40px*/
+}
+
+.logo_big {
+	display: block;
+	width: 107px;
+	height: 22px;
+}
+
+.main-nav {
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+/*首页下拉选择框，当浏览器页面缩小时显示*/
+/* .phone-show-menu {
+	color: #1e80ff;
+    height: 5rem;
+	width: 5.66rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.33rem;
+    padding: 0;
+	cursor: pointer;
+} */
+
+.nav-item.link-item {
+    padding: 0;
+    height: 5rem;
+}
+
+.nav-item {
+    color: #86909c;
+    font-size: 1.167rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+	position: relative;
+}
+
+.phone-hide {
+	display: flex;
+}
+
+.phone-hide .nav-item.link-item a:not(.no-hover) {
+    display: inline-block;
+    height: 5rem;
+    margin: 0 1rem;
+    line-height: 5rem;
+}
+
+/* .phone-hide li {
+	margin-top: 20px;
+} */
+
 .phone-hide a:hover {
 	border-bottom:dodgerblue solid 3px;
 	color: rgb(37,41,51);
 }
-.main-header-box {
-	/*position: relative;*/
-	/*width:1920px;*/
-	height: 60px;
-	width: 100%;
-	background-color: rgb(255,255,255);
-}
-.logo {
-	float: left;
-	/*height:20px;*/
-	/*width: 167px;*/
-	margin-left: 25px;
-	/*position: absolute;
-	top:25%*/
-	display: flex;
-  	align-items: center;
-	height: 4rem;
-	width:2rem;
-	margin-right: 100px;
-	/*max-width:100px;
-	max-height:40px*/
-}
+
 /*左边ul设置样式*/
 .nav-list li {
 	/*position: absolute;*/
@@ -48,19 +121,26 @@ body {
 	font-size: 0.9rem;
 	/*margin-top: 10px;*/
 }
-.phone-hide li {
-	margin-top: 20px;
-}
+
 ul .phone-hide .nav-item link-item route-active active{
 	color: rgb(30,128,255);
 }
+
+
 /*右边设置*/
 .right-side-nav {
-	margin-left:650px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    order: 0;
 }
+
 .right-side-nav li {
 	margin-left: 20px;
 }
+
 /*搜索框*/
 .search {
 	float: left;
@@ -179,7 +259,8 @@ ul .phone-hide .nav-item link-item route-active active{
     /*max-width: 600px;*/
     /*height: 44px;*/
     /* background-color: pink; */
-}
+
+
 /*.nav-item search {
 	
 	/* 为了放大镜图标加定位，不加图标可以省略 */
