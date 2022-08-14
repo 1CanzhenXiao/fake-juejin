@@ -1,22 +1,23 @@
 .main-header-box {
 	position: relative;
 	height: 5rem;
-	/* width: 100%; */ 
+	width: 100%;
 }
 
 .main-header {
-    background-color: rgb(255,255,255);
+    background: #fff;
     border-bottom: 1px solid #f1f1f1;
     color: #909090;
+    height: 5rem;
     z-index: 250;
 }
 
 .main-header {
-	height: 4.33rem;
-	position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    transition: all .2s;
 }
 
 .main-header .container {
@@ -28,6 +29,7 @@
 	position: relative;
 	display: flex;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
 
@@ -77,13 +79,13 @@
 }
 
 .nav-item {
+    position: relative;
     color: #86909c;
     padding: 0 1rem;
     font-size: 1.167rem;
     margin: 0;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -99,6 +101,7 @@
 
 .phone-hide {
 	display: flex;
+    padding: 0;
 }
 
 .phone-hide .nav-item.link-item a:not(.no-hover) {
@@ -193,10 +196,6 @@ ul .phone-hide .nav-item link-item route-active active{
     padding: 0 .8333rem 0 0;
     cursor: pointer;
     margin: 7px 15px;
-}
-
-.search-form input:focus {
-	width:320px;
 }
 
 /*创作者中心*/
