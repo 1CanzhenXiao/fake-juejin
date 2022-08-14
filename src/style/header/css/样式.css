@@ -1,15 +1,15 @@
+.main-header-box {
+	position: relative;
+	height: 5rem;
+	/* width: 100%; */ 
+}
+
 .main-header {
     background-color: rgb(255,255,255);
     border-bottom: 1px solid #f1f1f1;
     color: #909090;
     height: 5rem;
     z-index: 250;
-}
-
-.main-header-box {
-	position: relative;
-	height: 5rem;
-	/* width: 100%; */ 
 }
 
 .main-header {
@@ -92,6 +92,15 @@
 	position: relative;
 }
 
+.nav-item>a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .phone-hide {
 	display: flex;
 }
@@ -117,7 +126,7 @@
 	/*position: absolute;*/
 	float: left;
 	list-style: none;
-	margin-left:20px;
+	/* margin-left:20px; */
 	font-size: 0.9rem;
 	/*margin-top: 10px;*/
 }
