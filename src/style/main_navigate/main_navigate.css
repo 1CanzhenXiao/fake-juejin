@@ -1,16 +1,9 @@
-.view-nav,
-.view-nav:before {
+.view-nav {
     left: 0;
     background-color: #fff;
-}
-
-.view-nav {
     position: fixed;
     top: 5rem;
     width: 100%;
-}
-
-.view-nav {
     height: 3.833rem;
     z-index: 100;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
@@ -19,12 +12,15 @@
 }
 
 .view-nav:before {
+    left: 0;
+    right: 0;
     content: "";
     position: absolute;
-    right: 0;
     bottom: 0;
+    /* height: 60%; */
     height: 200%;
     z-index: -1;
+    background-color: white;
 }
 
 .view-nav .nav-list {
@@ -35,12 +31,6 @@
     line-height: 1;
 }
 
-.view-nav:before {
-    left: 0;
-    background-color: white;
-    position: absolute;
-    height: 60%;
-}
 
 .view-nav .nav-list .nav-item:first-child {
     padding: 0 1rem 0 0;
@@ -147,4 +137,49 @@
     padding: 0 1.2rem;
     font-size: 1.16rem;
     border-right: 1px solid hsla(0, 0%, 59.2%, .2)
+}
+
+
+
+
+/* test */
+
+
+
+
+/* 浮动只需要在每个section里做就行 */
+/* 给section设置"字号、文本对齐和行高" => 可继承属性 */
+
+.section1 {
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 这里规定悬停时head的样式 */
+/* 也可以写作.head:hover */
+
+.section1:hover .head1 {
+    color: white;
+    background-color: white;
+}
+
+/* 整个menu一开始是看不到的 同时规定样式 */
+
+.menu1 {
+    display: none;
+    background-color: transparent;
+}
+
+/* 悬停后就可以看到menu了 只能悬停父盒子 */
+
+.section1:hover .menu1 {
+    display: block;
+}
+
+/* 规定悬停时li的样式 */
+
+.menu1 li:hover {
+    background-color: white;
 }
