@@ -10,7 +10,7 @@
 以下目录树省略了一些python项目构建的库及配置文件，只留下主要架构：
 
 ```
-C:.
+juejin:.
 │  app.py
 │  README.md
 │  掘金文章路径.md
@@ -116,8 +116,4 @@ C:.
 
 ## 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
