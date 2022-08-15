@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿掘金主页</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='main_style/main.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='header/header.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='main_navigate/main_navigate.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='aside/aside.css')}}" type="text/css">
+</head>
+
+<body>
+    <!-- 设置多div组件的原因是有些样式不需要重复设置，一个选择器可以为多个元素设置基本样式。 -->
+    <div id="__layout">
+        <div id="juejin">
+            <div class="view-container">
+                <div class="main-header-box">
+                    <!-- header中有很多组件有样式变化 -->
+                    <header class="main-header visible">
+                        <div class="container">
+                            <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
+                            <a href="/" class="logo"><img src="{{ url_for('static',filename='need_image/juejin-logo.png')}}" class="logo_big"/></a>
+                            <nav role="navigation" class="main-nav">
+                                <ul class="nav-list">
+                                    <!--logo右边的第一个导航栏（下拉框）-->
+                                    <li class="main-nav-list">
+                                        <!--缩小窗口时调用的组件-->
+                                        <div class="phone-show-menu"></div>
+                                        <!--窗口正常是调用的组件-->
+                                        <ul class="phone-hide">
+                                            <li class="nav-item link-item route-active active"><a href="/"><span>首页</span></a></li>
+                                            <li class="nav-item link-item activities"><a href="/pins"><span>沸点</span></a></li>
+                                            <li class="nav-item link-item book"><a href="/courses"><span>课程</span></a></li>
+                                            <li class="nav-item link-item"><a href="/lives"><span>直播</span></a></li>
+                                            <li class="nav-item link-item"><a href="/events"><span>活动</span></a></li>
+                                            <li class="nav-item link-item"><a href="" class="nav-item link-item no-border" target="_blank"><span>商城</span></a></li>
+											<li class="nav-item link-item download-icon"><a href="#" target="_blank" class="download-app no-border"><span>APP</span></a></li>
+											<li class="nav-item link-item extension-icon"><a href="" class="header-plug" target="_blank"><span>插件</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <ul class="right-side-nav">
+                                        <li class="search-add">
+                                            <ul class="search-add-ul">
+                                                <li class="nav-item search">
+                                                    <form role="search" class="search-form">
+                                                        <input type="search" class="search-input" maxlength="32" placeholder="探索稀土掘金" >
+                                                        <div class="seach-icon-container" >
+                                                            <img src="{{ url_for('static',filename='need_image/input.png')}}" class="search-img" />
+                                                        </div>
+                                                    </form>
+                                                </li>
+                                                <li class="nav-item add creator-item">
+                                                    <div class="header-select">
+														<button type="button">
+															<span id="">
+																<a href="#">创作者中心</a>
+															</span>
+														</button>
+														<select value="" class="header-select-right">
+														    <option value=""><a>写文章</a></option>
+														    <option value=""><a>写沸点</a></option>
+														    <option value=""><a>写代码</a></option>
+														</select>
+													</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item vip-entry">
+                                            <div class="header-vip">
+												<img src="{{ url_for('static',filename='need_image/juejinVip.png')}}" class="vip-img"/>
+												<span class="vip-word">会员</span>
+											</div>
+                                        </li>
+                                        <li class="nav-item notification">
+                                            <a href="#">
+												<img src="{{ url_for('static',filename='need_image/inform-logo-off.png')}}" class="header-massage"/>
+											</a>
+                                        </li>
+                                        <li class="nav-item menu">
+                                            <span class="header-log">
+												<button type="button">登录</button>
+											</span>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+
+                <!-- 上导航栏与下文章列表的分割线 -->
+                <main class="container main-container with-view-nav">
+                    <div class="view timeline-index-view">
+                        <!-- 文章列表的导航栏 -->
+                        <nav role="navigation" class="view-nav">
+                            <div class="nav-list left">
+                                <a href="/recommended" class="nav-item active">
+                                    <div class="category-popover-box">
+                                        综合
+                                    </div>
+                                </a>
+                                <a href="/following" class="nav-item">
+                                    <div class="category-popover-box">
+                                        关注
+                                    </div>
+                                </a>
+                                <a href="/backend" class="nav-item">
+                                    <div class="category-popover-box">
+                                        后端
+                                    </div>
+                                </a>
+                                <a href="/frontend" class="nav-item">
+                                    <div class="category-popover-box">
+                                        前端
+                                    </div>
+                                </a>
+                                <a href="/android" class="nav-item">
+                                    <div class="category-popover-box">
+                                        Android
+                                    </div>
+                                </a>
+                                <a href="/ios" class="nav-item">
+                                    <div class="category-popover-box">
+                                        iOS
+                                    </div>
+                                </a>
+                                <a href="/ai" class="nav-item">
+                                    <div class="category-popover-box">
+                                        人工智能
+                                    </div>
+                                </a>
+                                <a href="/freebie" class="nav-item">
+                                    <div class="category-popover-box">
+                                        开发工具
+                                    </div>
+                                </a>
+                                <a href="/career" class="nav-item">
+                                    <div class="category-popover-box">
+                                        代码人生
+                                    </div>
+                                </a>
+                                <a href="/article" class="nav-item">
+                                    <div class="category-popover-box">
+                                        阅读
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        
+                        <div class="timeline-container">
+                            <div class="timeline-content">
+                                <div class="timeline-entry-list">
+                                    <div class="entry-list-container">
+                                        <header class="list-header">
+                                            <nav role="navigation" class="list-nav">
+                                                <ul class="nav-list left">
+                                                    <li class="nav-item active">
+                                                        <a href="#">推荐</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#">最新</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#">热榜</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="dorp-down-area"></div>
+                                            </nav>
+                                        </header>
+                                        <div class="entry-list-wrap">
+                                            <!-- 文章列表，内有多个文章块和广告快，但样式统一，只需用少量的选择器即可 -->
+                                            <div class="entry-list list">
+                                                <li class="item">
+                                                    <!-- 广告块 -->
+                                                    <div class="advertisement">
+                                                        <div class="meta-container">
+                                                            <div class="user-message">
+                                                                <a href="#" target="_blank" class="userbox">
+                                                                    <div class="popover-box user-popover">
+                                                                        掘金酱
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dividing"></div>
+                                                            <div class="date">6天前</div>
+                                                        </div>
+                                                        <div class="tag">广告</div>
+                                                        <div class="main">
+                                                            <div class="info-box">
+                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="title" >
+                                                                    「转发、评论有🎁」创作等级&amp;掘力值全新升级啦
+                                                                </a>
+                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="description">
+                                                                    成长体系优化，新权益解锁，掘力值计算方式升级，创作成长看得见！
+                                                                </a>
+                                                            </div>
+                                                            <img src="#" alt="「「转发、评论有🎁」创作等级&amp;掘力值全新升级啦」封面" class="lazy thumb" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 侧边栏 -->
+                                <aside class="index-aside aside">
+                                    <div class="signin-tip signin">
+                                        <div class="first-line" style="opacity: 1;">
+                                            <div class="icon-text">
+
+                                                <!-- 应该是什么图标 -->
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M8 2C8 1.72386 7.77614 1.5 7.5 1.5H6.5C6.22386 1.5 6 1.72386 6 2L5.9995 3H3C2.44772 3 2 3.47259 2 4.05556V7H22V4.05556C22 3.47259 21.5523 3 21 3H18V2C18 1.72386 17.7761 1.5 17.5 1.5H16.5C16.2239 1.5 16 1.72386 16 2V3H8V2ZM22 8.5H2V20.9444C2 21.5274 2.44772 22 3 22H21C21.5523 22 22 21.5274 22 20.9444V8.5Z"
+                                                        fill="#FFCF8B"></path>
+                                                    <rect x="5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                    <rect x="10.5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                    <rect x="5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                    <rect x="10.5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                    <rect x="16" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                    <rect x="16" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                                    </rect>
+                                                </svg>
+
+                                                <span class="title">下午好！</span>
+                                            </div>
+
+                                            <button class="btn signin-btn">
+                                                <span class="btn-text">去签到</span>
+                                            </button>
+
+                                        </div>
+                                        <div class="second-line" style="opacity: 1;">点亮你在社区的每一天</div>
+                                        <div class="byte-loading" style="display: none;">
+                                            <div class="byte-loading__spinner">
+                                                <i class="circular byte-icon byte-icon--loading">
+                                                    <!-- 又是一个svg标签，加载图片 -->
+                                                    <svg t="1553157954893" class="icon" viewBox="0 0 1024 1024"
+                                                        version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2605"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <path
+                                                            d="M980.752 313.697c-25.789-60.972-62.702-115.725-109.713-162.736-47.012-47.011-101.764-83.924-162.736-109.713C645.161 14.542 578.106 1 509 1c-2.242 0-4.48 0.015-6.715 0.043-16.567 0.211-29.826 13.812-29.615 30.38 0.209 16.438 13.599 29.618 29.99 29.618l0.39-0.002c1.98-0.026 3.963-0.039 5.95-0.039 61.033 0 120.224 11.947 175.93 35.508 53.82 22.764 102.162 55.359 143.683 96.879s74.115 89.862 96.88 143.683C949.054 392.776 961 451.967 961 513c0 16.568 13.432 30 30 30s30-13.432 30-30c0-69.106-13.541-136.162-40.248-199.303z"
+                                                            p-id="2606"></path>
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block banner-block">
+                                        <div class="banner banner">
+                                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
+                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image" >
+                                            </a>
+                                            <div class="ctrl-box">
+                                                <i class="ion-close-round close-btn"></i>
+                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                                    <span class="inco">投放</span>
+                                                    <span>广告</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block banner-block">
+                                        <div class="banner banner">
+                                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
+                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image">
+                                            </a>
+                                            <div class="ctrl-box">
+                                                <i class="ion-close-round close-btn"></i>
+                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                                    <span data-v-cb59515e="" class="inco">投放</span>
+                                                    <span data-v-cb59515e="">广告</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
+                                        <div class="block-body">
+                                            <a href="#" class="" target="_blank">
+                                                <div class="app-link">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
+                                                    <div class="content-box">
+                                                        <div class="headline">下载稀土掘金APP</div>
+                                                        <div class="desc">一个帮助开发者成长的社区</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block sticky-block">
+                                        <div class="banner banner sticky-banner">
+                                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
+                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
+                                            </a>
+                                            <div class="ctrl-box">
+                                                <i class="ion-close-round close-btn"></i>
+                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                                    <span class="inco">投放</span>
+                                                    <span>广告</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="banner banner sticky-banner">
+                                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
+                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
+                                            </a>
+                                            <div class="ctrl-box">
+                                                <i class="ion-close-round close-btn"></i>
+                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                                    <span class="inco">投放</span>
+                                                    <span>广告</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
+                                            <div class="block-body">
+                                                <a href="/app" class="" target="_blank">
+                                                    <div class="app-link">
+                                                        <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
+                                                        <div class="content-box">
+                                                            <div class="headline">下载稀土掘金APP</div>
+                                                            <div class="desc">一个帮助开发者成长的社区</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block user-block">
+                                        <div class="recommend-author-block sticky-author-block">
+                                            <header class="user-block-header">🎖️作者榜</header>
+                                            <div class="user-list">
+                                                <div class="item">
+                                                    <a href="/user/1169536100867949" target="_blank" rel="" class="link">
+                                                        <img src="https://p6-passport.byteacctimg.com/img/user-avatar/70d6edf3eac6724904ae8e596cf56afd~300x300.image" alt="lecepin的头像" class="lazy avatar avatar" data-src="https://p6-passport.byteacctimg.com/img/user-avatar/70d6edf3eac6724904ae8e596cf56afd~300x300.image"
+                                                            loading="lazy">
+                                                        <div class="user-info">
+                                                            <a href="/user/1169536100867949" target="_blank" rel="" class="username username">
+                                                                <span class="name" style="max-width: 128px;">
+                                                                    lecepin
+                                                                </span>
+                                                                <span blank="true" class="rank">
+                                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
+                                                                        alt="lv-4" title="创作等级">
+                                                                </span>
+                                                            </a>
+                                                            <div class="position"> 前端工程师 @ 阿里巴巴</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="/user/2480095518528503" target="_blank" rel="" class="link">
+                                                        <img src="https://p26-passport.byteacctimg.com/img/user-avatar/5321656a21c34554434c4c41580f34df~300x300.image" alt="潜水的鱼儿的头像" class="lazy avatar avatar" data-src="https://p26-passport.byteacctimg.com/img/user-avatar/5321656a21c34554434c4c41580f34df~300x300.image"
+                                                            loading="lazy">
+                                                        <div class="user-info">
+                                                            <a href="/user/2480095518528503" target="_blank" rel="" class="username username">
+                                                                <span class="name" style="max-width: 128px;">潜水的鱼儿</span>
+                                                                <span blank="true" class="rank">
+                                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-5.d08789d.png"
+                                                                        alt="lv-5" title="创作等级">
+                                                                </span>
+                                                            </a>
+                                                            <div data-v-edec7d04="" class="position"> iOS开发</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="/user/3597257776570791" target="_blank" rel="" class="link">
+                                                        <img src="https://p26-passport.byteacctimg.com/img/user-avatar/d2c9a7658801b0d933edd8e141925ce3~300x300.image" alt="我是小阵不悲催的头像" class="lazy avatar avatar" data-src="https://p26-passport.byteacctimg.com/img/user-avatar/d2c9a7658801b0d933edd8e141925ce3~300x300.image"
+                                                            loading="lazy">
+                                                        <div class="user-info">
+                                                            <a href="/user/3597257776570791" target="_blank" rel="" class="username username">
+                                                                <span class="name" style="max-width: 128px;">
+                                                                    我是小阵不悲催</span>
+                                                                <span blank="true" class="rank">
+                                                                    <img data-v-3de16c56=""
+                                                                        src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
+                                                                        alt="lv-4" title="创作等级">
+                                                                </span>
+                                                            </a>
+                                                            <div class="position">前端开发 @ 公众号：前端业务员进阶日记</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <a href="/recommendation/authors/recommended" class="item" target="_blank">
+                                                    <div class="more">
+                                                        <span>完整榜单</span>
+                                                        <i class="icon ion-chevron-right"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar-block link-block">
+                                        <ul class="link-list">
+                                            <li class="item">
+                                                <a class="link" href="/book/6844733795329900551" target="_blank">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png" class="icon">
+                                                    <span class="title">稀土掘金漫游指南</span>
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <a class="link" href="/extension" target="_blank">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png" class="icon">
+                                                    <span class="title">安装掘金浏览器插件</span>
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <a class="link" href="https://sourl.co/dQMLD9" rel="nofollow noopener noreferrer" target="_blank">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png" class="icon">
+                                                    <span data-v-08a3e345="" class="title">前往掘金翻译计划</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="index-aside-footer">
+                                        <ul class="more-list">
+                                            <li class="item">
+                                                <a href="/terms" target="_blank" rel="nofollow">用户协议</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/license" target="_blank" rel="nofollow">营业执照</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/privacy" target="_blank" rel="nofollow">隐私政策</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/about" target="_blank" rel="nofollow">关于我们</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="more-list">
+                                            <li class="item">
+                                                <a href="/map-author-A-1" target="_blank">站点地图</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/book/5c90640c5188252d7941f5bb" target="_blank">使用指南</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/links" target="_blank" rel="">友情链接</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="/more_posts" target="_blank" rel="">更多文章</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="more-list">
+                                            <li class="item">
+                                                <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">京ICP备18012699号-3</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="more-list">
+                                            <li class="item">
+                                                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802026719" target="_blank" rel="nofollow">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/police.d0289dc.png" alt="police" style="vertical-align: middle;">京公网安备11010802026719号
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <span>版权所有：北京北比信息技术有限公司</span>
+                                            </li>
+                                            <li class="item">
+                                                <span>公司地址：北京市海淀区信息路甲28号13层B座13B-5</span>
+                                            </li>
+                                            <li class="item">
+                                                <span>公司座机：010-83434395</span>
+                                            </li>
+                                            <li class="item">
+                                                <span>举报邮箱：
+                                                    <a href="mailto:feedback@xitu.io">feedback@xitu.io</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <ul class="more-list">
+                                            <li class="item">
+                                                <a>©2022 稀土掘金</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="more-list account-list">
+                                            <li class="item weibo">
+                                                <a href="http://weibo.com/xitucircle" target="_blank" rel="nofollow noopener noreferrer">
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/weibo.0cd39f5.png" alt="微博" class="icon">
+                                                </a>
+                                            </li>
+                                            <li class="item wechat">
+                                                <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/wechat.ce329e6.png" alt="微信" class="icon">
+                                                <div class="qr-panel">
+                                                    <div class="title">微信扫一扫</div>
+                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-qr.b247fde.jpeg" class="qr">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

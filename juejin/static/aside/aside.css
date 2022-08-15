@@ -1,0 +1,51 @@
+    a {
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+    }
+    
+    .index-aside {
+        width: 20rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .ctrl-box {
+        border: 1px #000000 solid;
+        width: 30px;
+        height: 20px;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+    
+    .ctrl-box:hover {
+        width: 60px;
+        height: 20px;
+        opacity: 1;
+    }
+    
+    .signin-btn {
+        width: 90px;
+        height: 40px;
+        background: white;
+        border-radius: 9px;
+        border: 1px blue solid;
+        float: right;
+    }
+    
+    .btn-text {
+        font-size: 18px;
+        color: blue;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .icon-text {
+        width: 300px;
+        height: 50%;
+    }

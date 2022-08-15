@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../resource/jQuery/jquery.min.js"></script>
+    <style>
+        .outer{
+          margin: 0 auto;
+          width: 100%;
+          max-width: 960px;
+          background: #aaa;
+        }
+        .outer .inner {
+          height: 150px;
+          color: #fff;
+          border:1px solid black;
+          line-height: 50px;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .outer .loading {
+          text-align:center;
+          font-size: 12px;
+          color: #eee;
+          text-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer" id="outer"></div>
+    
+</body>
+<script>
+    let requestFlag = false; 
+
+    $(function(){
+        rendering(17);
+    })
+
+    function rendering(size){
+        for (let i = 0; i < size; i++) {
+            let div = document.createElement('div');
+            div.classList.add('inner');
+            div.textContent = i;
+            div.style.backgroundColor = `rgb(${parseInt(Math.random()*255)},${parseInt(Math.random()*255)},${parseInt(Math.random()*255)})`;
+            outer.appendChild(div);
+        }
+        //最后添加loading组件块，自觉无必要。
+        //outer.append(loading);
+    }
+
+    $(window).scroll((e) => {
+        // 计算滚动条距离底部的距离
+        let scrollHeight = $(".outer").outerHeight();
+        console.log(scrollHeight);
+        let windowHeight = $(window).height();
+        console.log(windowHeight);
+        //浏览器兼容问题
+        let scrollTop = $(document).scrollTop();
+        console.log(scrollTop);
+        
+        let scrollBottom = scrollHeight - scrollTop - windowHeight;
+        if(scrollBottom < 20 && !requestFlag){
+          request();
+        }
+    })
+     
+    function request(){
+        let childrenLength = Array.from(outer.children).filter(it => it.className === 'inner').length;
+        requestFlag = true;
+        setTimeout(() => {// simulate request
+          requestFlag = false;
+          rendering(7);
+        }, 500);// delay 1s to simulate request
+    }
+
+</script>
+</html>

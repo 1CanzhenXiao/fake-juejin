@@ -1,0 +1,52 @@
+html {
+    font-size: 12px;
+    word-break: break-word;
+    text-rendering: optimizeLegibility;
+    color: #333;
+    background-color: #f4f5f5;
+}
+
+body {
+    font-size: 12px;
+    line-height: normal;
+    background-color: rgb(244,245,245);
+}
+
+div {
+    display: block;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.timeline-container {
+    margin-top: 0;
+}
+
+.main-container.with-view-nav>.view {
+    margin-top: 4.67rem;
+}
+
+.timeline-content {
+    position: relative;
+    margin-top: .33rem;
+}
+
+.timeline-entry-list {
+    margin-right: 21.667rem;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.entry-list-container {
+    background-color: #fff;
+}
+
+.list-header {
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+}

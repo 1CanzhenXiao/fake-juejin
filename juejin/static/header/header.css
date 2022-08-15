@@ -1,0 +1,309 @@
+.main-header-box {
+	position: relative;
+	height: 5rem;
+}
+
+.main-header {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    color: #909090;
+    height: 5rem;
+    z-index: 250;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s;
+}
+
+.main-header .container {
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+	position: relative;
+	display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+	height:22px;
+	width: auto;
+	margin-left: 0;
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+/*大logo大小设置*/
+.logo_big {
+	display: block;
+	width: 107px;
+	height: 22px;
+}
+
+.main-nav {
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+/*首页下拉选择框，当浏览器页面缩小时显示*/
+/* .phone-show-menu {
+	color: #1e80ff;
+    height: 5rem;
+	width: 5.66rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.33rem;
+    padding: 0;
+	cursor: pointer;
+} */
+
+.nav-item.link-item {
+    padding: 0;
+    height: 5rem;
+}
+
+.nav-item {
+    position: relative;
+    color: #86909c;
+    padding: 0 1rem;
+    font-size: 1.167rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item>a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*左边ul设置样式*/
+.nav-list li {
+	/*position: absolute;*/
+	float: left;
+	list-style: none;
+}
+
+.phone-hide {
+	display: flex;
+    padding: 0;
+}
+
+.phone-hide .nav-item.link-item a:not(.no-hover) {
+    display: inline-block;
+    height: 5rem;
+    margin: 0 1rem;
+    line-height: 5rem;
+}
+
+/* .phone-hide li {
+	margin-top: 20px;
+} */
+.phone-hide a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.563)
+}
+
+.nav-item.active, .nav-item.active>a {
+    color: #1e80ff;
+    font-weight: 500;
+}
+
+.phone-hide a:hover {
+	border-bottom:#1e80ff solid 3px;
+	color: rgb(10, 11, 14);
+} 
+
+/*右边设置*/
+.right-side-nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    order: 0;
+}
+
+.search-add {
+    flex: 1 1 auto;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .right-side-nav li {
+	margin-left: 20px;
+} */
+
+/*搜索框*/
+.search-form {
+    background-color: #fff;
+    border: 1px solid #c2c8d1;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 2.834rem;
+    width: 260px;
+    transition: width .2s;
+}
+
+.search-form .search-input {
+    border: none;
+    width: calc(100% - 44px);
+    padding: .6rem 0 .6rem 1rem;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: #8a919f;
+    background-color: transparent;
+    transition: width .3s;
+}
+
+.search-form .seach-icon-container{
+    position: relative;
+    left: -2px;
+    width: 44px;
+    height: 30px;
+    background: #f2f3f5;
+    border-radius: 2px;
+}
+
+.search-img {
+    display: inline-block;
+    width: 1.33rem;
+    padding: 0 .8333rem 0 0;
+    cursor: pointer;
+    margin: 7px 15px;
+}
+
+/*创作者中心*/
+.header-select {
+	float: left;
+	/*position: fixed;*/
+	/*background-color: #1E90FF;*/
+	margin-top:10px;
+}
+.header-select button{
+	color: white;
+    width:100px;
+    height: 36px;
+    border: 1px solid #1e80ff;
+    background-color: #1e80ff;
+}
+.header-select button:hover{
+	background-color: royalblue;
+}
+.header-select a {
+	text-decoration: none;
+	
+	
+}
+.header-select-right{
+    width: 20px;
+    height: 36px;
+    /*line-height: 50px;*/
+   /*margin-top: -10px;*/
+    margin-left:-5px;
+    border-left-color: whitesmoke;
+    background-color: #1e80ff;
+ 
+}
+
+/*会员设定*/
+.vip-entry .header-vip {
+    display: flex;
+    align-items: center;
+}
+
+.vip-entry .vip-img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-vip span {
+	color: #86909c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+/*消息*/
+.header-massage {
+	margin-top:20px;
+	display: flex;
+  	align-items: center;
+	height: 1.7rem;
+	width:1.5rem;
+	/*margin-left: 10px;*/
+}
+/*登录*/
+.header-log button{
+	background-color: white;
+    width: 80px;
+    height: 40px;
+    color: #1e80ff;
+    font-size: 1rem;
+    border: 1px solid #1e80ff;
+    margin-top: 10px;
+}
+/*搜索框随着网页变化*/
+/*.right-side-nav {*/
+	/*display: flex;*/
+    /* 定位和弹性布局不冲突 */
+    /* 加了绝对定位后，宽高属性与父盒子无关，需要重新定义 */
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /* 上面是C3语法，为了兼容老版本浏览器加入下面这一句： */
+    /*-webkit-transform: translateX(-50%);*/
+    /* 重新设置宽高 */
+    /*width: 100%;*/
+    /* 拉伸的最大最小改变范围 */
+    /*min-width: 320px;*/
+    /*max-width: 600px;*/
+    /*height: 44px;*/
+    /* background-color: pink; */
+
+
+/*.nav-item search {
+	
+	/* 为了放大镜图标加定位，不加图标可以省略 */
+    	/*position: relative;*/ 
+    /*height: 26px;*/
+    /*line-height: 24px;*/
+    /* 前面给了box-sizing后，边框就算进去了，不用减，所以量的时候量大一点 */
+    /*border: 1px solid #cccccc;*/
+    /* 父盒子给flex属性，子盒子给1即可 */
+    /*flex: 1;*/
+    /*margin: 7px 10px;*/
+    /* background-color: yellow; */
+    /*border-radius: 5px;
+    font-size: 14px;
+    padding-left: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+*/
