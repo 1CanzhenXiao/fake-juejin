@@ -98,6 +98,13 @@
     left: 0;
 }
 
+/*左边ul设置样式*/
+.nav-list li {
+	/*position: absolute;*/
+	float: left;
+	list-style: none;
+}
+
 .phone-hide {
 	display: flex;
     padding: 0;
@@ -113,26 +120,20 @@
 /* .phone-hide li {
 	margin-top: 20px;
 } */
+.phone-hide a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.563)
+}
+
+.nav-item.active, .nav-item.active>a {
+    color: #1e80ff;
+    font-weight: 500;
+}
 
 .phone-hide a:hover {
-	border-bottom:dodgerblue solid 3px;
-	color: rgb(37,41,51);
-}
-
-/*左边ul设置样式*/
-.nav-list li {
-	/*position: absolute;*/
-	float: left;
-	list-style: none;
-	/* margin-left:20px; */
-	font-size: 0.9rem;
-	/*margin-top: 10px;*/
-}
-
-ul .phone-hide .nav-item link-item route-active active{
-	color: rgb(30,128,255);
-}
-
+	border-bottom:#1e80ff solid 3px;
+	color: rgb(10, 11, 14);
+} 
 
 /*右边设置*/
 .right-side-nav {
