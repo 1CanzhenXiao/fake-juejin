@@ -1,0 +1,253 @@
+.index-aside {
+    width: 20rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.index-aside .signin {
+    width: 240px;
+    height: 96px;
+    margin-bottom: 16px;
+}
+
+.signin-tip {
+    padding: 16px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.signin-tip .first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.signin-tip .second-line {
+    margin-bottom: 2px;
+    margin-left: 36px;
+    color: #4e5969;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.signin-tip .first-line .icon-text {
+    display: flex;
+}
+
+.signin-tip .first-line .icon {
+    margin-right: 12px;
+    margin-top: 2px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+}
+
+.signin-tip .first-line .title {
+    margin-top: 2px;
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.signin-tip .first-line .signin-btn {
+    border: 1px solid #1e80ff;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-tip .first-line .btn {
+    border-radius: 50px;
+    height: 32px;
+    width: 72px;
+}
+
+.signin-tip .first-line .btn-text {
+    color: #1e80ff;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.signin-tip .second-line {
+    margin-bottom: 2px;
+    margin-left: 36px;
+    color: #4e5969;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.byte-loading {
+    position: absolute;
+    z-index: 1000;
+    background-color: hsla(0,0%,100%,.9);
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    color: #3370ff;
+}
+
+.sidebar-block:not(.pure) {
+    background-color: #fff;
+}
+
+.sidebar-block {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+
+.sidebar-block {
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    border-radius: 2px;
+    margin-bottom: 1.3rem;
+    font-size: 1.16rem;
+    line-height: 1.29;
+    color: #333;
+}
+
+.sidebar-block.sticky-block {
+    position: fixed;
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0;
+    transition: all .2s;
+    width: 20rem;
+    z-index: -1;
+    top: 67px;
+    pointer-events: none;
+}
+
+.sidebar-block.sticky-block .sticky-banner:not(:last-child) {
+    margin-bottom: 1.3rem;
+}
+
+.sidebar-block.sticky-block .sticky-banner {
+    height: 200px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.banner .ctrl-box .close-btn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 1rem;
+    color: #909090;
+    opacity: .5;
+    display: none;
+}
+
+.banner .ctrl-box .close-btn:hover {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+
+a, button, input {
+    margin: initial;
+}
+
+.banner .ctrl-box .label {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 20px;
+    z-index: 1;
+    transform: scale(.5);
+    transform-origin: right bottom;
+    color: #fff;
+    background-color: rgba(0,0,0,.2);
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 300;
+}
+
+.banner .ctrl-box .label .inco {
+    display: none;
+}
+
+.banner .ctrl-box .label span {
+    vertical-align: top;
+}
+
+.banner .ctrl-box .label :hover{
+    vertical-align: top;
+    background-color: rgba(63, 62, 62, 0.5);
+}
+
+.sidebar-block:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.app-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.qr-img {
+    margin-right: 16px;
+    width: 4.167rem;
+    height: 4.167rem;
+}
+
+.headline {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1d2129;
+}
+
+.desc {
+    margin-top: .5rem;
+    font-size: 12px;
+    line-height: 20px;
+    color: #86909c;
+}

@@ -1,0 +1,467 @@
+.main-header-box {
+	position: relative;
+	height: 5rem;
+}
+
+.main-header.visible {
+    transform: translateZ(0);
+}
+
+.main-header {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    color: #909090;
+    height: 5rem;
+    z-index: 250;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s;
+}
+
+.main-header .container {
+    margin: auto;
+    max-width: 1440px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.logo {
+	height:22px;
+	width: auto;
+	margin-left: 24px;
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+
+a, button, input {
+    margin: initial;
+}
+
+/*大logo大小设置*/
+.logo_big {
+	display: block;
+	width: 107px;
+	height: 22px;
+}
+
+.main-nav {
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row-reverse;
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav-list {
+    display: flex;
+    order: 99;
+}
+/*首页下拉选择框，当浏览器页面缩小时显示*/
+/* .phone-show-menu {
+	color: #1e80ff;
+    height: 5rem;
+	width: 5.66rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.33rem;
+    padding: 0;
+	cursor: pointer;
+} */
+
+.nav-item.link-item {
+    padding: 0;
+    height: 5rem;
+}
+
+.nav-item {
+    position: relative;
+    color: #86909c;
+    padding: 0 1rem;
+    font-size: 1.167rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item>a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*左边ul设置样式*/
+.phone-hide {
+	display: flex;
+    padding: 0;
+}
+
+.phone-hide .nav-item.link-item a:not(.no-hover) {
+    display: inline-block;
+    height: 5rem;
+    margin: 0 1rem;
+    line-height: 5rem;
+}
+
+/* .phone-hide li {
+	margin-top: 20px;
+} */
+.phone-hide a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.563)
+}
+
+.nav-item.active, .nav-item.active>a {
+    color: #1e80ff;
+    font-weight: 500;
+}
+
+.phone-hide a:hover {
+	border-bottom:#1e80ff solid 3px;
+	color: rgb(10, 11, 14);
+} 
+
+/*右边设置*/
+.right-side-nav {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    order: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.search-add {
+    flex: 1 1 auto;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1069px){
+    .search-add-ul {
+        width: 32.667rem;
+    }
+}
+
+.search-add-ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-item.search {
+    cursor: auto;
+    padding-left: 0;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* .right-side-nav li {
+	margin-left: 20px;
+} */
+
+/*搜索框*/
+.search-form {
+    background-color: #fff;
+    border: 1px solid #c2c8d1;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 2.834rem;
+    width: 260px;
+    transition: width .2s;
+}
+
+.search-form .search-input {
+    border: none;
+    width: calc(100% - 44px);
+    padding: .6rem 0 .6rem 1rem;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: #8a919f;
+    background-color: transparent;
+    transition: width .3s;
+}
+
+.search-form .seach-icon-container{
+    position: relative;
+    left: -2px;
+    width: 44px;
+    height: 30px;
+    background: #f2f3f5;
+    border-radius: 2px;
+}
+
+.search-img {
+    display: inline-block;
+    width: 1.33rem;
+    padding: 0 .8333rem 0 0;
+    cursor: pointer;
+    margin: 7px 15px;
+}
+
+/*创作者中心*/
+.nav-item.add.creator-item {
+    overflow: visible;
+    width: 11rem;
+    padding-left: 5px;
+}
+
+.nav-item.add {
+    cursor: default;
+    width: 25rem;
+    transition: width .3s;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.add-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 115px;
+    height: 3rem;
+}
+
+.add-group .add-btn {
+    padding: 0 1rem;
+    font-size: 1.167rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    white-space: nowrap;
+}
+
+.add-group .more {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.667rem;
+    border-left: 1px solid hsla(0,0%,100%,.1);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-sizing: border-box;
+}
+.add-group .add-btn, .add-group .more {
+    height: 100%;
+    color: #ffffff;
+    background-color: #1e80ff;
+    border-radius: 3px;
+    transition: background-color .1s linear .05s;
+}
+
+.button, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #007fff;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: .5rem 1.3rem;
+    outline: none;
+    transition: background-color .3s,color .3s;
+    cursor: pointer;
+}
+
+a, button, input {
+    margin: initial;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+}
+
+.add-group .more .unfold12-icon.active {
+    transform: rotate(180deg);
+}
+
+.add-group .more-list {
+    position: absolute;
+    top: 120%;
+    left: -7px;
+    right: 0;
+    padding: .417rem 0;
+    font-size: 1.167rem;
+    color: #515767;
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 0 24px rgba(81,87,103,.16);
+    border-radius: 6px;
+    width: 10rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.add-group .more-list .item {
+    margin: 0 8px;
+    padding: 6px 5px 5px .8rem;
+    border-radius: 4px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/*会员设定*/
+.vip-entry .header-vip {
+    display: flex;
+    align-items: center;
+}
+
+.vip-entry .vip-img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-vip span {
+	color: #86909c;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+/*消息*/
+.notification {
+    position: relative;
+    padding-right: 2rem;
+    background-color: #fff;
+}
+
+.nav-item a {
+    color: #515767;
+    position: relative;
+}
+
+.notification img {
+    width: 24px;
+    height: 24px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+/*登录*/
+.nav-item.auth {
+    color: #007fff;
+    padding: 0 0 0 .833rem;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-item .login-button {
+    background: rgba(30,128,255,.05);
+    border: 1px solid rgba(30,128,255,.3);
+    border-radius: 4px;
+    padding: .3rem 1.5rem;
+    color: #007fff;
+    line-height: 1.9rem;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 2rem;
+    height: 3rem;
+}

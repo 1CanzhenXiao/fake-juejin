@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仿掘金主页</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='main_style/main.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='header/header.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='main_navigate/main_navigate.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='aside/aside.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/main_style/main.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/main_navigate/main_navigate.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/aside/aside.css')}}" type="text/css">
 </head>
 
 <body>
@@ -52,17 +52,28 @@
                                                     </form>
                                                 </li>
                                                 <li class="nav-item add creator-item">
-                                                    <div class="header-select">
-														<button type="button">
-															<span id="">
-																<a href="#">创作者中心</a>
-															</span>
+                                                    <div class="add-group">
+														<button class="add-btn">
+															创作者中心
 														</button>
-														<select value="" class="header-select-right">
-														    <option value=""><a>写文章</a></option>
-														    <option value=""><a>写沸点</a></option>
-														    <option value=""><a>写代码</a></option>
-														</select>
+                                                        <div class="more">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="unfold12-icon">
+                                                                <path d="M2.45025 4.82383C2.17422 4.49908 2.40501 4 2.83122 4H9.16878C9.59499 4 9.82578 4.49908 9.54975 4.82382L6.38097 8.5518C6.1813 8.7867 5.8187
+                                                                 8.7867 5.61903 8.5518L2.45025 4.82383Z" fill="white">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+														<ul class="more-list">
+                                                            <li class="item">
+                                                                <span class="icon write-article">写文章</span>
+                                                            </li>
+                                                            <li class="item">
+                                                                <span class="icon issue-points">发沸点</span>
+                                                            </li>
+                                                            <li class="item">
+                                                                <span class="icon create-jcode">写代码</span>
+                                                            </li>
+                                                        </ul>
 													</div>
                                                 </li>
                                             </ul>
@@ -74,14 +85,12 @@
 											</div>
                                         </li>
                                         <li class="nav-item notification">
-                                            <a href="#">
+                                            <a href="#" class="app-link notification-a">
 												<img src="{{ url_for('static',filename='need_image/inform-logo-off.png')}}" class="header-massage"/>
 											</a>
                                         </li>
-                                        <li class="nav-item menu">
-                                            <span class="header-log">
-												<button type="button">登录</button>
-											</span>
+                                        <li class="nav-item auth">
+                                            <button class="login-button">登录</button>
                                         </li>
                                     </ul>
                                 </ul>
@@ -95,53 +104,53 @@
                     <div class="view timeline-index-view">
                         <!-- 文章列表的导航栏 -->
                         <nav role="navigation" class="view-nav">
-                            <div class="nav-list left">
-                                <a href="/recommended" class="nav-item active">
+                            <div class="nav-list_left">
+                                <a href="/recommended" class="main_nav-item active">
                                     <div class="category-popover-box">
                                         综合
                                     </div>
                                 </a>
-                                <a href="/following" class="nav-item">
+                                <a href="/following" class="main_nav-item">
                                     <div class="category-popover-box">
                                         关注
                                     </div>
                                 </a>
-                                <a href="/backend" class="nav-item">
+                                <a href="/backend" class="main_nav-item">
                                     <div class="category-popover-box">
                                         后端
                                     </div>
                                 </a>
-                                <a href="/frontend" class="nav-item">
+                                <a href="/frontend" class="main_nav-item">
                                     <div class="category-popover-box">
                                         前端
                                     </div>
                                 </a>
-                                <a href="/android" class="nav-item">
+                                <a href="/android" class="main_nav-item">
                                     <div class="category-popover-box">
                                         Android
                                     </div>
                                 </a>
-                                <a href="/ios" class="nav-item">
+                                <a href="/ios" class="main_nav-item">
                                     <div class="category-popover-box">
                                         iOS
                                     </div>
                                 </a>
-                                <a href="/ai" class="nav-item">
+                                <a href="/ai" class="main_nav-item">
                                     <div class="category-popover-box">
                                         人工智能
                                     </div>
                                 </a>
-                                <a href="/freebie" class="nav-item">
+                                <a href="/freebie" class="main_nav-item">
                                     <div class="category-popover-box">
                                         开发工具
                                     </div>
                                 </a>
-                                <a href="/career" class="nav-item">
+                                <a href="/career" class="main_nav-item">
                                     <div class="category-popover-box">
                                         代码人生
                                     </div>
                                 </a>
-                                <a href="/article" class="nav-item">
+                                <a href="/article" class="main_nav-item">
                                     <div class="category-popover-box">
                                         阅读
                                     </div>
@@ -210,7 +219,6 @@
                                     <div class="signin-tip signin">
                                         <div class="first-line" style="opacity: 1;">
                                             <div class="icon-text">
-
                                                 <!-- 应该是什么图标 -->
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -229,14 +237,11 @@
                                                     <rect x="16" y="16" width="3" height="2" rx="1" fill="#FF7D00">
                                                     </rect>
                                                 </svg>
-
                                                 <span class="title">下午好！</span>
                                             </div>
-
                                             <button class="btn signin-btn">
                                                 <span class="btn-text">去签到</span>
                                             </button>
-
                                         </div>
                                         <div class="second-line" style="opacity: 1;">点亮你在社区的每一天</div>
                                         <div class="byte-loading" style="display: none;">
@@ -313,9 +318,10 @@
                                                 <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
                                             </a>
                                             <div class="ctrl-box">
-                                                <i class="ion-close-round close-btn"></i>
+                                                <i class="ion-close-round close-btn" style="opacity: 0">
+                                                    <span class="inco">投放广告</span>
+                                                </i>
                                                 <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
-                                                    <span class="inco">投放</span>
                                                     <span>广告</span>
                                                 </a>
                                             </div>
@@ -329,71 +335,6 @@
                                                             <div class="headline">下载稀土掘金APP</div>
                                                             <div class="desc">一个帮助开发者成长的社区</div>
                                                         </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block user-block">
-                                        <div class="recommend-author-block sticky-author-block">
-                                            <header class="user-block-header">🎖️作者榜</header>
-                                            <div class="user-list">
-                                                <div class="item">
-                                                    <a href="/user/1169536100867949" target="_blank" rel="" class="link">
-                                                        <img src="https://p6-passport.byteacctimg.com/img/user-avatar/70d6edf3eac6724904ae8e596cf56afd~300x300.image" alt="lecepin的头像" class="lazy avatar avatar" data-src="https://p6-passport.byteacctimg.com/img/user-avatar/70d6edf3eac6724904ae8e596cf56afd~300x300.image"
-                                                            loading="lazy">
-                                                        <div class="user-info">
-                                                            <a href="/user/1169536100867949" target="_blank" rel="" class="username username">
-                                                                <span class="name" style="max-width: 128px;">
-                                                                    lecepin
-                                                                </span>
-                                                                <span blank="true" class="rank">
-                                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
-                                                                        alt="lv-4" title="创作等级">
-                                                                </span>
-                                                            </a>
-                                                            <div class="position"> 前端工程师 @ 阿里巴巴</div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="item">
-                                                    <a href="/user/2480095518528503" target="_blank" rel="" class="link">
-                                                        <img src="https://p26-passport.byteacctimg.com/img/user-avatar/5321656a21c34554434c4c41580f34df~300x300.image" alt="潜水的鱼儿的头像" class="lazy avatar avatar" data-src="https://p26-passport.byteacctimg.com/img/user-avatar/5321656a21c34554434c4c41580f34df~300x300.image"
-                                                            loading="lazy">
-                                                        <div class="user-info">
-                                                            <a href="/user/2480095518528503" target="_blank" rel="" class="username username">
-                                                                <span class="name" style="max-width: 128px;">潜水的鱼儿</span>
-                                                                <span blank="true" class="rank">
-                                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-5.d08789d.png"
-                                                                        alt="lv-5" title="创作等级">
-                                                                </span>
-                                                            </a>
-                                                            <div data-v-edec7d04="" class="position"> iOS开发</div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="item">
-                                                    <a href="/user/3597257776570791" target="_blank" rel="" class="link">
-                                                        <img src="https://p26-passport.byteacctimg.com/img/user-avatar/d2c9a7658801b0d933edd8e141925ce3~300x300.image" alt="我是小阵不悲催的头像" class="lazy avatar avatar" data-src="https://p26-passport.byteacctimg.com/img/user-avatar/d2c9a7658801b0d933edd8e141925ce3~300x300.image"
-                                                            loading="lazy">
-                                                        <div class="user-info">
-                                                            <a href="/user/3597257776570791" target="_blank" rel="" class="username username">
-                                                                <span class="name" style="max-width: 128px;">
-                                                                    我是小阵不悲催</span>
-                                                                <span blank="true" class="rank">
-                                                                    <img data-v-3de16c56=""
-                                                                        src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-4.a78c420.png"
-                                                                        alt="lv-4" title="创作等级">
-                                                                </span>
-                                                            </a>
-                                                            <div class="position">前端开发 @ 公众号：前端业务员进阶日记</div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <a href="/recommendation/authors/recommended" class="item" target="_blank">
-                                                    <div class="more">
-                                                        <span>完整榜单</span>
-                                                        <i class="icon ion-chevron-right"></i>
                                                     </div>
                                                 </a>
                                             </div>
