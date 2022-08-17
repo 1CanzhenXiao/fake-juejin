@@ -251,3 +251,112 @@ a, button, input {
     line-height: 20px;
     color: #86909c;
 }
+
+.sidebar-block.link-block .link-list {
+    padding: 0;
+}
+
+.sidebar-block.link-block .link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+
+.sidebar-block.link-block .icon {
+    width: 3rem;
+    margin-right: .8rem;
+}
+
+.sidebar-block.link-block .title {
+    position: relative;
+    font-size: 1.16rem;
+    line-height: 1;
+    color: #333;
+}
+
+.index-aside-footer {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.index-aside-footer .more-list {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #9aa3ab;
+}
+
+.index-aside-footer .more-list .item {
+    float: left;
+}
+
+.index-aside-footer .more-list .item:not(:last-child):after {
+    content: "";
+    margin-right: 8px;
+}
+
+.index-aside-footer .more-list.account-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.index-aside-footer .more-list {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #9aa3ab;
+}
+
+.index-aside-footer .more-list .item {
+    float: left;
+}
+
+.index-aside-footer .more-list.account-list .wechat {
+    position: relative;
+}
+
+.index-aside-footer .more-list .item {
+    float: left;
+}
+
+img {
+    border-style: none;
+}
+
+.index-aside-footer .more-list.account-list .icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+.index-aside-footer .more-list.account-list .wechat .qr-panel {
+    position: absolute;
+    background: #fff;
+    width: 10rem;
+    top: 100%;
+    left: -100%;
+    z-index: 2;
+    padding: .8rem 0 0;
+    opacity: 0;
+    border: 1px solid #ddd;
+    transform: translate(-24px);
+}
+
+.index-aside-footer .more-list.account-list .wechat .title {
+    text-align: center;
+}
+
+.index-aside-footer .more-list.account-list .wechat .qr {
+    width: 100%;
+}
+
+.index-aside-footer .more-list:after {
+    display: table;
+    content: "";
+    clear: both;
+}
