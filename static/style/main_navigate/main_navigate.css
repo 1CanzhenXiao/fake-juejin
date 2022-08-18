@@ -120,20 +120,24 @@
     border-right: 1px solid hsla(0, 0%, 59.2%, .2);
 }
 
-
-/* test */
-
-
-
-
-/* 浮动只需要在每个section里做就行 */
-/* 给section设置"字号、文本对齐和行高" => 可继承属性 */
-
 .section1 {
     float: left;
     font-size: 16px;
     line-height: 40px;
     text-align: center;
+}
+
+@media (max-width: 980px){
+    .view-nav .nav-list_left {
+        width: auto;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 980px){
+    .view-nav .nav-list_left .main_nav-item:first-child, .view-nav .nav-list_left .main_nav-item:last-child {
+        padding: 0 1.5rem;
+    }
 }
 
 /* 这里规定悬停时head的样式 */

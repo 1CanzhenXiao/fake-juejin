@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
     <link rel="stylesheet" href="{{url_for('static',filename='style/main_navigate/main_navigate.css')}}" type="text/css">
     <link rel="stylesheet" href="{{url_for('static',filename='style/aside/aside.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/article_list/article_list.css')}}" type="text/css">
 </head>
 
 <body>
@@ -23,13 +24,13 @@
                             <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
                             <a href="/" class="logo"><img src="{{ url_for('static',filename='need_image/juejin-logo.png')}}" class="logo_big"/></a>
                             <nav role="navigation" class="main-nav">
-                                <ul class="nav-list">
+                                <ul class="article_nav-list">
                                     <!--logo右边的第一个导航栏（下拉框）-->
                                     <li class="main-nav-list">
                                         <!--缩小窗口时调用的组件-->
-                                        <div class="phone-show-menu"></div>
+                                        <div class="phone-show-menu isResourceVisible"></div>
                                         <!--窗口正常是调用的组件-->
-                                        <ul class="phone-hide">
+                                        <ul class="phone-hide isResourceVisible">
                                             <li class="nav-item link-item route-active active"><a href="/"><span>首页</span></a></li>
                                             <li class="nav-item link-item activities"><a href="/pins"><span>沸点</span></a></li>
                                             <li class="nav-item link-item book"><a href="/courses"><span>课程</span></a></li>
@@ -46,7 +47,7 @@
                                                 <li class="nav-item search">
                                                     <form role="search" class="search-form">
                                                         <input type="search" class="search-input" maxlength="32" placeholder="探索稀土掘金" >
-                                                        <div class="seach-icon-container" >
+                                                        <div class="search-icon-container" >
                                                             <img src="{{ url_for('static',filename='need_image/input.png')}}" class="search-img" />
                                                         </div>
                                                     </form>
@@ -179,33 +180,64 @@
                                             </nav>
                                         </header>
                                         <div class="entry-list-wrap">
-                                            <!-- 文章列表，内有多个文章块和广告快，但样式统一，只需用少量的选择器即可 -->
                                             <div class="entry-list list">
                                                 <li class="item">
-                                                    <!-- 广告块 -->
-                                                    <div class="advertisement">
+                                                    <div class="entry" style="margin-bottom: 0px;">
                                                         <div class="meta-container">
-                                                            <div class="user-message">
-                                                                <a href="#" target="_blank" class="userbox">
-                                                                    <div class="popover-box user-popover">
-                                                                        掘金酱
-                                                                    </div>
-                                                                </a>
+                                                            <a href="/user/4301729759245678" target="_blank" rel="" class="user-message">
+                                                                <div class="popover-box user-popover"><!---->
+                                                                    国服第一摸鱼选手
+                                                                </div>
+                                                            </a>
+                                                            <div class="date">9天前</div>
+                                                            <div class="tag_list">
+                                                                <a href="/tag/%E5%89%8D%E7%AB%AF" target="_blank" rel="" class="tag">前端</a>
+                                                                <a href="/tag/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" target="_blank" rel="" class="tag">机器学习</a>
+                                                                <a href="/tag/%E7%BC%96%E8%AF%91%E5%99%A8" target="_blank" rel="" class="tag">编译器</a>
                                                             </div>
-                                                            <div class="dividing"></div>
-                                                            <div class="date">6天前</div>
                                                         </div>
-                                                        <div class="tag">广告</div>
-                                                        <div class="main">
-                                                            <div class="info-box">
-                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="title" >
-                                                                    「转发、评论有🎁」创作等级&amp;掘力值全新升级啦
-                                                                </a>
-                                                                <a href="https://juejin.cn/post/7125658251852513294?utm_source=feed1&amp;utm_medium=feed&amp;utm_campaign=creator0729" target="_blank" class="description">
-                                                                    成长体系优化，新权益解锁，掘力值计算方式升级，创作成长看得见！
-                                                                </a>
+                                                        <div class="content-wrapper" style="border-bottom: 1px solid rgba(228, 230, 235, 0.5);">
+                                                            <div class="content-main">
+                                                                <div class="title-row">
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <!---->
+                                                                    <a href="/post/7129303810001862664" target="_blank" rel="" title="史上最全vscode配置使用教程" class="title">
+                                                                        史上最全vscode配置使用教程
+                                                                    </a>
+                                                                </div>
+                                                                <div class="abstract">
+                                                                    <a href="/post/7129303810001862664" target="_blank" rel="">
+                                                                        <div>
+                                                                            史上最全vscode配置使用教程 国服第一摸鱼选手 ​ 工欲善其事，必先利其器。想要优雅且高效的编写代码，必须熟练使用一款前端开发工具。但前端开发工具数不胜数，像HBuilder、Sublime Te
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <ul class="action-list jh-timeline-action-area">
+                                                                    <li class="item view">
+                                                                        <i></i>
+                                                                        <span >2311</span>
+                                                                    </li>
+                                                                    <li class="item like">
+                                                                        <i ></i>
+                                                                        <span>27</span>
+                                                                    </li>
+                                                                    <li class="item comment">
+                                                                        <i></i>
+                                                                        <span>7</span>
+                                                                    </li>
+                                                                    <!---->
+                                                                </ul>
                                                             </div>
-                                                            <img src="#" alt="「「转发、评论有🎁」创作等级&amp;掘力值全新升级啦」封面" class="lazy thumb" loading="lazy">
+                                                            <!---->
+                                                        </div>
+                                                        <!---->
+                                                        <div class="dislike-button">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-close">
+                                                                <path d="M1.70538 11.7191C1.52399 11.899 1.22992 11.899 1.04853 11.7191L1.03125 11.7019C0.849866 11.522 0.84987 11.2302 1.03125 11.0502L10.2956 1.85884C10.477 1.67889 10.7711 1.67889 10.9525 1.85885L10.9697 1.876C11.1511 2.05596 11.1511 2.34773 10.9697 2.52769L1.70538 11.7191Z"></path>
+                                                                <path d="M1.0828 2.48943C0.903312 2.30758 0.904276 2.01369 1.08495 1.83302L1.10216 1.8158C1.28284 1.63513 1.5748 1.63609 1.75428 1.81794L10.9104 11.0949C11.0898 11.2767 11.0889 11.5706 10.9082 11.7513L10.891 11.7685C10.7103 11.9492 10.4183 11.9482 10.2389 11.7664L1.0828 2.48943Z"></path>
+                                                            </svg>
+                                                            <!---->
                                                         </div>
                                                     </div>
                                                 </li>
@@ -213,6 +245,7 @@
                                         </div>
                                     </div>
                                 </div>
+
 
                                 <!-- 侧边栏 -->
                                 <aside class="index-aside aside">
