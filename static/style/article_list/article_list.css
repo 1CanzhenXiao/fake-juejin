@@ -208,7 +208,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #4e5969;
     flex-shrink: 0;
 }
-.action-list>.item i {
+.action-list>.item img {
     display: block;
     width: 16px;
     height: 16px;

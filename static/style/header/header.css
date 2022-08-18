@@ -54,20 +54,6 @@
     clear: both;
 }
 
-@media screen and (max-width: 1149px){
-    .logo {
-        margin-left: 0;
-    }
-}
-
-.logo {
-	height:22px;
-	width: auto;
-	margin-left: 24px;
-	margin-right: 1rem;
-	display: inline-block;
-}
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -80,9 +66,45 @@ a, button, input {
 
 /*大logo大小设置*/
 .logo_big {
-	display: block;
 	width: 107px;
 	height: 22px;
+}
+
+.logo_min {
+    display: none;
+    width: 31px;
+    height: 2rem;
+}
+
+img {
+    border-style: none;
+}
+
+@media (max-width: 640px){
+    .logo_big {
+        display: none;
+    }
+}
+
+@media (max-width: 640px){
+    .logo_min {
+        display: block;
+        height: 2rem;
+    }
+}
+
+.logo {
+	height:22px;
+	width: auto;
+	margin-left: 24px;
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+@media screen and (max-width: 1149px){
+    .logo {
+        margin-left: 0;
+    }
 }
 
 .main-nav {
@@ -99,6 +121,9 @@ a, button, input {
     height: 100%;
     margin: 0;
 }
+
+/*左边ul设置样式*/
+
 
 @media (max-width: 1149px){
     .article_nav-list {
@@ -131,6 +156,24 @@ a, button, input {
     }
 }
 
+.phone-show-menu {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1149px){
+    .phone-show-menu {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        color: #1e80ff;
+        font-size: 1.33rem;
+        justify-content: center;
+        padding: 0;
+        width: 5.66rem;
+    }
+}
+
 @media screen and (max-width: 1190px) and (min-width: 1070px){
     .phone-show-menu.isResourceVisible span {
         margin-right: .333rem;
@@ -148,58 +191,57 @@ a, button, input {
     }
 }
 
+.phone-hide {
+	display: flex;
+    padding: 0;
+}
+
+@media (max-width: 1149px){
+    .phone-hide {
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 8px 24px rgba(81,87,103,.16);
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 1149px){
     .phone-show-menu.isResourceVisible span {
         margin-right: .333rem;
     }
 }
 
-.main-nav-list {
-    display: flex;
-    order: 99;
-}
-/*首页下拉选择框，当浏览器页面缩小时显示*/
-/* .phone-show-menu {
-	color: #1e80ff;
-    height: 5rem;
-	width: 5.66rem;
-    display: flex;
-    align-items: center;
-    font-size: 1.33rem;
-    padding: 0;
-	cursor: pointer;
-} */
-
-.nav-item.link-item {
-    padding: 0;
-    height: 5rem;
+@media screen and (max-width: 1190px) and (min-width: 1070px){
+    .phone-hide.isResourceVisible.show {
+        display: block;
+        position: absolute;
+        right: -4rem;
+        left: -4.3rem;
+        padding: .667rem;
+        width: 11.9rem;
+        top: 52px;
+        z-index: 1;
+    }
 }
 
-.nav-item {
-    position: relative;
-    color: #86909c;
-    padding: 0 1rem;
-    font-size: 1.167rem;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+@media (max-width: 1149px){
+    .phone-hide.show {
+        display: block;
+        position: absolute;
+        right: -4rem;
+        left: -4.3rem;
+        padding: .667rem;
+        width: 11.9rem;
+        top: 52px;
+    }
 }
 
-.nav-item>a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+@media (max-width: 640px){
+    .phone-show-menu {
+    height: 4.333rem;
 }
-
-/*左边ul设置样式*/
-.phone-hide {
-	display: flex;
-    padding: 0;
 }
 
 .phone-hide .nav-item.link-item a:not(.no-hover) {
@@ -226,6 +268,37 @@ a, button, input {
 	border-bottom:#1e80ff solid 3px;
 	color: rgb(10, 11, 14);
 } 
+
+.main-nav-list {
+    display: flex;
+    order: 99;
+}
+
+.nav-item.link-item {
+    padding: 0;
+    height: 5rem;
+}
+
+.nav-item {
+    position: relative;
+    color: #86909c;
+    padding: 0 1rem;
+    font-size: 1.167rem;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item>a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 /*右边设置*/
 @media (max-width: 1149px){
@@ -333,6 +406,66 @@ ul {
     padding: 0 .8333rem 0 0;
     cursor: pointer;
     margin: 7px 15px;
+}
+
+@media (max-width: 799px){
+    .nav-item.search {
+        padding-left: 4.133rem;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .search-add-ul {
+        width: 29.334rem!important;
+    }
+}
+
+@media screen and (max-width: 1069px){
+    .search-add-ul{
+        width: 32.667rem;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .search-add-ul {
+        width: 27.083rem;
+    }
+}
+
+@media (max-width: 799px){
+    .search-form {
+        transition: width .2s ease-in;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .search-form {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1069px){
+    .search-form {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .search-form {
+        width: 180px;
+    }
+}
+
+@media (max-width: 640px){
+    .search-add-ul {
+        width: 220px;
+    }
+}
+
+@media (max-width: 640px){
+    .search-add-ul {
+        width: 22.667rem!important;
+    }
 }
 
 /*创作者中心*/
@@ -468,6 +601,12 @@ li {
     text-align: -webkit-match-parent;
 }
 
+@media (max-width: 799px){
+    .nav-item.add {
+        display: none;
+    }
+}
+
 /*会员设定*/
 .vip-entry .header-vip {
     display: flex;
@@ -525,6 +664,11 @@ a {
     }
 }
 
+@media (max-width: 960px){
+    .vip-entry {
+        display: none;
+    }
+}
 
 .nav-item .login-button {
     background: rgba(30,128,255,.05);

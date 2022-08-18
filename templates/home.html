@@ -22,13 +22,18 @@
                     <header class="main-header visible">
                         <div class="container">
                             <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
-                            <a href="/" class="logo"><img src="{{ url_for('static',filename='need_image/juejin-logo.png')}}" class="logo_big"/></a>
+                            <a href="/" class="logo">
+                                <img src="{{ url_for('static',filename='need_image/juejin-logo.png')}}" class="logo_big"/>
+                                <img src="{{ url_for('static',filename='need_image/logo_min.svg')}}" class="logo_min"/>
+                            </a>
                             <nav role="navigation" class="main-nav">
                                 <ul class="article_nav-list">
                                     <!--logo右边的第一个导航栏（下拉框）-->
                                     <li class="main-nav-list">
                                         <!--缩小窗口时调用的组件-->
-                                        <div class="phone-show-menu isResourceVisible"></div>
+                                        <div class="phone-show-menu isResourceVisible">
+                                            <span>首页</span>
+                                        </div>
                                         <!--窗口正常是调用的组件-->
                                         <ul class="phone-hide isResourceVisible">
                                             <li class="nav-item link-item route-active active"><a href="/"><span>首页</span></a></li>
@@ -81,7 +86,7 @@
                                         </li>
                                         <li class="nav-item vip-entry">
                                             <div class="header-vip">
-												<img src="{{ url_for('static',filename='need_image/juejinVip.png')}}" class="vip-img"/>
+												<img src="{{ url_for('static',filename='need_image/vip.svg')}}" class="vip-img"/>
 												<span class="vip-word">会员</span>
 											</div>
                                         </li>
@@ -215,15 +220,15 @@
                                                                 </div>
                                                                 <ul class="action-list jh-timeline-action-area">
                                                                     <li class="item view">
-                                                                        <i></i>
+                                                                        <i><img src="{{ url_for('static',filename='need_image/eye.png') }}"></i>
                                                                         <span >2311</span>
                                                                     </li>
                                                                     <li class="item like">
-                                                                        <i ></i>
+                                                                        <i><img src="{{ url_for('static',filename='need_image/Zan_off.png') }}"></i>
                                                                         <span>27</span>
                                                                     </li>
                                                                     <li class="item comment">
-                                                                        <i></i>
+                                                                        <i><img src="{{ url_for('static',filename='need_image/cloud_off.png') }}"></i>
                                                                         <span>7</span>
                                                                     </li>
                                                                     <!---->
