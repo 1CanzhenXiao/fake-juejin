@@ -213,7 +213,7 @@ a, button, input {
     vertical-align: top;
 }
 
-.banner .ctrl-box .label :hover{
+.banner .ctrl-box :hover{
     vertical-align: top;
     background-color: rgba(63, 62, 62, 0.5);
 }
