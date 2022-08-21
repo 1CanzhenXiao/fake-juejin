@@ -21,3 +21,16 @@ document.querySelector('.unfold16-icon').addEventListener('click', function(){
         svg16.style.transform = 'rotate(0deg)';
     }
 })
+
+$(window).scroll((e) => {
+    // 计算滚动条距离顶部的距离
+    let scrollTop = $(document).scrollTop();
+    console.log(scrollTop);
+    if(scrollTop>400){
+        document.querySelector(".main-header").style.transform = "";
+        document.querySelector(".view-nav").style.transform = "translate3d(0,-5rem,0)";
+    }else{
+        document.querySelector(".main-header").style.transform = "translateZ(0)";
+        document.querySelector(".view-nav").style.transform = "";
+    }
+})

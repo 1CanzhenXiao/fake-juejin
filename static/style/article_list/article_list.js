@@ -108,13 +108,13 @@ function read(i, div){
 //添加滚动条监听事件监听事件
 $(window).scroll((e) => {
     // 计算滚动条距离底部的距离
+    let navHeight = 178;
     let scrollHeight = $(".entry-list").outerHeight();
     let windowHeight = $(window).height();
-    //浏览器兼容问题
     let scrollTop = $(document).scrollTop();
-
-    let scrollBottom = scrollHeight - scrollTop - windowHeight;
-    if(scrollBottom < 20 && !requestFlag){
+    let scrollBottom = scrollHeight - scrollTop - windowHeight + navHeight;
+    // console.log(scrollBottom);
+    if(scrollBottom < 100 && !requestFlag){
       request();
     }
 })
@@ -122,8 +122,8 @@ $(window).scroll((e) => {
 //请求函数
 function request(){
     requestFlag = true;
-    setTimeout(() => {// simulate request
+    setTimeout(() => {
       requestFlag = false;
-      rendering(10);
-    }, 500);// delay 1s to simulate request
+      rendering(7);
+    }, 500);
 }

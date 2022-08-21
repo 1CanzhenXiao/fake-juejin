@@ -182,12 +182,6 @@ svg {
     display: block;
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #909090;
-}
-
 a, button, input {
     margin: initial;
 }

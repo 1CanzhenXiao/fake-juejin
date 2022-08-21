@@ -3,10 +3,6 @@
 	height: 5rem;
 }
 
-.main-header.visible {
-    transform: translateZ(0);
-}
-
 .container1 {
     display: flex;
     align-items: center;
@@ -19,6 +15,7 @@
     color: #909090;
     height: 5rem;
     z-index: 250;
+    transform: translate3d(0,-100%,0);
 }
 
 .main-header {
@@ -83,6 +80,9 @@ img {
     .logo_min {
         display: block;
         height: 2rem;
+    }
+    .logo {
+        margin-bottom: 10px;
     }
 }
 
