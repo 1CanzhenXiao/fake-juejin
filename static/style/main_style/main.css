@@ -17,30 +17,8 @@ div {
     display: block;
 }
 
-.container {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-}
-
-.timeline-container {
-    margin-top: 0;
-}
-
 .main-container.with-view-nav>.view {
     margin-top: 4.67rem;
-}
-
-.timeline-content {
-    position: relative;
-    margin-top: .33rem;
-}
-
-.timeline-entry-list {
-    margin-right: 21.667rem;
-    border-radius: 2px;
-    width: 100%;
 }
 
 .entry-list-container {

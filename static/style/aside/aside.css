@@ -74,6 +74,10 @@ svg {
     align-items: center;
 }
 
+.signin-tip .first-line .signin-btn:hover{
+    background-color: rgba(30,128,255,0.1);
+}
+
 .signin-tip .first-line .btn {
     border-radius: 50px;
     height: 32px;
@@ -274,11 +278,15 @@ a {
     margin-right: .8rem;
 }
 
-.sidebar-block.link-block .title {
+.sidebar-block.link-block .aside_title {
     position: relative;
     font-size: 1.16rem;
     line-height: 1;
     color: #333;
+}
+
+.sidebar-block.link-block .link-list .item:hover{
+    background-color: #d9d9d9;
 }
 
 .index-aside-footer {
@@ -294,6 +302,11 @@ a {
 
 .index-aside-footer .more-list .item {
     float: left;
+}
+
+/*选择前三个元素设置样式*/
+.index-aside-footer .more-list:nth-child(-n+3) .item a:hover {
+    color: #1e80ff;
 }
 
 .index-aside-footer .more-list .item:not(:last-child):after {
@@ -347,6 +360,14 @@ img {
     transform: translate(-24px);
 }
 
+.index-aside-footer .more-list.account-list .wechat .aside_title {
+    text-align: center;
+}
+
+.index-aside-footer .more-list.account-list .wechat:hover .qr-panel{
+    opacity: 1;
+}
+
 .index-aside-footer .more-list.account-list .wechat .title {
     text-align: center;
 }
@@ -359,4 +380,10 @@ img {
     display: table;
     content: "";
     clear: both;
+}
+
+@media (max-width: 960px){
+    .index-aside {
+        display: none;
+    }
 }

@@ -1,0 +1,858 @@
+[
+    {
+        "user_id": "465848661970824",
+        "article_id": "7127986629213421576",
+        "brief_content": "前言 前段时间我踩过一个坑：在mysql8的一张innodb引擎的表中，加了唯一索引，但最后发现数据竟然还是重复了。 到底怎么回事呢？ 本文通过一次踩坑经历，聊聊唯一索引，一些有意思的知识点。 1.还",
+        "comment_count": 8,
+        "digg_count": 54,
+        "collect_count": 29,
+        "cover_image": "",
+        "title": "明明加了唯一索引，为什么还是产生了重复数据？",
+        "view_count": 3388,
+        "tag_ids": [
+            6809640408797168000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "4441682704609320",
+        "article_id": "7111962295425007652",
+        "brief_content": "@[toc] 因为写了不少 Spring Security 文章的缘故，所以总是有小伙伴来问松哥：按钮级别的权限怎么实现？甚至有一些看过 vhr 的小伙伴也问这种问题，其实有的时候搞得我确实挺郁闷的，",
+        "comment_count": 9,
+        "digg_count": 116,
+        "collect_count": 242,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2864ce333e7547698bfb96c142c2bd87~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "权限想要细化到按钮，怎么做？",
+        "view_count": 8965,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000,
+            6809641037787562000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3716790210271470",
+        "article_id": "7120584877879066660",
+        "brief_content": "前几天在抖音刷到一个老哥做的章鱼哥来电提醒，感觉挺好玩的，于是就用Java搞了一个，看起来还挺想的。",
+        "comment_count": 7,
+        "digg_count": 17,
+        "collect_count": 9,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9d223a42389473a84145e83f4d2efab~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Java模拟微信来电提醒",
+        "view_count": 2693,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1855631359745352",
+        "article_id": "7119009010371526692",
+        "brief_content": "SpringBoot目前的使用已经很普遍了，实际的项目中，我们需要集成各种的插件支持，不仅如此，还有很多可能我们平时不知道，但是很方便的操作。",
+        "comment_count": 19,
+        "digg_count": 40,
+        "collect_count": 62,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/207949711f5e427dbe4a4c5e21c36e70~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "SpringBoot 三大开发工具，你都用过么？",
+        "view_count": 10077,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000,
+            6809641037787562000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3386151545092589",
+        "article_id": "7123908203590451207",
+        "brief_content": "第四届字节跳动青训营讲师非常用心给大家整理了课前、中、后的学习内容，同学们自我评估，选择性查漏补缺，便于大家更好的跟上讲师们的节奏，祝大家学习愉快，多多提问交流～",
+        "comment_count": 4,
+        "digg_count": 33,
+        "collect_count": 45,
+        "cover_image": "",
+        "title": "【大数据专场 学习资料二】第四届字节跳动青训营",
+        "view_count": 3409,
+        "tag_ids": [
+            6809641131131798000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "518625218005390",
+        "article_id": "7117440930247868424",
+        "brief_content": "环境 Ubuntu 16.04.7 LTS Nginx 1.10.3 Mysql 5.7.33 PHP 7.0.33 安装LNMP环境 安装 nginx 方式一：apt-get 安装 $ apt-ge",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": "Linux-《Nginx-运维基础入门》实验报告",
+        "view_count": 188,
+        "tag_ids": [
+            6809640385980137000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1626932937500488",
+        "article_id": "7019931525751767070",
+        "brief_content": "以太坊是目前第二大公链，它和比特币不一样，以太坊上的可以实现的功能更多，如果比特币是一个可以进行加减乘除的计算器，那么以太坊就是一台功能完备的计算机。以太坊系统的复杂度超过比特币好几个数量级。",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cd578ef06c464901aa6fe8a4a252db3a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Gas 机制是如何运作的",
+        "view_count": 424,
+        "tag_ids": [
+            6809640408797168000,
+            6809641062659785000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3421335915080093",
+        "article_id": "7055206012185214989",
+        "brief_content": "这是我参与2022首次更文挑战的第3天，活动详情查看：2022首次更文挑战 前言 开发流程 1.选择语言和IDE 这里我们选择我们上篇所讲到的在线IDE工具 remix 。 语言当然是solidity",
+        "comment_count": 0,
+        "digg_count": 4,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": "智能合约入门系列(三) ",
+        "view_count": 948,
+        "tag_ids": [
+            6809641096751104000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "4424090519078430",
+        "article_id": "7124129188079992845",
+        "brief_content": "生如夏花之绚烂，死如秋叶之静美，生活未必全是美好，但永远心怀热枕，上半年生活可以总结为一二三四五六七八，春夏限定，积极拥抱生活，快乐面向未来",
+        "comment_count": 142,
+        "digg_count": 96,
+        "collect_count": 5,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/afc31cd01d864683bc53399b1ff79995~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "迷茫的上半年，没散掉追光的方向",
+        "view_count": 3905,
+        "tag_ids": [
+            6809640407484334000,
+            6809640482725954000,
+            6809640408797168000
+        ],
+        "category_name": "前端",
+        "category_id": "6809637767543259144",
+        "category_url": "frontend"
+    },
+    {
+        "user_id": "1239904847411406",
+        "article_id": "7119390985863299085",
+        "brief_content": "前言 在我们的日常开发中, 日志模块永远是最基础且最重要的一个模块, 它可以有效的帮我们发现问题, 定位问题, 最后去解决问题; zap包的集成 简介 zap是一个可以在go项目中进行快速",
+        "comment_count": 19,
+        "digg_count": 19,
+        "collect_count": 11,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d2799aa1fa4d47ad8230e4bac44825d5~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "GO语言框架中如何快速集成日志模块",
+        "view_count": 1523,
+        "tag_ids": [
+            6809640408797168000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2506542241824007",
+        "article_id": "7113450727687028744",
+        "brief_content": "本文已参与「新人创作礼」活动,一起开启掘金创作之路。 会话技术 会话：一次会话中包含多次请求和响应。 一次会话：浏览器第一次给服务器资源发送请求，会话建立，直到有一方断开为止 功能：在一次会话的范围内",
+        "comment_count": 0,
+        "digg_count": 4,
+        "collect_count": 13,
+        "cover_image": "",
+        "title": "Cookie和Session详解",
+        "view_count": 8914,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1838039172387262",
+        "article_id": "7116817920209977351",
+        "brief_content": "泛型编程是一种编程风格，泛型允许程序员在编写代码时使用一些以后才指定的类型，在实例化时作为参数指明这些类型。本文主要介绍Golang泛型的基本要素，泛型通用代码的实践及总结。",
+        "comment_count": 1,
+        "digg_count": 16,
+        "collect_count": 24,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/81d047c30ab045df88098eb8df93d6d4~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Golang 泛型初识",
+        "view_count": 12491,
+        "tag_ids": [
+            6809640364677267000,
+            6809640420889346000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "4068655349905006",
+        "article_id": "7117223873942126629",
+        "brief_content": "文章结合简单的案例演示 MySQL 事务中的四种隔离级别，结合案例详细解释脏读、不可重复读、幻读这几种场景的意思。简单易懂",
+        "comment_count": 0,
+        "digg_count": 1,
+        "collect_count": 5,
+        "cover_image": "",
+        "title": "一篇文章读懂 MySQL 事务中的四种隔离级别，以及脏读、不可重复读、幻读详解",
+        "view_count": 301,
+        "tag_ids": [
+            6809640366896054000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "61228381386487",
+        "article_id": "7113746508096208909",
+        "brief_content": "为了验证 MySQL 中哪些情况下会导致索引失效，我们可以借助 explain 执行计划来分析索引失效的",
+        "comment_count": 9,
+        "digg_count": 65,
+        "collect_count": 145,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fe99380766db4d24a27f41f0a7a5d17a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "面试突击60：什么情况会导致 MySQL 索引失效？",
+        "view_count": 19474,
+        "tag_ids": [
+            6809640408797168000,
+            6809640404791591000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3940246036433438",
+        "article_id": "7028202018338504734",
+        "brief_content": "这是我参与11月更文挑战的第8天，活动详情查看：2021最后一次更文挑战 ​ 在使用Redis时不可避免地会遇到并发访问的问题，比如多个用户同时下单，就会对缓存中的商品库存数据进行并发更新。一旦有了并",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": " Redis 如何保证原子性来应对并发访问（八）",
+        "view_count": 1826,
+        "tag_ids": [
+            6809640371019055000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "615367094054285",
+        "article_id": "7123590131356958750",
+        "brief_content": "该系列第四篇：实现一个多房间的聊天室。这次官网没有demo了，需要我们自己实现！本篇文章介绍了实现「多房间聊天室」的难点及解决方案。",
+        "comment_count": 1,
+        "digg_count": 10,
+        "collect_count": 11,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/47e97e8cc8034bbab4cf59f274e295ec~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "[Go WebSocket] 多房间的聊天室（一）思考篇",
+        "view_count": 4436,
+        "tag_ids": [
+            6809640408797168000,
+            6809640364677267000,
+            6809640767544361000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3913917126415166",
+        "article_id": "7113703932228009991",
+        "brief_content": "我大抵是卷上瘾了，横竖都睡不着，坐起来身来打开Mac和外接显示器，这Bug没有由来，默然看着打印异常的屏幕，一个是我的，另外一个也是我的。",
+        "comment_count": 6,
+        "digg_count": 27,
+        "collect_count": 13,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6a29b465f9ca4babb684299663d2e71f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "我大抵是卷上瘾了，横竖睡不着！竟让一个Bug，搞我两次！",
+        "view_count": 6224,
+        "tag_ids": [
+            6809640408797168000,
+            6809640407484334000,
+            6809640404791591000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "4284175332948126",
+        "article_id": "7061109637361172517",
+        "brief_content": "Java项目开发中经常要用到分页功能，现在普遍使用SpringBoot进行快速开发，而数据层主要整合SpringDataJPA和MyBatis两种框架，这两种框架都提供了相应的分页工具，使用方式也很简",
+        "comment_count": 0,
+        "digg_count": 14,
+        "collect_count": 16,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2de16adfd2de4357bca2058eff72a07f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Java项目开发中实现分页的三种方式一篇包会",
+        "view_count": 1785,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2700056290405815",
+        "article_id": "7118640858760478750",
+        "brief_content": "在之前的系列中，我们讲解了关于Seata基本介绍和实际应用，今天带来的这篇，就给大家分析一下Seata的源码是如何一步一步实现的。",
+        "comment_count": 0,
+        "digg_count": 12,
+        "collect_count": 37,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a13590e5519049b3a455d335036837c1~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "分布式事务(Seata)原理 详解篇，建议收藏",
+        "view_count": 1354,
+        "tag_ids": [
+            6809640408797168000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3809152949558622",
+        "article_id": "7118354085522178056",
+        "brief_content": "这篇文章来讲一讲对ClickHouse性能影响比较大的主题——索引。如果带着RDBMS的经验来使用ClickHouse的索引的话，一不小心就会掉进坑里。",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 5,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/085f97b78ebd4724827cfd82fec14e24~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "ClickHouse的索引原理",
+        "view_count": 802,
+        "tag_ids": [
+            6809641131131798000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2638450451812695",
+        "article_id": "7114669787870920734",
+        "brief_content": "持续创作，加速成长！这是我参与「掘金日新计划 · 6 月更文挑战」的第14天，点击查看活动详情 前段时间，同事在代码中KW扫描的时候出现这样一条： 上面出现这样的原因是在使用foreach对HashM",
+        "comment_count": 4,
+        "digg_count": 17,
+        "collect_count": 15,
+        "cover_image": "",
+        "title": "探究map为什么不能遍历的同时进行增删操作",
+        "view_count": 2612,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "61228381386487",
+        "article_id": "7118909270082453534",
+        "brief_content": "HTTP（Hyper Text Transfer Protocol）超文本传输协议，下文简称 HTTP，它的作用是用于实现服务器端和客户端的数据传输的。它可以传输任意的数据类型，如文本、HTML、图片",
+        "comment_count": 0,
+        "digg_count": 13,
+        "collect_count": 17,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/34661cb1599b43e48540e23d009f61a7~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "面试突击64：了解 HTTP 协议吗？",
+        "view_count": 3534,
+        "tag_ids": [
+            6809640408797168000,
+            6809640404791591000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3984285871118728",
+        "article_id": "7127308613164466213",
+        "brief_content": "用法 多个通道 Channel 中信息的发送和接受处理的专用的语句—select 语句。select 语句会阻塞，直到其中的一个发送/接收操作准备好。select 语句和 switch 语句有点相似，",
+        "comment_count": 4,
+        "digg_count": 6,
+        "collect_count": 5,
+        "cover_image": "",
+        "title": "Go 中的 select 语句",
+        "view_count": 2408,
+        "tag_ids": [
+            6809640408797168000,
+            6809640364677267000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1521379821230269",
+        "article_id": "7118392332461801502",
+        "brief_content": "😀 这是爬虫专栏第 「30」 篇原创 前面我们介绍了多种请求库，如 urllib、requests、Selenium、Playwright 等用法，但是没有统一梳理代理的设置方法，本节我们来针对这些库",
+        "comment_count": 0,
+        "digg_count": 9,
+        "collect_count": 11,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ac768c7ea054452180d5c969071fe764~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "【2022 年】崔庆才 Python3 爬虫教程 - 代理的使用方法",
+        "view_count": 2204,
+        "tag_ids": [
+            6809640700968174000,
+            6809640448827589000,
+            6809640642101117000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "325111173878983",
+        "article_id": "7121508320493453326",
+        "brief_content": "本文是 JDK8 系列文章的第三篇，本篇主要给大家带来 Lamda 的前世今生和函数式接口的关系，并详细讲解函数式接口中的四个主要接口和一众衍生接口，在文章正式开始之前，想必一些读者也是知道",
+        "comment_count": 17,
+        "digg_count": 62,
+        "collect_count": 65,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c1c5aceb68f14eaead9ae329e2781a36~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "现代编程语言都具备的Lambda到底是个啥？详细聊聊Lambda与函数式接口",
+        "view_count": 2904,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2119514117904295",
+        "article_id": "7080155730694635534",
+        "brief_content": "不久之前，部门进行了一次代码评审。 代码整体比较简单，该吹B的地方都已经吹过了，无非是些if else的老问题而已。当翻到一段定时任务的一步执行代码时，我的双眼一亮，觉得该BB两句了。 谁知这群家伙，",
+        "comment_count": 76,
+        "digg_count": 272,
+        "collect_count": 162,
+        "cover_image": "",
+        "title": "代码review，瑞出事来了！",
+        "view_count": 57092,
+        "tag_ids": [
+            6809640445233070000,
+            6809640501776482000,
+            6809640456868086000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "493043443054494",
+        "article_id": "7001078387871580173",
+        "brief_content": "jvm的参数有很多，也是面试中面试官最常问的问题之一。在平时开发过程中你使用过哪些参数？让我们先来看看以下最常见的jvm参数。",
+        "comment_count": 0,
+        "digg_count": 5,
+        "collect_count": 3,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8e8affa559e74e30bce744107ab68cf4~tplv-k3u1fbpfcp-watermark.image",
+        "title": "常见的JVM参数",
+        "view_count": 489,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "712139266595784",
+        "article_id": "7133508813977550884",
+        "brief_content": "Kong是由Mashape开发的并于2015年开源的一款API网关，Kong可以水平扩展多个Kong Server，通过前置的负载均衡配置把请求均匀地分发到各个Server，来应对大批量的网络请求。",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": "微服务网关 Kong 科普",
+        "view_count": 593,
+        "tag_ids": [
+            6809640403516522000,
+            6809640408797168000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "990026471834062",
+        "article_id": "7133251769408651295",
+        "brief_content": "​携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第18天，点击查看活动详情 作者简介：🏅云计算领域优质创作者🏅新星计划第三季python赛道TOP1🏅 阿里云ACE认证高级工程师",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/17da946c89b940f990b1e84b1fa690ef~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "【云原生 | 18】Docker数据卷及卷的持久化问题",
+        "view_count": 208,
+        "tag_ids": [
+            6809641127432421000,
+            6809641113071124000,
+            6809640396788859000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1556564194374926",
+        "article_id": "7117898969866305566",
+        "brief_content": "作为编程语言界崛起之秀Golang，凭借语法简单、媲美C或C++代码的速度、无硬件局限性、易于维护、效率高等优势火速出圈。Golang的框架功能强大，结构扎实，可承载的类型多，适用性强，本期技术专题我",
+        "comment_count": 191,
+        "digg_count": 126,
+        "collect_count": 66,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6767fe050b5d455e829c59e4ceae771f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "🏆技术专题征文18期｜聊聊Go语言框架",
+        "view_count": 23601,
+        "tag_ids": [
+            6809640364677267000,
+            6809640402103042000,
+            6809640420889346000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3139860941516158",
+        "article_id": "7123484860202614798",
+        "brief_content": "为什么需要内存模型 由于摩尔定律的失效，CPU的执行速度越来越快，由于内存的技术并没有太大的变化，所以从内存中读取和写入数据的过程和CPU的执行速度比起来差距就会越来越大,这就导致CPU每次操作内存都",
+        "comment_count": 0,
+        "digg_count": 15,
+        "collect_count": 23,
+        "cover_image": "",
+        "title": "Java并发的基石，Java内存模型（JMM）",
+        "view_count": 4511,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "465848663023160",
+        "article_id": "7115261833522446367",
+        "brief_content": "快速构建 Python 工程，快速了解 Python 基础语法，快速了解 Python 多范式设计模式。",
+        "comment_count": 3,
+        "digg_count": 9,
+        "collect_count": 24,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/72e3540b8eae4a61b77c6f5fe7d55101~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "万字总结 Python 构建指南与设计模式概览 ",
+        "view_count": 2238,
+        "tag_ids": [
+            6809640448827589000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3755587450179965",
+        "article_id": "7133250145029718029",
+        "brief_content": "Spring 初始化 BeanFactory 过程中最重要的步骤之一就是加载 BeanDefinition，本文介绍 BeanDefinition 加载过程。",
+        "comment_count": 1,
+        "digg_count": 2,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": "Spring 源码阅读 07：加载 BeanDefinition 的过程（资源加载阶段）",
+        "view_count": 301,
+        "tag_ids": [
+            6809640703325372000,
+            6809640684354535000,
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1398234521016328",
+        "article_id": "7133143295911755784",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第7天，点击查看活动详情。ElasticSearch系列笔记大部分已完结，今天主要介绍一下ElasticSearch8.x的基本操作",
+        "comment_count": 1,
+        "digg_count": 1,
+        "collect_count": 0,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d0e30f94ada7424384b522e1b162fe6e~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "ElasticSearch基本操作",
+        "view_count": 284,
+        "tag_ids": [
+            6809640408797168000,
+            6809640794794754000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2837173444548711",
+        "article_id": "7120824850003787789",
+        "brief_content": "前言 作为一个接触开源社区快要一年的准大二生，对开源社区进行贡献的同时自己也想要造一个属于自己的框架——goffee，在边学边写的过程中发现了很多自己不足，正巧CSG正在举行解析Hertz源码的活动",
+        "comment_count": 0,
+        "digg_count": 14,
+        "collect_count": 13,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bfb5888296984c7aa5616bd6ddd14f18~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "解读字节开源HTTP框架Hertz | 核心结构与入口的实现",
+        "view_count": 4283,
+        "tag_ids": [
+            6809640364677267000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3017489401778999",
+        "article_id": "7129020344513331236",
+        "brief_content": "本文已参与「新人创作礼」活动，一起开启掘金创作之路。 一、前言 本不打算专门写文来讲装饰器的，但有不少粉丝问到了，自己查阅了一些网上的装饰器教程，发现讲的通俗易懂的不多，也有不少照搬的文章。所以我这里",
+        "comment_count": 1,
+        "digg_count": 11,
+        "collect_count": 7,
+        "cover_image": "",
+        "title": "一文搞懂Python装饰器",
+        "view_count": 353,
+        "tag_ids": [
+            6809640448827589000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1992780961292302",
+        "article_id": "7118206768634675207",
+        "brief_content": "从零开始搭建一个项目骨架，最好选择合适熟悉的技术，并且在未来易拓展，适合微服务化体系等。所以一般以Springboot作为我们的框架基础，这是离不开的了。 然后数据层，我们常用的是Mybatis，易上",
+        "comment_count": 5,
+        "digg_count": 3,
+        "collect_count": 23,
+        "cover_image": "",
+        "title": "Java 之SpringBoot+Vue实现后台管理系统的开发",
+        "view_count": 1685,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1838039172387262",
+        "article_id": "7120176632693784607",
+        "brief_content": "本文介绍一种 Golang 程序在运行时加载 C 动态库的技术，跳过了 Golang 项目编译阶段需要链接 C 动态库的过程，提高了 Golang 项目开发部署的灵活性。",
+        "comment_count": 1,
+        "digg_count": 6,
+        "collect_count": 8,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd522560616147689aa413864cabbe4d~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Golang使用CGO&Plugin技术，运行时加载C动态库",
+        "view_count": 8546,
+        "tag_ids": [
+            6809640364677267000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1003170034892494",
+        "article_id": "7086451258164756516",
+        "brief_content": "一起养成写作习惯！这是我参与「掘金日新计划 · 4 月更文挑战」的第4天，点击查看活动详情。 对于.NET开发者来说，ORM框架一般都会采用EFCore，但我并不喜欢用，其实这个官方的ORM已经被优化",
+        "comment_count": 0,
+        "digg_count": 2,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": "SqlSugar简单使用记录（一）",
+        "view_count": 275,
+        "tag_ids": [
+            6809640452816372000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2664871917534648",
+        "article_id": "7127165069460242445",
+        "brief_content": "玉溪卷烟厂设备采集点共有 36526 个，数据类型包总数据量轻松超过了万亿行。使用 TDengine 后即便是在三副本（数据存储三份确保高可用）的配置下，目前占用的总空间也仅有 1TB 左右。",
+        "comment_count": 6,
+        "digg_count": 24,
+        "collect_count": 8,
+        "cover_image": "",
+        "title": "玉溪卷烟厂通过正确选择时序数据库 轻松应对超万亿行数据",
+        "view_count": 3128,
+        "tag_ids": [
+            6809640600502010000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "465848660925805",
+        "article_id": "7123914749041098783",
+        "brief_content": "前言 由于工作变动，我现在已经开始使用Golang了。用了一段时间之后，我发现Golang（后面简称Go）中的语法糖还蛮多的，有些语法糖还让会让人很懵逼。那么接下来，让我以一个曾经的 Java CUR",
+        "comment_count": 8,
+        "digg_count": 14,
+        "collect_count": 14,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/313d97de8f464a8ca45f554e110e9f07~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "说说Go中的语法糖",
+        "view_count": 2193,
+        "tag_ids": [
+            6809640408797168000,
+            6809640364677267000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "395479915699319",
+        "article_id": "7041573775086714910",
+        "brief_content": "在.NET 6中，微软加入了JSON Node，可以让我们动态编辑一个JSON文档，就像Newtonsoft.Json里的JToken一样，我们就可以更加灵活的操作JSON文档。 这次主要新增的API",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": ".NET6新东西---System.Text.Json Writeable DOM",
+        "view_count": 246,
+        "tag_ids": [
+            6809640500325253000,
+            6809640408797168000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "4081804676698846",
+        "article_id": "7026988763775500301",
+        "brief_content": "如果你的linux服务器未安装Maven环境，则需要先安装Maven环境： 1.下载：https://maven.apache.org/download.cgi 2.安装包放在usr/local下，解",
+        "comment_count": 0,
+        "digg_count": 1,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": "Linux部署RocketMQ",
+        "view_count": 217,
+        "tag_ids": [
+            6809641140556399000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1838039172387262",
+        "article_id": "7117578224854368263",
+        "brief_content": "本文提出了一种使用 Golang 进行 Excel 文件创建和读取的方案。首先对问题进行分析，然后描述Excelize基础库的基本用法，以及Excel数据在Golang中的表示和解析方式。",
+        "comment_count": 3,
+        "digg_count": 15,
+        "collect_count": 27,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d8c69d530fd7422790036dfb9e806261~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "使用 Golang 创建和读取 Excel 文件",
+        "view_count": 11170,
+        "tag_ids": [
+            6809640364677267000,
+            6809640771545727000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "1680474815073805",
+        "article_id": "7125002505620029471",
+        "brief_content": "一、Go 语言 Go 语言概览 Go(Golang) 是由 Google 开源的、静态、强类型的编程语言，Go 语言最初的设计目的是用来替代 C++。 Go 语言具有以下特点： 开发效率高 执行性能高",
+        "comment_count": 0,
+        "digg_count": 10,
+        "collect_count": 3,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/626d325be0384391a8d392ec903c8a28~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Go 编程 | 连载 01 - Go Quickstart",
+        "view_count": 701,
+        "tag_ids": [
+            6809640364677267000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "3668388983878573",
+        "article_id": "7116135904334315557",
+        "brief_content": "stackoverflow是帮助我们解决棘手问题的好去处，里面集结这全世界各个国家的开发者，解决问题是他们共同的目标。通过`Q&A`即问答的方式，能够让每个人直观的却提出他的问题，却找到他们想要的答案",
+        "comment_count": 3,
+        "digg_count": 17,
+        "collect_count": 17,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56ea7c3d3adc444792895a916ebd9383~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "一个人一双手写一个国产stackoverflow-【BSolver】",
+        "view_count": 2227,
+        "tag_ids": [
+            6809640408797168000,
+            6809640445233070000,
+            6809640419505209000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "2541726616791037",
+        "article_id": "7106393821943955463",
+        "brief_content": "泛型程序设计（generic programming）是程序设计语言的一种风格或范式。泛型允许程序员在强类型程序设计语言中编写代码时使用一些以后才指定的类型，在实例化时作为参数指明这些类型",
+        "comment_count": 6,
+        "digg_count": 62,
+        "collect_count": 42,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/243059a7c1c64f84bbb57cfbbcad4f19~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "十年磨一剑 go 1.18泛型",
+        "view_count": 21098,
+        "tag_ids": [
+            6809640408797168000,
+            6809640364677267000,
+            6809640420889346000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    },
+    {
+        "user_id": "884480090838286",
+        "article_id": "7133192968676048932",
+        "brief_content": "1. 算数运算符 1.1 算术运算符的（理解） 1.1.1 运算符和表达式 运算符：对常量或者变量...",
+        "comment_count": 0,
+        "digg_count": 1,
+        "collect_count": 0,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6b4a362e03a4af8b01c0620813981cc~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "黑马Java笔记第二讲—java基础",
+        "view_count": 318,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "后端",
+        "category_id": "6809637769959178254",
+        "category_url": "backend"
+    }
+]

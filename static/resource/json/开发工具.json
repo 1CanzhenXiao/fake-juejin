@@ -1,0 +1,1047 @@
+[
+    {
+        "user_id": "4011435956644013",
+        "article_id": "7118752301765885983",
+        "brief_content": "前言 随着 M1 的横空出世，越来越多的企业和个人转入 Mac 生态。而由于和 Windows 平台的不同，Mac 始终有些使用上的痛点。笔者使用 M1 Pro 近一年，倾情分享折腾出来的一堆使用技巧",
+        "comment_count": 10,
+        "digg_count": 35,
+        "collect_count": 37,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efa28cbf43c24995af6a43619d4bd50f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "M1 Pro 折腾一年的收获：一堆“哇塞”的技巧和 App",
+        "view_count": 7402,
+        "tag_ids": [
+            6809640569376096000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "360295544143032",
+        "article_id": "7082662579147341831",
+        "brief_content": "一起养成写作习惯！这是我参与「掘金日新计划 · 4 月更文挑战」的第1天，点击查看活动详情。 1. Neovim是什么 在此之前,我一直都是使用VSCODE或者WEB STORM编辑器的. 他们确实好",
+        "comment_count": 159,
+        "digg_count": 261,
+        "collect_count": 229,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/214e91b3ccf0446abcbbdd4caa87c162~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "是时候使用nvim来代替VSCode了",
+        "view_count": 45208,
+        "tag_ids": [
+            6809640407484334000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1433418892081741",
+        "article_id": "7096660785077846046",
+        "brief_content": "腾讯tmagic-editor是一个所见即所得的页面可视化编辑器，实现零代码/低代码生成页面，可以快速搭建可视化页面生产平台，让非技术人员可以通过拖拽和配置，自助生成H5页面、PC页面、TV页面，大大",
+        "comment_count": 16,
+        "digg_count": 128,
+        "collect_count": 259,
+        "cover_image": "",
+        "title": "腾讯低代码可视化生成器，正式开源！",
+        "view_count": 15436,
+        "tag_ids": [
+            6809640407484334000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "444664871131214",
+        "article_id": "7115037296641966088",
+        "brief_content": "最近趁摸鱼时间体验了一款神器，堪称后端前端们的摸鱼加速器，测试们的寿命催化剂。 那就是：Apifox。中国自主研发的集文档、接口调试、Mock、接口自动化测试一体的协作平台。 一套系统、一份数据，可解",
+        "comment_count": 37,
+        "digg_count": 14,
+        "collect_count": 23,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8a96b0100bef4f97bf01ddb846fb726f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "用了Apifox之后，老板连夜把测试开了",
+        "view_count": 9752,
+        "tag_ids": [
+            6809640403516522000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1626932940390279",
+        "article_id": "7080135520902184997",
+        "brief_content": "是时候放下console.log一把梭了，快来学学如何使用VS Code debug代码吧~VS Code的关键特性之一就是它具有强大的调试功能，不学白不学啦",
+        "comment_count": 50,
+        "digg_count": 735,
+        "collect_count": 1174,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/058d9dd1b50f46e2a745238b345d5d5d~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "2022年了，该学会用VSCode debug了",
+        "view_count": 42922,
+        "tag_ids": [
+            6809640407484334000,
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "958429870690413",
+        "article_id": "7128223896301469727",
+        "brief_content": "继 Tabby、Warp 后，今天再来给大家推荐一款终端神器——WindTerm，完全开源，在 GitHub 上已经收获 6.6k 的 star。 作者还拿 WindTerm 和 Putty、xter",
+        "comment_count": 14,
+        "digg_count": 50,
+        "collect_count": 86,
+        "cover_image": "",
+        "title": "WindTerm：新一代开源免费的终端工具，GitHub星标6.6k+，太酷了！",
+        "view_count": 5709,
+        "tag_ids": [
+            6809640375880253000,
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1838039174227006",
+        "article_id": "7111881218471231501",
+        "brief_content": "对于不知道 GitHub Copilot 是什么朋友，掘金上有很多的文章介绍过。 对于用过的朋友，首先你要知道你使用的是 “GitHub Copilot 技术预览版”。 正式版谁还有资格免费使用呢？",
+        "comment_count": 12,
+        "digg_count": 16,
+        "collect_count": 3,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3237d3b701f64ccc8adfaa8af33fa23d~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "🎉Congratulations! 你有资格免费使用 GitHub Copilot",
+        "view_count": 5290,
+        "tag_ids": [
+            6809640407484334000,
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2472125987040093",
+        "article_id": "7110850335668699166",
+        "brief_content": "还在为电脑内存不够而烦恼吗？还在想着用自己低配电脑领着公司电脑补贴而纠结吗？如果你电脑经常卡顿，编译起来就像便秘一样难受，那么请点进来，也许能治好你的便秘，啊不，治好你的卡顿，还能薅公司羊毛！！",
+        "comment_count": 34,
+        "digg_count": 98,
+        "collect_count": 90,
+        "cover_image": "",
+        "title": "【奇技淫巧】薅公司服务器羊毛，IntelliJ IDEA的远程开发",
+        "view_count": 14664,
+        "tag_ids": [
+            6809640445233070000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156380415287",
+        "article_id": "7127846000831496206",
+        "brief_content": " 很多人在软件开发中经常会分不清 SDK 与 API ，今天就来浅谈一下两者之间的区别。 直白地说，SDK 包含了 API ，是一套完整的，能完成更多功能的工具包，无论你想获取什么样的信息，",
+        "comment_count": 4,
+        "digg_count": 25,
+        "collect_count": 17,
+        "cover_image": "",
+        "title": " API 与 SDK 之间的区别",
+        "view_count": 6570,
+        "tag_ids": [
+            6809641131131798000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1785257054701293",
+        "article_id": "7117997347837067301",
+        "brief_content": "开箱即用又能完全自定义的Fileheader插件您会喜欢么？ 总之，非常好用就对了。 添加头部注释的事情就交给它吧！",
+        "comment_count": 2,
+        "digg_count": 9,
+        "collect_count": 13,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4e0d6c1f7d71425aaf0e2e84edaf46e6~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "这就是最好用的VSCode头部注释插件，Fileheader Pro登场",
+        "view_count": 4798,
+        "tag_ids": [
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1785262616099822",
+        "article_id": "7113543274480025608",
+        "brief_content": "VSCode 是我们前端开发的一个强大的IDE，所以选择趁手好用的插件是提高开发效率，然后剩下的时间用来摸鱼是很有必要滴。",
+        "comment_count": 1,
+        "digg_count": 13,
+        "collect_count": 22,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f21e0161d47c40959773e69a09890198~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "VSCode中值得推荐的常用的33个高效前端插件「效率篇」（三）",
+        "view_count": 3062,
+        "tag_ids": [
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4388906151185975",
+        "article_id": "7126191827715096583",
+        "brief_content": "Chrome浏览器对于我们现在互联网行业已经不可或缺，其实大部分使用Chrome浏览器的人更看重的是它的强大的插件功能，几乎提供的插件无所不能。",
+        "comment_count": 4,
+        "digg_count": 10,
+        "collect_count": 5,
+        "cover_image": "",
+        "title": "Chrome浏览器必备插件推荐",
+        "view_count": 4646,
+        "tag_ids": [
+            6809640625856578000,
+            6809640380334604000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1926000099730701",
+        "article_id": "7126030692932124679",
+        "brief_content": "你是否考虑将macOS作为你的下一个操作系统？正在从Windows或Linux切换到macOS？您想在macOS上用Java开发吗？或者你正在寻找一些工具来帮助你提高工作效率？ 请阅读对我来说至关重要",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 3,
+        "cover_image": "",
+        "title": "macOS——Java开发人员的必备工具（超详细指南）",
+        "view_count": 1429,
+        "tag_ids": [
+            6809640399544517000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2181850638084542",
+        "article_id": "7129388982105800734",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情 关于Mac是开发同学的首选生产力，想必大家都没有异议吧，今天就来说说自己的Mac都有哪些好用的软件。",
+        "comment_count": 2,
+        "digg_count": 4,
+        "collect_count": 7,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b28991cf49ea4f7f9c512692bcd0d056~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Mac开发应用分享",
+        "view_count": 1079,
+        "tag_ids": [
+            6809640578855207000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2277843824017975",
+        "article_id": "7124727505352654878",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情 前言 先说一下为什么要写一下这个文章吧，因为公司对于git的管理并没有很严格的要求和步骤，加上自己算个gi",
+        "comment_count": 1,
+        "digg_count": 5,
+        "collect_count": 9,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efa8c96dc0a44e898b968b85abf003bc~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "公司git分支管理混乱，被迫整理",
+        "view_count": 3147,
+        "tag_ids": [
+            6809640373774713000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "233526039432445",
+        "article_id": "7121270530111635463",
+        "brief_content": "Vite 是目前最快捷的工具，但是在如此竞争下相信 Webpack 也会做出改变并进行优化。所有的工具都并不是完美的，开发者们只需根据不同的情况选择不同的开发工具，使得开发变得更加方便即可",
+        "comment_count": 16,
+        "digg_count": 31,
+        "collect_count": 19,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a67e550c92644817aae92b461112a509~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "一杯咖啡的时间，告诉你 Vite 凭什么比 Webpack 快",
+        "view_count": 5360,
+        "tag_ids": [
+            6809640528267706000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156384091320",
+        "article_id": "7117052948332740644",
+        "brief_content": "“小抄”一词大家应该不会陌生，它有个学名叫做“速查表”（cheatsheet）是用来快速找到你知识点和答案的表格，因为其有体积小、不易察觉等特点，频繁出现在考场和演讲中... 友情提示⚠️：考试作弊一",
+        "comment_count": 4,
+        "digg_count": 12,
+        "collect_count": 15,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a25b82af5c4b4a67a1cc02d23570d25b~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "一大波开源小抄来袭",
+        "view_count": 9564,
+        "tag_ids": [
+            6809640375880253000,
+            6809640419505209000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4156572948766200",
+        "article_id": "7124210013199368228",
+        "brief_content": "Prettier 是一款强大的代码格式化工具，支持 JavaScript、TypeScript、CSS、SCSS、Less、JSX、Angular、Vue、GraphQL、JSON、Markdown",
+        "comment_count": 0,
+        "digg_count": 2,
+        "collect_count": 3,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e85c97c8ad7a415ea4ff22bf7fe3b7aa~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "vscode格式化代码规范",
+        "view_count": 2667,
+        "tag_ids": [
+            6809640456868086000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156384091320",
+        "article_id": "7130041204183400484",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第2天，点击查看活动详情 高中的时候我特别喜欢捣鼓手机，然后我一个哥们儿在我的强烈推荐下买了个 HTC Dream(G1) 手机。 ",
+        "comment_count": 4,
+        "digg_count": 20,
+        "collect_count": 20,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aded4caefef544718e7351ce0c92ae2e~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "越折腾越好用的 3 款开源 APP",
+        "view_count": 4963,
+        "tag_ids": [
+            6809640375880253000,
+            6809640419505209000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "3488114293604430",
+        "article_id": "7124509678821703710",
+        "brief_content": "Mac 开发环境配置，包括 Homebrew, Git, iTerm2, Zsh, Oh-my-zsh 的简单配置。",
+        "comment_count": 1,
+        "digg_count": 5,
+        "collect_count": 9,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed7c4ec2b2954c96904104c496b443ab~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Mac 开发环境配置",
+        "view_count": 1626,
+        "tag_ids": [
+            6809640578855207000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "958429870690413",
+        "article_id": "7089224236941721607",
+        "brief_content": "程序员的一生，用的最多的两个工具，一个是代码编辑器（Code Editor），另外一个就是命令行终端工具（Terminal）。这两个工具对于提高开发效率至关重要。 代码编辑器在过去的 40 年里不断进",
+        "comment_count": 86,
+        "digg_count": 293,
+        "collect_count": 322,
+        "cover_image": "",
+        "title": "超越 iTerm！号称下一代 Terminal 终端神器，用完爱不释手！",
+        "view_count": 25091,
+        "tag_ids": [
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1258291471587496",
+        "article_id": "7044515205644042270",
+        "brief_content": "谷歌前不久公布了2021年年度最受欢迎Chrome插件名单，名单共有13个。 其中有不少开源作品，让TJ君给你分享",
+        "comment_count": 0,
+        "digg_count": 2,
+        "collect_count": 0,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ebed38e7f4ef49a79e00d8b61fb3612f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "年度最受欢迎的开源CHROME插件",
+        "view_count": 520,
+        "tag_ids": [
+            6809640381920051000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "254742429974295",
+        "article_id": "7110433421985316878",
+        "brief_content": "Typora收费？搭建VS Code MarkDown写作环境！ 开源软件，完全值得信赖！强烈推荐！",
+        "comment_count": 1,
+        "digg_count": 35,
+        "collect_count": 39,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/307df9a752af4bdcae3607a95c58cfc4~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Typora收费？搭建VS Code MarkDown写作环境！",
+        "view_count": 12997,
+        "tag_ids": [
+            6809640656265282000,
+            6809640507191329000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156384091320",
+        "article_id": "7124105476639293453",
+        "brief_content": "你还记得那些 PHP 开发都去哪了吗？转 Golang 了！移动端现在流行什么？Flutter 编程。现在谷歌带着新的生产力语言来了，Carbon，代号：C++ 继承者。不知道多年之后 C++ 的从业",
+        "comment_count": 1,
+        "digg_count": 8,
+        "collect_count": 9,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6955c8341b614d2aa61038b0e06720c2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "造！又有新的生产力语言了「GitHub 热点速览 v.22.30」",
+        "view_count": 9421,
+        "tag_ids": [
+            6809640375880253000,
+            6809640419505209000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2981531263964718",
+        "article_id": "7035642340098179085",
+        "brief_content": "使用git已经很久，但从未整体总结过，这次就对git的进行一次总结和思考。 为什么要使用git，git有哪些状态，",
+        "comment_count": 0,
+        "digg_count": 6,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": "git基本操作和使用，不仅仅是操作，还需要理解",
+        "view_count": 725,
+        "tag_ids": [
+            6809640373774713000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "778924454586823",
+        "article_id": "7129342785244626975",
+        "brief_content": "Jenkins自动前端代码 最近公司项目重构，PHP的前后端代码分离，现在前端代码需要npm run build，现在根据之前的情况，进行前端构建",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 3,
+        "cover_image": "",
+        "title": "Jenkins自动前端代码",
+        "view_count": 489,
+        "tag_ids": [
+            6809640490242146000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4015843789243982",
+        "article_id": "7127613019319697445",
+        "brief_content": "oscs 开源安全社区监测到8月3日13时，名为 Stephen Lacy 的工程师在 Twitter 中表示其发现 GitHub 中大量仓库被加入了恶意代码，感染文件超过3.5万，涉及 G",
+        "comment_count": 6,
+        "digg_count": 10,
+        "collect_count": 4,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/42a803892d6449c49e389601e08458b5~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "GitHub中超过3.5万开源代码被投毒",
+        "view_count": 3097,
+        "tag_ids": [
+            6809640375880253000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "3466111120582039",
+        "article_id": "7116883485087760397",
+        "brief_content": "什么是 HTTPS 总所周知，HTTP 协议主要用于客户端和服务端的通信，但它本身也有一定缺点 明文传输，内容可能被监听不能验证通信方的身份，可能遭遇伪装无法证明报文完整性，报文可能被篡改 从架构",
+        "comment_count": 0,
+        "digg_count": 1,
+        "collect_count": 14,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/86b55a1d47bb41089ed3e9bf6c7ddf83~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "个人网站如何白嫖 HTTPS",
+        "view_count": 2813,
+        "tag_ids": [
+            6809640677232607000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "3350967174838701",
+        "article_id": "7117286403876061197",
+        "brief_content": "这篇文章推荐一个由Golang编写的一个命令行工具——Glow，这个CLI工具可以在命令行读取Markdown，Markdown对于码农来说也是非常重要的，几乎所有的文档全部都有Markdown的身影",
+        "comment_count": 6,
+        "digg_count": 3,
+        "collect_count": 0,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/59849303084b4df59ae7c92f9229f87b~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "【好物分享】在命令行读Markdown，这个感觉太舒服了",
+        "view_count": 3147,
+        "tag_ids": [
+            6809640415537398000,
+            6809640364677267000,
+            6809640482725954000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156384091320",
+        "article_id": "7118908630581116964",
+        "brief_content": "本周 GitHub Trending 的项目重量十足，比如标题的一周获得 18k+ 的高性能 JS Runtime——bun，用性能来体现了它的“含金量”。同样有重量的还有一行代码就能让你生成一幅画作",
+        "comment_count": 0,
+        "digg_count": 7,
+        "collect_count": 8,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/124eb25bdfc844839b534a0f1998eb60~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "揭开周获 18k star 开源项目的神秘面纱「GitHub 热点速览 v.22.28」",
+        "view_count": 10855,
+        "tag_ids": [
+            6809640375880253000,
+            6809640419505209000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1785262616099822",
+        "article_id": "7113541157019189284",
+        "brief_content": "VSCode 是我们前端开发的一个强大的IDE，所以选择趁手好用的插件是提高开发效率，然后剩下的时间用来摸鱼是很有必要滴。",
+        "comment_count": 0,
+        "digg_count": 2,
+        "collect_count": 11,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d543fd3e252b49f5808ebbedd505d8d2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "VSCode中值得推荐的常用的33个高效前端插件「效率篇」（二）",
+        "view_count": 2643,
+        "tag_ids": [
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2344598314164263",
+        "article_id": "7126159437210845220",
+        "brief_content": "说说你对webpack的理解？解决了什么问题？ 说说你对webpack的理解？解决了什么问题？ 说说你对webpack的理解？解决了什么问题？",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": "说说你对webpack的理解？解决了什么问题？",
+        "view_count": 546,
+        "tag_ids": [
+            6809640528267706000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2766786261423576",
+        "article_id": "7117987884937773086",
+        "brief_content": "本文作者：Daniel Hu 个人主页：https://www.danielhu.cn/ 一、概述 今天我准备和你详细介绍如何开始参与开源项目，帮助你在 GitHub 上完成第一个 PR 的合入。 当",
+        "comment_count": 0,
+        "digg_count": 7,
+        "collect_count": 12,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7abb65cbb9f9405f9a685e162a190c12~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "如何参与开源项目 - 细说 GitHub 上的 PR 全过程",
+        "view_count": 7452,
+        "tag_ids": [
+            6809640419505209000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "3350967174838701",
+        "article_id": "7131753383647510558",
+        "brief_content": "对于开发来说，尤其是前端开发，有一个好的开发环境真的很提升工作效率，这里我整理了28个顶级资源，包括但不限于网站、软件和插件（浏览器插件、VScode插件），可以点赞收藏保留一下，万一在什么时候需要的",
+        "comment_count": 8,
+        "digg_count": 21,
+        "collect_count": 31,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23b5500278a54b63b4c9af483732ed72~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "【好物分享】分享给前端开发的28个资源（网站、软件、插件），简直是提高效率必备",
+        "view_count": 2124,
+        "tag_ids": [
+            6809640407484334000,
+            6809640656265282000,
+            6809640482725954000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1732486058213822",
+        "article_id": "7122882640998301733",
+        "brief_content": "前言 博主现在已经转 mac 用户。但是因为家里的台式机是是 win 装黑果遇到各种问题，最终还是放弃在家使用 mac 环境。 但是又用习惯了 zsh 的各种插件。所以开始琢磨如何在 win 中使用一",
+        "comment_count": 7,
+        "digg_count": 13,
+        "collect_count": 9,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/721ab866437c4edda917ee1a916f23cb~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Windows在git-bash安装zsh",
+        "view_count": 4788,
+        "tag_ids": [
+            6809640689706467000,
+            6809640407484334000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1750078240598216",
+        "article_id": "7117447447529390093",
+        "brief_content": "前言： 从简书把文章搬运过来，一些基础的东西自己也算回顾下了工欲善其事必先利其器，git 作为时下最流行的分布式代码管理系统，可以硕士每个开发着必须要掌握的",
+        "comment_count": 1,
+        "digg_count": 0,
+        "collect_count": 1,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ad21a6f5c254c1d8850267f6ceb8785~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Git + iTerm2",
+        "view_count": 689,
+        "tag_ids": [
+            6809640415537398000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1670908483210365",
+        "article_id": "7114536321980301319",
+        "brief_content": "基于docker安装mysql、redis的可视化监控工具，可以实时观察msyql、redis、mongoDB等数据库的资源占用状态。",
+        "comment_count": 0,
+        "digg_count": 22,
+        "collect_count": 34,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b95af08dcc834581be5d2070b977498b~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Msyql、Redis、MongoDB可视化监控工具Grafana",
+        "view_count": 8616,
+        "tag_ids": [
+            6809640574459576000,
+            6809640396788859000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1785262616099822",
+        "article_id": "7113538515614302244",
+        "brief_content": "VSCode 是我们前端开发的一个强大的IDE，所以选择趁手好用的插件是提高开发效率，然后剩下的时间用来摸鱼是很有必要滴。",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 8,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6cc33cfb06084e40bf2185a9c650f6ee~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "VSCode中值得推荐的常用的33个高效前端插件「效率篇」（一）",
+        "view_count": 1536,
+        "tag_ids": [
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2313028192178791",
+        "article_id": "7116887834438402056",
+        "brief_content": "在实际工作中，我发现很多同学并不熟悉Git的分支操作，本文试图通过图解的方式，讲解常用分支操作命令，和命令背后的Git分支模型。",
+        "comment_count": 3,
+        "digg_count": 18,
+        "collect_count": 32,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1772fb1497b4fdf877407f7d220c8d9~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "图解Git分支和命令",
+        "view_count": 3881,
+        "tag_ids": [
+            6809640375880253000,
+            6809640373774713000,
+            6809640820799439000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1926000099730701",
+        "article_id": "7126945815746052104",
+        "brief_content": "首页 软件开发 编程语言 调查显示，Rust是最受欢迎的WebAssembly语言 对Wasm开发人员进行的2022年WebAssembly状况调查显示，Rust位居榜首，Blazor和Python正",
+        "comment_count": 1,
+        "digg_count": 3,
+        "collect_count": 0,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ec2119395b2943c6b82e263ab8284468~tplv-k3u1fbpfcp-zoom-1.image",
+        "title": "调查显示Rust是最受欢迎的WebAssembly语言",
+        "view_count": 1642,
+        "tag_ids": [
+            6809640495594078000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2506542242335934",
+        "article_id": "7053330489859375112",
+        "brief_content": "程序员的快乐可能是一个得心应手的键盘，一款高效的IDE，甚至一个炫酷的命令行终端。 终端是Linux和Unix系统下非常重要，且频繁使用的工具，它可以让你与你的系统进行交互。 虽然大多数时候我们都在终",
+        "comment_count": 12,
+        "digg_count": 115,
+        "collect_count": 203,
+        "cover_image": "",
+        "title": "程序员的快乐，只需要这7款工具！",
+        "view_count": 19869,
+        "tag_ids": [
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2401808937401047",
+        "article_id": "7070317079026483207",
+        "brief_content": "前言 ​ 小声bb：瞎说什么将本地托管到GitHub的教程，其实就是想记下自己踩了多少坑，避免以后忘了怎么搞",
+        "comment_count": 0,
+        "digg_count": 1,
+        "collect_count": 2,
+        "cover_image": "",
+        "title": "将本地项目托管到GitHub",
+        "view_count": 527,
+        "tag_ids": [
+            6809640375880253000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "3470534935322008",
+        "article_id": "7130614004321353736",
+        "brief_content": "webstorm虽然好用，但是有两个很大的缺陷：一是太卡了，三年前买的笔记本在打开一个项目，基本上每天都要重启，二是付费的，虽然网上有破解版，但是每隔一段时间就会失效，太蛋疼，因此，决定弃",
+        "comment_count": 5,
+        "digg_count": 4,
+        "collect_count": 3,
+        "cover_image": "",
+        "title": "webstorm转VS Code开发vue项目必装的插件",
+        "view_count": 2119,
+        "tag_ids": [
+            6809640656265282000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4103795717964989",
+        "article_id": "7119881334457106440",
+        "brief_content": "node升级问题 本人HB实习，最近的任务是把web端的node从10升级到16版本，期间遇到各种问题，几乎把该踩的坑都踩过了。记录下来，希望给后来的小伙伴带来一些帮助。",
+        "comment_count": 1,
+        "digg_count": 1,
+        "collect_count": 4,
+        "cover_image": "",
+        "title": "【 最详细! 】nodeJS版本升级，所有问题汇总？",
+        "view_count": 707,
+        "tag_ids": [
+            6809640407484334000,
+            6809640361531539000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2216247432848813",
+        "article_id": "7120079217626185735",
+        "brief_content": "本文主要介绍了：ChromeOS (FydeOS) 操作系统安装体验，基于 ChromOS 的 Linux 子系统的开发环境搭建，以及 ChromeOS 原理和架构的探索。",
+        "comment_count": 0,
+        "digg_count": 9,
+        "collect_count": 2,
+        "cover_image": "",
+        "title": "ChromeOS 体验 (FydeOS)",
+        "view_count": 5056,
+        "tag_ids": [
+            6809641200954376000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1359459050597710",
+        "article_id": "7124458360618876965",
+        "brief_content": "为啥国外的好工具/好实践到了国内就变味了。难理解，难使用，用不顺，效果差......事实上有些时候不是我们用不好这些工具，是源头上这些工具可能就不适合你。",
+        "comment_count": 1,
+        "digg_count": 3,
+        "collect_count": 0,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/48b4443715fc4b1fbc709f4e7984a30c~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "为啥谷歌的内部工具不适合你？",
+        "view_count": 3637,
+        "tag_ids": [
+            6926170622158438000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "2242659452477016",
+        "article_id": "7129659977706242056",
+        "brief_content": "来看一遍我日常使用的命令，当然很多时候有些命令一台电脑只用一次，但是很多时候可以救火，已经救过我好多次了。",
+        "comment_count": 15,
+        "digg_count": 35,
+        "collect_count": 42,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0247bb0f4f6047098b6e7e3b7a8129cc~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "日常工作中对我很重要的那些git命令",
+        "view_count": 3179,
+        "tag_ids": [
+            6809640373774713000,
+            6809640407484334000,
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1204720474531582",
+        "article_id": "7117174240012402701",
+        "brief_content": "使用 git rebase 让提交记录更加清晰可读 使用 git reflog + git reset 跳到任意 commit 使用 git cherry-pick 获取指定的 commit",
+        "comment_count": 0,
+        "digg_count": 6,
+        "collect_count": 13,
+        "cover_image": "",
+        "title": "工作中使用 Git 解决问题的场景",
+        "view_count": 878,
+        "tag_ids": [
+            6809640407484334000,
+            6809640373774713000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1178293158295367",
+        "article_id": "7124128807576928263",
+        "brief_content": "git merger 和 git rebase 两个指令是我们整合 Git 工作，合并不同分支内容的两大利器，但是它们两者的工作方式和对历史记录的影响却是截然不同的。",
+        "comment_count": 2,
+        "digg_count": 4,
+        "collect_count": 11,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/22bedc9bdc314d148bb9e707bc935442~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "一篇文章，深入理解 git 的 merge 和 rebase",
+        "view_count": 2430,
+        "tag_ids": [
+            6809640373774713000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1478162260693118",
+        "article_id": "7031146522565689374",
+        "brief_content": "大家好，我是征哥，改善最高频要素，可以从根本上改善生命体的生活质量，对程序员来讲，编辑代码就是高频要素，要改善这一点，就要用最擅长编辑的工具，这一点非 Vim 莫属。此外，Vim 还是一个通用工具，一",
+        "comment_count": 0,
+        "digg_count": 0,
+        "collect_count": 0,
+        "cover_image": "",
+        "title": "Vim新手快速入门",
+        "view_count": 255,
+        "tag_ids": [
+            6809640554033316000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1310273590294168",
+        "article_id": "7113192902829801502",
+        "brief_content": "本文介绍的`MobaXterm`同时支持SSH和SFTP，可视化操作文件，不需要再安装ftp工具。作为本人一直在用的终端工具，希望通过本文能够让大家充分了解`MobaXterm`。",
+        "comment_count": 2,
+        "digg_count": 9,
+        "collect_count": 14,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a2bd416eb0bd486496aafac137b51746~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "终端工具MobaXterm超详细使用教程",
+        "view_count": 5012,
+        "tag_ids": [
+            6809641057333019000,
+            6809640689706467000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "1574156380415287",
+        "article_id": "7127455217372626958",
+        "brief_content": " 接口文档是项目开发中必需的说明文档，接口文档编写有很多不同的方式，今天本文简单介绍一下常用的几种接口文档编写方法。 > API 文档导入生成 使用接口文档工具 Eolink 演示 A",
+        "comment_count": 1,
+        "digg_count": 1,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": "在线生成接口文档",
+        "view_count": 775,
+        "tag_ids": [
+            6809641131131798000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "853681408311559",
+        "article_id": "7113803425145421832",
+        "brief_content": "在日常项目开发中构建工具是必不可少的，所以也是我们需要掌握学习的一个重要部分，在技术蓬勃发展的今天，许多优秀的构建工具涌现出来，前端主流打包工具主要有 grunt，gulp，rollup，webpac",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 6,
+        "cover_image": "",
+        "title": "前端打包工具介绍和对比",
+        "view_count": 922,
+        "tag_ids": [
+            6809640407484334000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "747323639474910",
+        "article_id": "7102266422054617125",
+        "brief_content": "2022年5月21日，数智化开发管理平台猪齿鱼 Choerodon 发布2.0版本。新增项目计划导入导出、知识库在线协同、需求交付周期统计、钉钉集成等多项功能，全面提升团队工作效能！",
+        "comment_count": 1,
+        "digg_count": 1,
+        "collect_count": 3,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96ea3b50ec78467fb9ae2fccda136f0d~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "猪齿鱼2.0版本重磅发布，解锁更多新特性，提升研发管理效率！",
+        "view_count": 3141,
+        "tag_ids": [
+            6809640490242146000,
+            6926170622158438000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4350129414610744",
+        "article_id": "7126129564526313508",
+        "brief_content": "有一天撸代码，然后git commit的时候，发现注释都太单调了，想让代码提交页面充满点表情色彩。于是乎就开始搜索idea插件里是否存在表情插件，看了下还真有，各种emoji表情插件，可以展示在代码注",
+        "comment_count": 12,
+        "digg_count": 22,
+        "collect_count": 23,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/659b0286d2ab45e1a6a596157fc139a1~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "如何在idea里git提交代码时，能有emoji表情图片？emoji表情大全给大家奉上",
+        "view_count": 10183,
+        "tag_ids": [
+            6809640375880253000,
+            6809640408797168000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "4138992351315117",
+        "article_id": "7121650485978726430",
+        "brief_content": "Figma是什么 我先来谈谈我个人的理解吧，在今天之前，我其实不太了解产品这个职位 在和老板沟通之后，我发现其实产品挺重要的，他需要进行需求分析，然后按照分析出来的需求，设计页面，让开发去进行实现。 ",
+        "comment_count": 1,
+        "digg_count": 16,
+        "collect_count": 2,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ef559f044ff74f298b05e4197d389548~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Figma自编教程第一篇（也是做产品实习生的第一天）",
+        "view_count": 4023,
+        "tag_ids": [
+            6809640621406421000,
+            6809640406058271000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "413072104103502",
+        "article_id": "7120108166804684837",
+        "brief_content": "1.简介 1.1 关于版本控制 版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。 1.2 版本控制发展史 1.2.1 本地版本控制 记录文件每次的更新，可以对每个版本做一",
+        "comment_count": 0,
+        "digg_count": 3,
+        "collect_count": 11,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bd260c87623b451db5ab457a76417618~tplv-k3u1fbpfcp-watermark.image",
+        "title": "git基本操作，这篇文章就够了！爆赞！",
+        "view_count": 633,
+        "tag_ids": [
+            6809640373774713000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "268717538945181",
+        "article_id": "7120474763910676488",
+        "brief_content": "通过公开仓库 + 私有仓库，使用 GitHub Actions 实现 GitHub 私有仓库的 GitHub Pages 页面自动发布，并使用 Cloudflare 加速国内访问和隐藏真实地址。",
+        "comment_count": 0,
+        "digg_count": 2,
+        "collect_count": 1,
+        "cover_image": "",
+        "title": " GitHub 私有仓库免费开启 GitHub Pages 的可行性方案",
+        "view_count": 2703,
+        "tag_ids": [
+            6809640375880253000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "34828751746430",
+        "article_id": "7112693331637108743",
+        "brief_content": "前言 作为一个资深『xpath』提取工程师，想要快速从页面中拿到数据，肯定需要借助一些工具， 而最初接触的就是xpath-helper这块浏览器插件。使用一段时间后，发现笔者有一些特别的需求，想在此基",
+        "comment_count": 3,
+        "digg_count": 7,
+        "collect_count": 6,
+        "cover_image": "",
+        "title": "一晚上做了一个xpath终结者：xpath-helper-plus",
+        "view_count": 3933,
+        "tag_ids": [
+            6809640381920051000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    },
+    {
+        "user_id": "484203461875214",
+        "article_id": "7121987787506581518",
+        "brief_content": "官网的方式配置VUE 环境 1 安装node环境 打开Node官网点击下载相应的版本 官网下载地址： http://nodejs.cn/download/ 下载完成后 可以检查自己是否下载成功 CMD",
+        "comment_count": 0,
+        "digg_count": 4,
+        "collect_count": 5,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ccaffe6f0ef467ea4b3f7ea241dbf71~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "从零开始搭建一个VUE项目 三种方式 ",
+        "view_count": 3749,
+        "tag_ids": [
+            6809640369764958000
+        ],
+        "category_name": "开发工具",
+        "category_id": "6809637771511070734",
+        "category_url": "freebie"
+    }
+]

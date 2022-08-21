@@ -50,10 +50,6 @@
     line-height: 1;
 }
 
-.main_nav-item.active .nav-list_left:hover .main_nav-item:hover {
-    color: blue;
-}
-
 .view-nav .nav-list_left .main_nav-item:first-child {
     padding: 0 1rem 0 0;
 }

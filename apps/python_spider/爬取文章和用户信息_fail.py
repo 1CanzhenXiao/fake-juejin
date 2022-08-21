@@ -1,6 +1,7 @@
 # -*- coding = utf-8 -*-
 import json
 import requests
+from lxpy import copy_headers_dict
 
 i = 1
 id_set = []  # 用户集合，用户id在该集合中唯一存在
@@ -24,12 +25,12 @@ tar_url = r"https://api.juejin.cn/recommend_api/v1/article/recommend_cate_feed"
 
 # POST参数
 post = {
-    "id_type": 2,
-    'cate_id': '6809637769959178254',
-    "client_type": 2608,
-    "sort_type": 200,
-    "cursor": "0",  # 控制分页
-    "limit": 20
+    "id_type":2,
+    'cate_id':'6809637769959178254',
+    "client_type":2608,
+    "sort_type":200,
+    "cursor":"0",  # 控制分页(没有效果)
+    "limit":20
 }
 
 header = {
@@ -37,13 +38,13 @@ header = {
                   '(KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
     "accept-encoding": "gzip",
     "accept-language": "zh-CN,zh;q=0.9",
-    "content-length": "72",
+    "content-length": "85",
     "content-type": "application/json"
 }
 for key in list(cate_dict.keys()):
     cate_id = cate_dict[key]
     post["cate_id"] = cate_id
-    for page in range(20):
+    for page in range(2):
         post["cursor"] = str(page)
         res = requests.post(tar_url, data=json.dumps(post), headers=header)
         js_lst = res.json()  # 将json格式的字符串转为字典
@@ -84,14 +85,14 @@ for key in list(cate_dict.keys()):
                 user_info["all_views"] = info_dic["got_view_count"]  # 文章总浏览量
                 user_list.append(user_info)  # 将该用户的信息加入到用户列表
 
-            print("成功爬取并处理第"+str(i)+"条数据......")
-            i+=1
+            # print("成功爬取并处理第"+str(i)+"条数据......")
+            # i+=1
 
     with open("../../static/json/"+key+"_article_info.json", 'w', encoding='utf-8') as file_obj:
-        json.dump(article_list_temp, file_obj, ensure_ascii=False)
+        json.dump(article_list_temp, file_obj, ensure_ascii=False, indent=4)
     article_list_temp.clear()
 
-with open("../../static/json/all_article_info.json", 'w', encoding='utf-8') as file_obj:
-    json.dump(article_list, file_obj, ensure_ascii=False)
-with open("../../static/json/all_user_info.json", 'w', encoding='utf-8') as file_obj:
-    json.dump(user_list, file_obj, ensure_ascii=False)
+with open("../../static/resource/json/all_article_info.json", 'w', encoding='utf-8') as file_obj:
+    json.dump(article_list, file_obj, ensure_ascii=False ,indent=4)
+with open("../../static/resource/json/all_user_info.json", 'w', encoding='utf-8') as file_obj:
+    json.dump(user_list, file_obj, ensure_ascii=False, indent=4)
