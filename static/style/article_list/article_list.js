@@ -79,8 +79,8 @@ function rendering(size){
 function read(i, div){
    $.getJSON("../../static/resource/json/all_article_info.json", function (data){
        let temp_book = data[i];
+       var user_id = temp_book["user_id"];
        let title = temp_book["title"];
-       let user_id = temp_book["user_id"];
        let comment_count = temp_book["comment_count"];
        let digg_count = temp_book["digg_count"];
        let cover_image = temp_book["cover_image"];
@@ -102,7 +102,14 @@ function read(i, div){
            img.src = cover_image;
            div.querySelector('.content-wrapper').appendChild(img);
        }
-   })
+       //获取文章作者账号信息
+       $.getJSON("../../static/resource/json/all_user_info.json", function (data){
+            let temp_id = data[user_id];
+            let name = temp_id["name"];
+            div.querySelector('.popover-box.user-popover').innerHTML = name;
+        })
+   });
+
 }
 
 //添加滚动条监听事件监听事件
