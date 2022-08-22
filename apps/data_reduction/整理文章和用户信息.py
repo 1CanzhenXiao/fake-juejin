@@ -3,26 +3,14 @@ import json
 id_set = []  # 用户集合，用户id在该集合中唯一存在
 article_id_set = []     #同理
 user_list = {}  # 用户信息
-article_list = []  # 文章信息
-article_list_temp = [] #储存不同类别的文章信息
-cate_dict = {  # 文章标签id
-    "安卓": "6809635626879549454",
-    "人工智能": "6809637773935378440",
-    "IOS": "6809635626661445640",
-    "后端": "6809637769959178254",
-    "前端": "6809637767543259144",
-    "开发工具":"6809637771511070734",
-    "代码人生":"6809637776263217160",
-    "阅读":"6809637772874219534"
-}
-
-
+article_list = {}  # 文章信息
+article_list_temp = {} #储存不同类别的文章信息
 
 for i in range(25):
     path = "../../static/resource/响应返回的json数据/"+str(i)+".json"
     with open(path, "r", encoding='utf-8') as f:
         js_lst = json.load(f)
-    key = js_lst["data"][0]["category"]["category_name"]
+    key = js_lst["data"][0]["category"]["category_url"]
     for item in js_lst["data"]:  # 遍历每一篇文章
         info_dic = item["author_user_info"]  # 作者信息存储的字典
         article_dic = item["article_info"]
@@ -42,8 +30,8 @@ for i in range(25):
             article_info["category_name"] = item["category"]["category_name"]  # 文章的大分类名
             article_info["category_id"] = item["category"]["category_id"]  # 文章的大分类id
             article_info["category_url"] = item["category"]["category_url"]  # 文章的大分类url
-            article_list.append(article_info)
-            article_list_temp.append(article_info)
+            article_list[article_info["article_id"]] = article_info
+            article_list_temp[article_info["article_id"]] = article_info
 
         if info_dic["user_id"] not in id_set:  # 检查id来判断该作者信息是否已经被读取
             id_set.append(info_dic["user_id"])  # id
@@ -62,9 +50,9 @@ for i in range(25):
             user_list[info_dic["user_id"]] = user_info  # 将该用户的信息加入到用户列表
 
 
-    # with open("../../static/resource/json/"+key+".json", 'a', encoding='utf-8') as file_obj:
-    #     json.dump(article_list_temp, file_obj, ensure_ascii=False, indent=4)
-    # article_list_temp.clear()
+    with open("../../static/resource/json/"+key+".json", 'a', encoding='utf-8') as file_obj:
+        json.dump(article_list_temp, file_obj, ensure_ascii=False, indent=4)
+    article_list_temp.clear()
 
 with open("../../static/resource/json/all_article_info.json", 'w', encoding='utf-8') as file_obj:
     json.dump(article_list, file_obj, ensure_ascii=False ,indent=4)

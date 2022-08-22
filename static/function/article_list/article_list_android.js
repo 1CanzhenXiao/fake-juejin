@@ -60,52 +60,6 @@ let article_html = "<li class=\"article_item item\">\n" +
     "        </div>\n" +
     "    </li>"
 
-//用户信息的结构
-let user_html = "<div class=\"popover-content\" style=\"\">" +
-    "<div class=\"info-row\">" +
-    "   <a href=\"#\" target=\"_blank\" rel=\"\">" +
-    "       <img src=\"\" alt=\"\" class=\"lazy avatar avatar\" loading=\"lazy\">" +
-    "   </a> " +
-    "<div class=\"user-info\">" +
-    "   <a href=\"#\" target=\"_blank\" rel=\"\" class=\"username\">" +
-    "       <span class=\"name\" style=\"max-width: 128px;\">\n" +
-    "       </span> " +
-    "       <span blank=\"true\" class=\"rank\">" +
-    "           <img src=\"\" alt=\"\" title=\"创作等级\">" +
-    "       </span> " +
-    "       <img src=\"\" alt=\"掘友等级\" title=\"掘友等级\" class=\"jueyou-level\"> " +
-    "       <div class=\"vip-level\">" +
-    "           <span class=\"tooltip\">" +
-    "               <div class=\"byte-tooltip byte-tooltip--dark\" style=\"display: none;\">\n" +
-    "               </div>" +
-    "               <span class=\"byte-tooltip__wrapper\">" +
-    "                   <img src=\"\" alt=\"\">" +
-    "               </span>" +
-    "           </span>" +
-    "       </div> " +
-    "    </a> " +
-    "<div class=\"position\"></div>" +
-    "</div>" +
-    "</div> " +
-    "<button class=\"ui-btn follow-btn primary large default attention\"><!----> \n" +
-    "    关注\n" +
-    "</button> " +
-    "<div class=\"meta-row\">" +
-    "<ul class=\"meta-list\">" +
-    "<li class=\"item\">" +
-    "<div class=\"count\"></div> " +
-    "<div class=\"title\">关注</div>" +
-    "</li> " +
-    "<li class=\"divider\"></li> " +
-    "<li class=\"item\">" +
-    "<div class=\"count\"></div> " +
-    "<div class=\"title\">粉丝</div>" +
-    "</li>" +
-    "</ul>" +
-    "</div> " +
-    "<span class=\"container3 triangle-bottom\">" +
-    "<em class=\"triangle\"></em></span></div>"
-
 $(function(){
     rendering(17);
 })
@@ -123,12 +77,17 @@ function rendering(size){
 //读取并写入json数据信息
 function read(i, div1){
    $.getJSON("../../static/resource/json/android.json", function (data){
-       let temp_book = data[i];
+       let temp = Object.values(data);
+       let lens = temp.length;
+       let temp_book = temp[i%lens];
        var user_id = temp_book["user_id"];
        let cover_image = temp_book["cover_image"];
+	   let time_count = temp_book["collect_count"];
+	   let time = (new Date().getTime()) - (1000 * 60 * 60 * 24 * Number(time_count));
        let article_title = div1.querySelector('.article_title');
        article_title.innerHTML = temp_book["title"];
        article_title.title = temp_book["title"];
+	   div1.querySelector('.date').innerHTML = getDistanceDay(time);
        div1.querySelector('.view span').innerHTML = temp_book["view_count"];
        div1.querySelector('.like span').innerHTML = temp_book["digg_count"];
        div1.querySelector('.comment span').innerHTML = temp_book["comment_count"];
@@ -141,17 +100,12 @@ function read(i, div1){
            img.src = cover_image;
            div1.querySelector('.content-wrapper').appendChild(img);
        }
-       // let div2 = $(user_html)[0];  //初始化用户信息结构
-       //获取文章作者账号信息
 
+       //获取文章作者账号信息
        $.getJSON("../../static/resource/json/all_user_info.json", function (data){
             let temp_id = data[user_id];
             div1.querySelector('.popover-box.user-popover').appendChild(document.createTextNode(temp_id["name"]));
-            // div2.querySelector('.name').innerHTML = temp_id["name"];
-            // div2.querySelector('.avatar').src = temp_id["avatar_large"];
-            // div2.querySelector('.position').innerHTML = temp_id["descrip"];
        })
-       // div1.querySelector('.popover-box.user-popover').appendChild(div2);
    });
 
 }
@@ -177,4 +131,82 @@ function request(){
       requestFlag = false;
       rendering(7);
     }, 500);
+}
+
+function getDistanceDay(time) {
+	let stime = new Date().getTime();
+	let usedTime = stime - time; //两个时间戳相差的毫秒数
+
+	let one_minute = 60 * 1000;
+	let one_hour = 60 * 60 * 1000;
+	let one_day = 24 * 60 * 60 * 1000;
+	let timeTxt = '';
+	if (usedTime >= one_day) {
+		//相差几天
+		let disparityDay = parseInt(usedTime / one_day);
+
+		timeTxt = disparityDay + '天前';
+		if (disparityDay > getMonthDay()) timeTxt = getDisparityMonth(disparityDay) + '个月前';
+
+		if (disparityDay > getYearDay()) timeTxt = parseInt(disparityDay / getYearDay()) + '年前';
+
+	} else {
+		if (usedTime >= one_hour) {
+			timeTxt = parseInt(usedTime / one_hour) + '小时前';
+		} else if (usedTime >= one_minute) {
+			timeTxt = parseInt(usedTime / one_minute) + '分钟前';
+		} else {
+			timeTxt = '刚刚';
+		}
+	}
+	return timeTxt;
+}
+
+// 获取相差几个月 传天数
+function getDisparityMonth(disparityDay) {
+	let disparityMonth = 0;
+	let countFc = () => {
+		if (disparityDay > getMonthDay(disparityMonth)) {
+			disparityDay -= getMonthDay(disparityMonth)
+			disparityMonth += 1;
+			countFc(disparityMonth)
+		} else {
+			return disparityMonth;
+		}
+	}
+	countFc(disparityMonth)
+	return disparityMonth;
+}
+
+// 获取当前月
+function getNowMonth() {
+	return new Date().getMonth() + 1;
+}
+
+// 获取当前月有多少天 可以计算前面几个月有多少天 upNum 是前面几个月
+function getMonthDay(upNum) {
+	let day = 0;
+	let month = getNowMonth();
+	if (upNum) {
+		let date = new Date();
+		date.setMonth(date.getMonth() - upNum);
+		month = date.getMonth() + 1;
+	}
+	if (month === 1 || month === 3 || month === 5 || month === 7 || month === 8 || month === 10 || month === 12) {
+		day = 31
+	} else if (month === 2) {
+		if (getYearDay() === 366) day = 29
+		if (getYearDay() === 365) day = 28
+	} else {
+		day = 30
+	}
+	return day;
+}
+
+// 获取当前年有多少天
+function getYearDay() {
+	let day = 365
+	let year = new Date().getFullYear();
+	if (year % 4 === 0) day = 366;
+	return day;
 }
