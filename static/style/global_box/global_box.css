@@ -1,0 +1,52 @@
+.suspension-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;
+}
+
+.suspension-panel .btn1 {
+    margin: 1rem 0 0;
+    padding: 0;
+    width: 3.33rem;
+    height: 3.33rem;
+    line-height: 1;
+    color: #909090;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(50,50,50,.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.return_up:not(:root) {
+    overflow: hidden;
+}
+
+.icon-feedback:not(:root) {
+    overflow: hidden;
+}
+
+.return_up {
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
+
+.icon-feedback {
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
+
+.suspension-panel .meiqia-btn {
+    font-size: 1.3rem;
+    color: #007fff;
+}

@@ -1,440 +1,336 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block title %}仿掘金{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='style/main_style/main.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/article_navigate/article_navigate.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/aside/aside.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/article_list/article_list.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/global_box/global_box.css')}}" type="text/css">
+<script src="{{ url_for('static', filename='jQuery/jquery.min.js') }}"></script>
+<script></script>
+{% endblock %}
+{% block body1 %}
+<main class="container main-container with-view-nav">
+    <div class="view timeline-index-view">
+        <!-- 文章列表的导航栏 -->
+        <nav role="navigation" class="view-nav">
+            <div class="nav-list_left">
+                <a href="/recommended" class="main_nav-item active">
+                    <div class="category-popover-box">
+                        综合
+                    </div>
+                </a>
+                <a href="/following" class="main_nav-item">
+                    <div class="category-popover-box">
+                        关注
+                    </div>
+                </a>
+                <a href="/backend" class="main_nav-item">
+                    <div class="category-popover-box">
+                        后端
+                    </div>
+                </a>
+                <a href="/frontend" class="main_nav-item">
+                    <div class="category-popover-box">
+                        前端
+                    </div>
+                </a>
+                <a href="/android" class="main_nav-item">
+                    <div class="category-popover-box">
+                        Android
+                    </div>
+                </a>
+                <a href="/ios" class="main_nav-item">
+                    <div class="category-popover-box">
+                        iOS
+                    </div>
+                </a>
+                <a href="/ai" class="main_nav-item">
+                    <div class="category-popover-box">
+                        人工智能
+                    </div>
+                </a>
+                <a href="/freebie" class="main_nav-item">
+                    <div class="category-popover-box">
+                        开发工具
+                    </div>
+                </a>
+                <a href="/career" class="main_nav-item">
+                    <div class="category-popover-box">
+                        代码人生
+                    </div>
+                </a>
+                <a href="/article" class="main_nav-item">
+                    <div class="category-popover-box">
+                        阅读
+                    </div>
+                </a>
+            </div>
+        </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仿掘金主页</title>
-    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='/need_image/logo_min.svg')}}"/>
-    <link rel="stylesheet" href="{{url_for('static',filename='style/main_style/main.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='style/main_navigate/main_navigate.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='style/aside/aside.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='style/article_list/article_list.css')}}" type="text/css">
-    <script src="{{ url_for('static', filename='jQuery/jquery.min.js') }}"></script>
-    <script></script>
-</head>
-
-<body>
-    <!-- 设置多div组件的原因是有些样式不需要重复设置，一个选择器可以为多个元素设置基本样式。 -->
-    <div id="__layout">
-        <div id="juejin">
-            <div class="view-container">
-                <div class="main-header-box">
-                    <!-- header中有很多组件有样式变化 -->
-                    <header class="main-header visible" style="transform: translateZ(0)">
-                        <div class="container1">
-                            <!-- 存放主页logo，注意，原掘金主页有响应窗口式的变化，即logo会随着主页缩小而变化 -->
-                            <a href="/" class="logo">
-                                <img src="{{ url_for('static',filename='need_image/juejin-logo.png')}}" class="logo_big"/>
-                                <img src="{{ url_for('static',filename='need_image/logo_min.svg')}}" class="logo_min"/>
-                            </a>
-                            <nav role="navigation" class="main-nav">
-                                <ul class="article_nav-list">
-                                    <!--logo右边的第一个导航栏（下拉框）-->
-                                    <li class="main-nav-list">
-                                        <!--缩小窗口时调用的组件-->
-                                        <div class="phone-show-menu isResourceVisible">
-                                            <span>首页</span>
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="unfold16-icon" >
-                                                <path d="M2.45025 4.82431C2.17422 4.49957 2.40501 4.00049 2.83122 4.00049H9.16878C9.59498 4.00049 9.82578 4.49957 9.54975 4.82431L6.38097 8.55229C6.1813 8.78719 5.8187 8.78719 5.61903 8.55229L2.45025 4.82431Z" ></path>
-                                            </svg>
-                                        </div>
-                                        <!--窗口正常是调用的组件-->
-                                        <ul class="phone-hide isResourceVisible">
-                                            <li class="nav-item link-item route-active active"><a href="/"><span>首页</span></a></li>
-                                            <li class="nav-item link-item activities"><a href="/pins"><span>沸点</span></a></li>
-                                            <li class="nav-item link-item book"><a href="/courses"><span>课程</span></a></li>
-                                            <li class="nav-item link-item"><a href="/lives"><span>直播</span></a></li>
-                                            <li class="nav-item link-item"><a href="/events"><span>活动</span></a></li>
-                                            <li class="nav-item link-item"><a href="" class="nav-item link-item no-border" target="_blank"><span>商城</span></a></li>
-											<li class="nav-item link-item download-icon"><a href="#" target="_blank" class="download-app no-border"><span>APP</span></a></li>
-											<li class="nav-item link-item extension-icon"><a href="" class="header-plug" target="_blank"><span>插件</span></a></li>
-                                        </ul>
+        <div class="timeline-container">
+            <div class="timeline-content">
+                <div class="timeline-entry-list">
+                    <div class="entry-list-container">
+                        <header class="list-header">
+                            <nav role="navigation" class="list-nav">
+                                <ul class="nav-list left">
+                                    <li class="nav-item active">
+                                        <a href="#">推荐</a>
                                     </li>
-                                    <ul class="right-side-nav">
-                                        <li class="search-add">
-                                            <ul class="search-add-ul">
-                                                <li class="nav-item search">
-                                                    <form role="search" class="search-form">
-                                                        <input type="search" class="search-input" maxlength="32" placeholder="探索稀土掘金" >
-                                                        <div class="search-icon-container" >
-                                                            <img src="{{ url_for('static',filename='need_image/input.png')}}" class="search-img" />
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li class="nav-item add creator-item">
-                                                    <div class="add-group">
-														<button class="add-btn">
-															创作者中心
-														</button>
-                                                        <div class="more">
-                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="unfold12-icon">
-                                                                <path d="M2.45025 4.82383C2.17422 4.49908 2.40501 4 2.83122 4H9.16878C9.59499 4 9.82578 4.49908 9.54975 4.82382L6.38097 8.5518C6.1813 8.7867 5.8187
-                                                                 8.7867 5.61903 8.5518L2.45025 4.82383Z" fill="white">
-                                                                </path>
-                                                            </svg>
-                                                        </div>
-														<ul class="head_more_list" style="display: none">
-                                                            <li class="item">
-                                                                <span class="icon write-article">写文章</span>
-                                                            </li>
-                                                            <li class="item">
-                                                                <span class="icon issue-points">发沸点</span>
-                                                            </li>
-                                                            <li class="item">
-                                                                <span class="icon create-jcode">写代码</span>
-                                                            </li>
-                                                            <li class="item">
-                                                                <span class="icon drafts">草稿箱</span>
-                                                            </li>
-                                                        </ul>
-													</div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item vip-entry">
-                                            <div class="header-vip">
-												<img src="{{ url_for('static',filename='need_image/vip.svg')}}" class="vip-img"/>
-												<span class="vip-word">会员</span>
-											</div>
-                                        </li>
-                                        <li class="nav-item notification">
-                                            <a href="#" class="app-link notification-a">
-												<img src="{{ url_for('static',filename='need_image/inform-logo-off.png')}}" class="header-massage"/>
-											</a>
-                                        </li>
-                                        <li class="nav-item auth">
-                                            <button class="login-button">登录</button>
-                                        </li>
-                                    </ul>
+                                    <li class="nav-item">
+                                        <a href="#">最新</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#">热榜</a>
+                                    </li>
                                 </ul>
+                                <div class="dorp-down-area"></div>
                             </nav>
-                        </div>
-                    </header>
-                </div>
+                        </header>
+                        <div class="entry-list-wrap">
+                            <div class="entry-list list">
 
-                <!-- 上导航栏与下文章列表的分割线 -->
-                <main class="container main-container with-view-nav">
-                    <div class="view timeline-index-view">
-                        <!-- 文章列表的导航栏 -->
-                        <nav role="navigation" class="view-nav">
-                            <div class="nav-list_left">
-                                <a href="/recommended" class="main_nav-item active">
-                                    <div class="category-popover-box">
-                                        综合
-                                    </div>
-                                </a>
-                                <a href="/following" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        关注
-                                    </div>
-                                </a>
-                                <a href="/backend" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        后端
-                                    </div>
-                                </a>
-                                <a href="/frontend" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        前端
-                                    </div>
-                                </a>
-                                <a href="/android" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        Android
-                                    </div>
-                                </a>
-                                <a href="/ios" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        iOS
-                                    </div>
-                                </a>
-                                <a href="/ai" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        人工智能
-                                    </div>
-                                </a>
-                                <a href="/freebie" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        开发工具
-                                    </div>
-                                </a>
-                                <a href="/career" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        代码人生
-                                    </div>
-                                </a>
-                                <a href="/article" class="main_nav-item">
-                                    <div class="category-popover-box">
-                                        阅读
-                                    </div>
-                                </a>
-                            </div>
-                        </nav>
-                        
-                        <div class="timeline-container">
-                            <div class="timeline-content">
-                                <div class="timeline-entry-list">
-                                    <div class="entry-list-container">
-                                        <header class="list-header">
-                                            <nav role="navigation" class="list-nav">
-                                                <ul class="nav-list left">
-                                                    <li class="nav-item active">
-                                                        <a href="#">推荐</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#">最新</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#">热榜</a>
-                                                    </li>
-                                                </ul>
-                                                <div class="dorp-down-area"></div>
-                                            </nav>
-                                        </header>
-                                        <div class="entry-list-wrap">
-                                            <div class="entry-list list">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- 侧边栏 -->
-                                <aside class="index-aside aside">
-                                    <div class="signin-tip signin">
-                                        <div class="first-line" style="opacity: 1;">
-                                            <div class="icon-text">
-                                                <!-- 日历图标 -->
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M8 2C8 1.72386 7.77614 1.5 7.5 1.5H6.5C6.22386 1.5 6 1.72386 6 2L5.9995 3H3C2.44772 3 2 3.47259 2 4.05556V7H22V4.05556C22 3.47259 21.5523 3 21 3H18V2C18 1.72386 17.7761 1.5 17.5 1.5H16.5C16.2239 1.5 16 1.72386 16 2V3H8V2ZM22 8.5H2V20.9444C2 21.5274 2.44772 22 3 22H21C21.5523 22 22 21.5274 22 20.9444V8.5Z"
-                                                        fill="#FFCF8B"></path>
-                                                    <rect x="5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                    <rect x="10.5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                    <rect x="5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                    <rect x="10.5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                    <rect x="16" y="12" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                    <rect x="16" y="16" width="3" height="2" rx="1" fill="#FF7D00">
-                                                    </rect>
-                                                </svg>
-                                                <span class="title">下午好！</span>
-                                            </div>
-                                            <button class="btn signin-btn">
-                                                <span class="btn-text">去签到</span>
-                                            </button>
-                                        </div>
-                                        <div class="second-line" style="opacity: 1;">点亮你在社区的每一天</div>
-                                        <div class="byte-loading" style="display: none;">
-                                            <div class="byte-loading__spinner">
-                                                <i class="circular byte-icon byte-icon--loading">
-                                                    <!-- 又是一个svg标签，加载图片 -->
-                                                    <svg t="1553157954893" class="icon" viewBox="0 0 1024 1024"
-                                                        version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2605"
-                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                        <path
-                                                            d="M980.752 313.697c-25.789-60.972-62.702-115.725-109.713-162.736-47.012-47.011-101.764-83.924-162.736-109.713C645.161 14.542 578.106 1 509 1c-2.242 0-4.48 0.015-6.715 0.043-16.567 0.211-29.826 13.812-29.615 30.38 0.209 16.438 13.599 29.618 29.99 29.618l0.39-0.002c1.98-0.026 3.963-0.039 5.95-0.039 61.033 0 120.224 11.947 175.93 35.508 53.82 22.764 102.162 55.359 143.683 96.879s74.115 89.862 96.88 143.683C949.054 392.776 961 451.967 961 513c0 16.568 13.432 30 30 30s30-13.432 30-30c0-69.106-13.541-136.162-40.248-199.303z"
-                                                            p-id="2606"></path>
-                                                    </svg>
-                                                </i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block banner-block">
-                                        <div class="banner banner">
-                                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
-                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image" >
-                                            </a>
-                                            <div class="ctrl-box">
-                                                <i class="ion-close-round close-btn"></i>
-                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
-                                                    <span class="inco">投放</span>
-                                                    <span>广告</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block banner-block">
-                                        <div class="banner banner">
-                                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
-                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image">
-                                            </a>
-                                            <div class="ctrl-box">
-                                                <i class="ion-close-round close-btn"></i>
-                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
-                                                    <span data-v-cb59515e="" class="inco">投放</span>
-                                                    <span data-v-cb59515e="">广告</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
-                                        <div class="block-body">
-                                            <a href="#" class="" target="_blank">
-                                                <div class="app-link">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
-                                                    <div class="content-box">
-                                                        <div class="headline">下载稀土掘金APP</div>
-                                                        <div class="desc">一个帮助开发者成长的社区</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block sticky-block">
-                                        <div class="banner banner sticky-banner">
-                                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
-                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
-                                            </a>
-                                            <div class="ctrl-box">
-                                                <i class="ion-close-round close-btn"></i>
-                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
-                                                    <span class="inco">投放</span>
-                                                    <span>广告</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="banner banner sticky-banner">
-                                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
-                                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
-                                            </a>
-                                            <div class="ctrl-box">
-                                                <i class="ion-close-round close-btn" style="opacity: 0">
-                                                    <span class="inco">广告</span>
-                                                </i>
-                                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
-                                                    <span>广告</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
-                                            <div class="block-body">
-                                                <a href="https://juejin.cn/app" class="" target="_blank">
-                                                    <div class="app-link">
-                                                        <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
-                                                        <div class="content-box">
-                                                            <div class="headline">下载稀土掘金APP</div>
-                                                            <div class="desc">一个帮助开发者成长的社区</div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-block link-block">
-                                        <ul class="link-list">
-                                            <li class="item">
-                                                <a class="link" href="https://juejin.cn/book/6844733795329900551" target="_blank">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png" class="icon">
-                                                    <span class="aside_title">稀土掘金漫游指南</span>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a class="link" href="https://juejin.cn/extension" target="_blank">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png" class="icon">
-                                                    <span class="aside_title">安装掘金浏览器插件</span>
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a class="link" href="https://sourl.co/dQMLD9" rel="nofollow noopener noreferrer" target="_blank">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png" class="icon">
-                                                    <span data-v-08a3e345="" class="aside_title">前往掘金翻译计划</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="index-aside-footer">
-                                        <ul class="more-list">
-                                            <li class="item">
-                                                <a href="/terms" target="_blank" rel="nofollow">用户协议</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/license" target="_blank" rel="nofollow">营业执照</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/privacy" target="_blank" rel="nofollow">隐私政策</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/about" target="_blank" rel="nofollow">关于我们</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="more-list">
-                                            <li class="item">
-                                                <a href="/map-author-A-1" target="_blank">站点地图</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/book/5c90640c5188252d7941f5bb" target="_blank">使用指南</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/links" target="_blank" rel="">友情链接</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/more_posts" target="_blank" rel="">更多文章</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="more-list">
-                                            <li class="item">
-                                                <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">京ICP备18012699号-3</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="more-list">
-                                            <li class="item">
-                                                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802026719" target="_blank" rel="nofollow">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/police.d0289dc.png" alt="police" style="vertical-align: middle;">京公网安备11010802026719号
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <span>版权所有：北京北比信息技术有限公司</span>
-                                            </li>
-                                            <li class="item">
-                                                <span>公司地址：北京市海淀区信息路甲28号13层B座13B-5</span>
-                                            </li>
-                                            <li class="item">
-                                                <span>公司座机：010-83434395</span>
-                                            </li>
-                                            <li class="item">
-                                                <span>举报邮箱：
-                                                    <a href="mailto:feedback@xitu.io">feedback@xitu.io</a>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                        <ul class="more-list">
-                                            <li class="item">
-                                                <a>©2022 稀土掘金</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="more-list account-list">
-                                            <li class="item weibo">
-                                                <a href="http://weibo.com/xitucircle" target="_blank" rel="nofollow noopener noreferrer">
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/weibo.0cd39f5.png" alt="微博" class="icon">
-                                                </a>
-                                            </li>
-                                            <li class="item wechat">
-                                                <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/wechat.ce329e6.png" alt="微信" class="icon">
-                                                <div class="qr-panel">
-                                                    <div class="aside_title">微信扫一扫</div>
-                                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-qr.b247fde.jpeg" class="qr">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </aside>
                             </div>
                         </div>
                     </div>
-                </main>
+                </div>
+
+
+                <!-- 侧边栏 -->
+                <aside class="index-aside aside">
+                    <div class="signin-tip signin">
+                        <div class="first-line" style="opacity: 1;">
+                            <div class="icon-text">
+                                <!-- 日历图标 -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 2C8 1.72386 7.77614 1.5 7.5 1.5H6.5C6.22386 1.5 6 1.72386 6 2L5.9995 3H3C2.44772 3 2 3.47259 2 4.05556V7H22V4.05556C22 3.47259 21.5523 3 21 3H18V2C18 1.72386 17.7761 1.5 17.5 1.5H16.5C16.2239 1.5 16 1.72386 16 2V3H8V2ZM22 8.5H2V20.9444C2 21.5274 2.44772 22 3 22H21C21.5523 22 22 21.5274 22 20.9444V8.5Z"
+                                        fill="#FFCF8B"></path>
+                                    <rect x="5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                    <rect x="10.5" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                    <rect x="5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                    <rect x="10.5" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                    <rect x="16" y="12" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                    <rect x="16" y="16" width="3" height="2" rx="1" fill="#FF7D00">
+                                    </rect>
+                                </svg>
+                                <span class="title">下午好！</span>
+                            </div>
+                            <button class="btn signin-btn">
+                                <span class="btn-text">去签到</span>
+                            </button>
+                        </div>
+                        <div class="second-line" style="opacity: 1;">点亮你在社区的每一天</div>
+                        <div class="byte-loading" style="display: none;">
+                            <div class="byte-loading__spinner">
+                                <i class="circular byte-icon byte-icon--loading">
+                                    <!-- 又是一个svg标签，加载图片 -->
+                                    <svg t="1553157954893" class="icon" viewBox="0 0 1024 1024"
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2605"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path
+                                            d="M980.752 313.697c-25.789-60.972-62.702-115.725-109.713-162.736-47.012-47.011-101.764-83.924-162.736-109.713C645.161 14.542 578.106 1 509 1c-2.242 0-4.48 0.015-6.715 0.043-16.567 0.211-29.826 13.812-29.615 30.38 0.209 16.438 13.599 29.618 29.99 29.618l0.39-0.002c1.98-0.026 3.963-0.039 5.95-0.039 61.033 0 120.224 11.947 175.93 35.508 53.82 22.764 102.162 55.359 143.683 96.879s74.115 89.862 96.88 143.683C949.054 392.776 961 451.967 961 513c0 16.568 13.432 30 30 30s30-13.432 30-30c0-69.106-13.541-136.162-40.248-199.303z"
+                                            p-id="2606"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block banner-block">
+                        <div class="banner banner">
+                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
+                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image" >
+                            </a>
+                            <div class="ctrl-box">
+                                <i class="ion-close-round close-btn"></i>
+                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                    <span class="inco">投放</span>
+                                    <span>广告</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block banner-block">
+                        <div class="banner banner">
+                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
+                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:400:0:0.awebp?" width="240" height="200" class="banner-image">
+                            </a>
+                            <div class="ctrl-box">
+                                <i class="ion-close-round close-btn"></i>
+                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                    <span data-v-cb59515e="" class="inco">投放</span>
+                                    <span data-v-cb59515e="">广告</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
+                        <div class="block-body">
+                            <a href="#" class="" target="_blank">
+                                <div class="app-link">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
+                                    <div class="content-box">
+                                        <div class="headline">下载稀土掘金APP</div>
+                                        <div class="desc">一个帮助开发者成长的社区</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-block sticky-block">
+                        <div class="banner banner sticky-banner">
+                            <a href="https://juejin.cn/post/7123120819437322247?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=gengwen202208" target="_blank">
+                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d76f050f2f6d48f8890e4036ac4fdfb2~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
+                            </a>
+                            <div class="ctrl-box">
+                                <i class="ion-close-round close-btn"></i>
+                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                    <span class="inco">投放</span>
+                                    <span>广告</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner banner sticky-banner">
+                            <a href="https://juejin.cn/post/7120441631530549284?utm_source=web&amp;utm_medium=banner&amp;utm_campaign=cykf202207" target="_blank">
+                                <img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da39b5ada1cc46f1a240e3b720012b3c~tplv-k3u1fbpfcp-no-mark:480:0:0:0.awebp?" width="240" height="0" class="banner-image">
+                            </a>
+                            <div class="ctrl-box">
+                                <i class="ion-close-round close-btn" style="opacity: 0">
+                                    <span class="inco">广告</span>
+                                </i>
+                                <a class="label" href="https://bd.juejin.cn?utm_campaign=bd&amp;utm_source=web&amp;utm_medium=banner" target="_blank">
+                                    <span>广告</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-block app-download-sidebar-block sidebar-block shadow">
+                            <div class="block-body">
+                                <a href="https://juejin.cn/app" class="" target="_blank">
+                                    <div class="app-link">
+                                        <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/home.59780ae.png" class="qr-img">
+                                        <div class="content-box">
+                                            <div class="headline">下载稀土掘金APP</div>
+                                            <div class="desc">一个帮助开发者成长的社区</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block link-block">
+                        <ul class="link-list">
+                            <li class="item">
+                                <a class="link" href="https://juejin.cn/book/6844733795329900551" target="_blank">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-tutu.d58819c.png" class="icon">
+                                    <span class="aside_title">稀土掘金漫游指南</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="https://juejin.cn/extension" target="_blank">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-extension-icon.4b79fb4.png" class="icon">
+                                    <span class="aside_title">安装掘金浏览器插件</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="link" href="https://sourl.co/dQMLD9" rel="nofollow noopener noreferrer" target="_blank">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-miner.b78347c.png" class="icon">
+                                    <span data-v-08a3e345="" class="aside_title">前往掘金翻译计划</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="index-aside-footer">
+                        <ul class="more-list">
+                            <li class="item">
+                                <a href="/terms" target="_blank" rel="nofollow">用户协议</a>
+                            </li>
+                            <li class="item">
+                                <a href="/license" target="_blank" rel="nofollow">营业执照</a>
+                            </li>
+                            <li class="item">
+                                <a href="/privacy" target="_blank" rel="nofollow">隐私政策</a>
+                            </li>
+                            <li class="item">
+                                <a href="/about" target="_blank" rel="nofollow">关于我们</a>
+                            </li>
+                        </ul>
+                        <ul class="more-list">
+                            <li class="item">
+                                <a href="/map-author-A-1" target="_blank">站点地图</a>
+                            </li>
+                            <li class="item">
+                                <a href="/book/5c90640c5188252d7941f5bb" target="_blank">使用指南</a>
+                            </li>
+                            <li class="item">
+                                <a href="/links" target="_blank" rel="">友情链接</a>
+                            </li>
+                            <li class="item">
+                                <a href="/more_posts" target="_blank" rel="">更多文章</a>
+                            </li>
+                        </ul>
+                        <ul class="more-list">
+                            <li class="item">
+                                <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow">京ICP备18012699号-3</a>
+                            </li>
+                        </ul>
+                        <ul class="more-list">
+                            <li class="item">
+                                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802026719" target="_blank" rel="nofollow">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/police.d0289dc.png" alt="police" style="vertical-align: middle;">京公网安备11010802026719号
+                                </a>
+                            </li>
+                            <li class="item">
+                                <span>版权所有：北京北比信息技术有限公司</span>
+                            </li>
+                            <li class="item">
+                                <span>公司地址：北京市海淀区信息路甲28号13层B座13B-5</span>
+                            </li>
+                            <li class="item">
+                                <span>公司座机：010-83434395</span>
+                            </li>
+                            <li class="item">
+                                <span>举报邮箱：
+                                    <a href="mailto:feedback@xitu.io">feedback@xitu.io</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="more-list">
+                            <li class="item">
+                                <a>©2022 稀土掘金</a>
+                            </li>
+                        </ul>
+                        <ul class="more-list account-list">
+                            <li class="item weibo">
+                                <a href="http://weibo.com/xitucircle" target="_blank" rel="nofollow noopener noreferrer">
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/weibo.0cd39f5.png" alt="微博" class="icon">
+                                </a>
+                            </li>
+                            <li class="item wechat">
+                                <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/wechat.ce329e6.png" alt="微信" class="icon">
+                                <div class="qr-panel">
+                                    <div class="aside_title">微信扫一扫</div>
+                                    <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/juejin-qr.b247fde.jpeg" class="qr">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='style/article_list/article_list.js') }}"></script>
-    <script src="{{ url_for('static', filename='style/aside/aside.js') }}"></script>
-    <script src="{{ url_for('static', filename='style/header/header.js') }}"> </script>
-</body>
-</html>
+</main>
+{% endblock %}
+{% block body2 %}
+    <script src="{{ url_for('static', filename='function/aside/aside.js') }}"></script>
+{#    <script src="{{ url_for('static', filename='function/article_navigate/article_navigate.js') }}"></script>#}
+    <script src="{{ url_for('static', filename='function/global_box/global_box.js') }}"></script>
+    <script src="{{ url_for('static', filename='function/header/header.js') }}"> </script>
+    <script src="{{ url_for('static', filename='function/article_list/article_list.js') }}"></script>
+{% endblock %}

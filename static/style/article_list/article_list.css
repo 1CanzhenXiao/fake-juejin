@@ -75,7 +75,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 
 .article_item:hover{
-    opacity: 0.6;
+    opacity: 0.7;
+}
+
+.article_item:hover .popover-content{
+    opacity: 1;
 }
 
 .entry {
@@ -284,6 +288,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #007fff;
 }
 
+.popover-box.user-popover:hover {
+    color: #007fff;
+}
+
+.popover-box.user-popover:hover .popover-content {
+    display: block;
+}
+
 .entry .collection-button-wrap, .entry .dislike-button {
     position: absolute;
     right: 1.667rem;
@@ -315,3 +327,337 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     }
 }
 
+.popover-box .popover-content {
+    padding: 1.667rem;
+    box-shadow: 0 8px 24px rgba(81,87,103,.16);
+    border-radius: 4px;
+    border: none;
+    display: none;
+}
+
+.user-popover .popover-content {
+    width: 300px;
+}
+
+.popover-content {
+    position: fixed;
+    top: 20rem;
+    left: 2rem;
+    padding: 1.333rem 1.333rem 1.833rem;
+    width: 267px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.08);
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: default;
+    z-index: 250;
+}
+
+.info-row {
+    display: flex;
+}
+
+.info-row .avatar {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.avatar, .avatar.xmas:after {
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.avatar {
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+    background-color: #eee;
+}
+
+.info-row .user-info {
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-row .user-info .username {
+    display: flex;
+    align-items: center;
+    font-size: 1.33rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #252933;
+}
+
+.username {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2e3135;
+    display: flex;
+    align-items: center;
+}
+
+.username .name {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.rank {
+    display: inline-flex;
+    align-items: center;
+    margin-left: .33rem;
+    vertical-align: middle;
+}
+
+.jueyou-level {
+    margin-left: 4px;
+}
+
+.jueyou-level {
+    margin-left: .33rem;
+}
+
+.jueyou-level {
+    width: 3.75rem;
+    height: 1.3333rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.username .vip-level {
+    transform: translateY(-2px);
+}
+
+.vip-level {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: 4px;
+}
+
+.vip-level .tooltip {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+div.byte-tooltip--dark {
+    background: #000;
+    opacity: .8;
+    box-shadow: 0 4px 8px rgba(0,0,0,.16);
+}
+
+div.byte-tooltip {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.vip-level img {
+    width: 16px;
+    height: 16px;
+}
+
+.info-row .user-info .position {
+    margin: .333rem 0 0;
+    font-size: 1rem;
+    line-height: 1.67rem;
+    max-width: 165px;
+    color: #8f969c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ui-btn.large {
+    padding: 7px 20px;
+}
+
+.ui-btn.attention {
+    display: flex;
+    align-items: center;
+}
+
+.ui-btn.primary {
+    background-color: #1d7dfa;
+}
+
+.follow-btn {
+    border-radius: 4px;
+    margin-top: 1.334rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.ui-btn {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 5px 16px;
+    color: #fff;
+    border: none;
+    white-space: nowrap;
+}
+
+.meta-row {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.user-popover .meta-row .meta-list {
+    position: relative;
+}
+
+.meta-row .meta-list {
+    flex: 1 1 auto;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.meta-row .meta-list .item {
+    flex: 1 1 auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meta-row .meta-list .item .count {
+    font-size: 1.333rem;
+    font-weight: 500;
+    color: #252933;
+    line-height: 2.333rem;
+}
+
+.meta-row .meta-list .item .title {
+    font-size: 1.167rem;
+    line-height: 2rem;
+    color: #8a919f;
+}
+
+.user-popover .meta-row .meta-list .divider {
+    width: 260px;
+    height: 1px;
+    top: -9px;
+    position: absolute;
+}
+
+.meta-row .meta-list .divider {
+    width: 1px;
+    height: 32px;
+    background-color: #e4e6eb;
+}
+
+span.triangle-bottom.container3 {
+    transform: rotate(0deg);
+}
+
+span.triangle-bottom {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.container3 {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    border-top: 1px solid #fff;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+.container3 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.container3 .triangle {
+    position: absolute;
+    margin: auto;
+    top: -6px;
+    left: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+}
+
+em {
+    color: red;
+    font-style: normal;
+}
+
+.container3:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.activity-empty {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 .2rem .2rem;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #b2bac2;
+    margin-bottom: .67rem;
+}
+
+.empty-icon {
+    width: 66px;
+    height: 68px;
+}
+
+.empty-icon:not(:root) {
+    overflow: hidden;
+}
+
+g {
+    fill: none;
+    fill-rule: evenodd;
+    transform: translate(4px, 3px);
+}
+
+.activity-empty .empty-text {
+    margin-top: 10px;
+}
+
+.rect {
+    width: 56px;
+    height: 60px;
+    x: 1.139;
+    y: 1.338;
+    stroke: rgb(235, 235, 235);
+    stroke-width: 2;
+    rx: 6;
+}
