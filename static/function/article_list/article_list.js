@@ -80,19 +80,23 @@ function read(i, div1){
        let temp = Object.values(data);
        let lens = temp.length;
        let temp_book = temp[i%lens];
-       var user_id = temp_book["user_id"];
+	   let article_id = temp_book["article_id"];
+       let user_id = temp_book["user_id"];
        let cover_image = temp_book["cover_image"];
 	   let time_count = temp_book["collect_count"];
 	   let time = (new Date().getTime()) - (1000 * 60 * 60 * 24 * Number(time_count));
        let article_title = div1.querySelector('.article_title');
        article_title.innerHTML = temp_book["title"];
        article_title.title = temp_book["title"];
+	   article_title.href = article_id;
 	   div1.querySelector('.date').innerHTML = getDistanceDay(time);
        div1.querySelector('.view span').innerHTML = temp_book["view_count"];
        div1.querySelector('.like span').innerHTML = temp_book["digg_count"];
        div1.querySelector('.comment span').innerHTML = temp_book["comment_count"];
        div1.querySelector('.abstract div').innerHTML = temp_book["brief_content"];
+	   div1.querySelector('.abstract a').href = article_id;
        div1.querySelector('.tag_list .tag1').innerHTML = temp_book["category_name"];
+	   div1.addEventListener('click', function (){window.open('/'+article_id, '_blank')})
        if(cover_image!==''){
            let img_html = "<img alt=\"\" class=\"lazy thumb\" loading=\"lazy\">";
            let img = $(img_html)[0];
@@ -100,7 +104,6 @@ function read(i, div1){
            img.src = cover_image;
            div1.querySelector('.content-wrapper').appendChild(img);
        }
-
        //获取文章作者账号信息
        $.getJSON("../../static/resource/json/all_user_info.json", function (data){
             let temp_id = data[user_id];
@@ -132,6 +135,9 @@ function request(){
     }, 500);
 }
 
+
+
+// 计算时间
 function getDistanceDay(time) {
 	let stime = new Date().getTime();
 	let usedTime = stime - time; //两个时间戳相差的毫秒数
@@ -143,12 +149,9 @@ function getDistanceDay(time) {
 	if (usedTime >= one_day) {
 		//相差几天
 		let disparityDay = parseInt(usedTime / one_day);
-
 		timeTxt = disparityDay + '天前';
 		if (disparityDay > getMonthDay()) timeTxt = getDisparityMonth(disparityDay) + '个月前';
-
 		if (disparityDay > getYearDay()) timeTxt = parseInt(disparityDay / getYearDay()) + '年前';
-
 	} else {
 		if (usedTime >= one_hour) {
 			timeTxt = parseInt(usedTime / one_hour) + '小时前';
