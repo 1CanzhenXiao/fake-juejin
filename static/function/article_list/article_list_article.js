@@ -80,7 +80,8 @@ function read(i, div1){
        let temp = Object.values(data);
        let lens = temp.length;
        let temp_book = temp[i%lens];
-       var user_id = temp_book["user_id"];
+       let article_id = temp_book["article_id"];
+       let user_id = temp_book["user_id"];
        let cover_image = temp_book["cover_image"];
 	   let time_count = temp_book["collect_count"];
 	   let time = (new Date().getTime()) - (1000 * 60 * 60 * 24 * Number(time_count));
@@ -93,6 +94,7 @@ function read(i, div1){
        div1.querySelector('.comment span').innerHTML = temp_book["comment_count"];
        div1.querySelector('.abstract div').innerHTML = temp_book["brief_content"];
        div1.querySelector('.tag_list .tag1').innerHTML = temp_book["category_name"];
+	   div1.addEventListener('click', function (){window.open('/'+article_id, '_blank')});
        if(cover_image!==''){
            let img_html = "<img alt=\"\" class=\"lazy thumb\" loading=\"lazy\">";
            let img = $(img_html)[0];

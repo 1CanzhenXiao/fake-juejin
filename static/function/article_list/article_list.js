@@ -104,6 +104,7 @@ function read(i, div1){
            img.src = cover_image;
            div1.querySelector('.content-wrapper').appendChild(img);
        }
+
        //获取文章作者账号信息
        $.getJSON("../../static/resource/json/all_user_info.json", function (data){
             let temp_id = data[user_id];

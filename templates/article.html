@@ -2,8 +2,10 @@
 {% block head %}
     <link rel="stylesheet" href="{{url_for('static',filename='style/main_style/main.css')}}" type="text/css">
     <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style/global_box/global_box.css')}}" type="text/css">
 {% endblock %}
 
 {% block body2 %}
     <script src="{{ url_for('static', filename='function/header/header.js') }}"> </script>
+     <script src="{{ url_for('static', filename='function/global_box/global_box.js') }}"></script>
 {% endblock %}

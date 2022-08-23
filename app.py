@@ -9,7 +9,7 @@ from apps.page_jump.home_recommended import bp as recommended_bp
 from apps.page_jump.home_ai import bp as ai_bp
 from apps.page_jump.home_ios import bp as ios_bp
 from apps.page_jump.home_frontend import bp as frontend_bp
-from apps.page_jump.index import bp as index_bp
+from apps.page_jump.article import bp as page_bp
 
 app = Flask(__name__)
 app.register_blueprint(android_bp)
@@ -22,13 +22,12 @@ app.register_blueprint(frontend_bp)
 app.register_blueprint(recommended_bp)
 app.register_blueprint(ai_bp)
 app.register_blueprint(ios_bp)
-app.register_blueprint(index_bp)
+app.register_blueprint(page_bp)
 
 
 @app.route('/')
 def home():
     return render_template("home.html")
-
 
 if __name__ == '__main__':
     app.run()

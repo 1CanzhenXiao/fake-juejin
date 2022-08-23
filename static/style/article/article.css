@@ -990,3 +990,17 @@ div.byte-tooltip {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.sidebar .wechat-sidebar-block {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.wechat-img.square {
+    aspect-ratio: 971/805;
+}
+
+.wechat-img {
+    width: 100%;
+    aspect-ratio: 1507/533;
+}
