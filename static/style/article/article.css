@@ -1004,3 +1004,131 @@ div.byte-tooltip {
     width: 100%;
     aspect-ratio: 1507/533;
 }
+
+.main-area .action-bar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.action-box {
+    display: flex;
+    height: 3.92rem;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+}
+
+.main-area>* {
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 2.67rem;
+    padding-right: 2.67rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px){
+    .main-area.recommended-area .entry-list .entry, .main-area>* {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .main-area>* {
+        border: none;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .main-area .action-bar {
+        display: flex;
+    }
+}
+
+.action {
+    flex: 1 1 33.333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.action-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1rem;
+    width: 1px;
+    height: 2rem;
+    background-color: #ebebeb;
+}
+
+@media (max-width: 1140px){
+    .main-area {
+        width: calc(100% - 26.67rem);
+    }
+}
+
+.markdown-body {
+    word-break: break-word;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 15px;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.avatar {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.form-box {
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.auth-card {
+    position: relative;
+}
+
+.form-box .input-box {
+    font-size: 0;
+    transition: all .3s;
+    background: #f2f3f5;
+    border: 1px solid #f2f3f5;
+    border-radius: 4px;
+}
+
+.form-box .rich-input {
+    position: relative;
+    padding: 8px 12px;
+    color: #252933;
+    outline: none;
+    min-height: 64px;
+    box-sizing: border-box;
+    line-height: 22px;
+    font-size: 14px;
+    resize: both;
+}
+
