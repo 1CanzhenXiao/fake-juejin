@@ -1,3 +1,4 @@
+import urllib
 from flask import Blueprint, render_template
 import json
 
@@ -5,9 +6,13 @@ bp = Blueprint("article",__name__)
 
 @bp.route('/<article_id>')
 def article(article_id):
-    with open(r"D:\git\juejin\static\resource\json\all_article_info.json", 'r', encoding='utf-8') as f:
+    # 注意此为绝对路径，在不同的电脑上运行得注意
+    path1 = r"D:\git\juejin\static\resource\json\all_article_info.json"
+    path2 = r"D:\git\juejin\static\resource\json\all_user_info.json"
+    path3 = "D:/git/juejin/static/articles_file/"+article_id+".md"
+    with open(path1, 'r', encoding='utf-8') as f:
         articles_inf = json.load(f)
-    with open(r"D:\git\juejin\static\resource\json\all_user_info.json", 'r', encoding='utf-8') as f:
+    with open(path2, 'r', encoding='utf-8') as f:
         users_inf = json.load(f)
 
     article_inf = articles_inf[article_id]

@@ -10,7 +10,7 @@
 <main class = "container main-container" style="max-width:1140px;">
     <div class="view column-view">
         <div class="main-area article-area">
-            <article class="article">
+            <article class="article" id="{{ article_inf['article_id']}}">
             <h1 class="article-title">{{ article_inf['title'] }}</h1>
             <div class="author-info-block">
                 <a href="" target="_blank" rel="" class="avatar-link"><img loading="eager" src="{{ user_inf['avatar_large'] }}" alt="" class="lazy avatar avatar"></a>
@@ -323,8 +323,10 @@
 </main>
 {% endblock %}
 {% block body2 %}
-<script src="{{ url_for('static', filename='js_package/jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js_package/marked.min.js') }}"></script>
-<script src="{{ url_for('static', filename='function/header/header.js') }}"> </script>
-<script src="{{ url_for('static', filename='function/global_box/global_box.js') }}"></script>
+    <script src="{{ url_for('static', filename='js_package/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js_package/highlight.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='function/article/article.js') }}"></script>
+    <script src="{{ url_for('static', filename='function/header/header.js') }}"> </script>
+    <script src="{{ url_for('static', filename='function/global_box/global_box.js') }}"></script>
 {% endblock %}
