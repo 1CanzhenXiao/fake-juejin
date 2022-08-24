@@ -43,18 +43,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     box-sizing: border-box;
 }
 
-.container, .left {
-    display: flex;
-    align-items: center;
-}
-
 .left {
     width: calc(100% - 112px);
-}
-
-.container, .left {
-    display: flex;
-    align-items: center;
 }
 
 a {
@@ -239,6 +229,10 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.article-hero {
+    width: 100%;
 }
 
 .rank {
@@ -596,12 +590,6 @@ a {
     border-radius: 50%;
 }
 
-.lazy {
-    position: relative;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
 .user-item .info-box {
     flex: 1 1 auto;
     min-width: 0;
@@ -622,14 +610,6 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.username .name {
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .user-item .info-box .position {
@@ -1014,7 +994,7 @@ div.byte-tooltip {
     left: 0;
 }
 
-.action-box {
+.action-box1 {
     display: flex;
     height: 3.92rem;
     border-top: 1px solid #ebebeb;
@@ -1108,27 +1088,99 @@ div.byte-tooltip {
     position: relative;
 }
 
-.auth-card {
-    position: relative;
-}
-
-.form-box .input-box {
-    font-size: 0;
-    transition: all .3s;
-    background: #f2f3f5;
-    border: 1px solid #f2f3f5;
-    border-radius: 4px;
-}
-
-.form-box .rich-input {
-    position: relative;
-    padding: 8px 12px;
+.article-title {
+    margin: 0 0 1.667rem;
+    font-size: 2.667rem;
+    font-weight: 600;
+    line-height: 1.31;
     color: #252933;
-    outline: none;
-    min-height: 64px;
-    box-sizing: border-box;
-    line-height: 22px;
-    font-size: 14px;
-    resize: both;
+}
+
+.container_comm {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.container_comm_1 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    padding-top: 32px;
+}
+
+.author-info-block .author-info-box {
+    min-width: 0;
+    flex-grow: 1;
+    flex: 1;
+    min-height: 43px;
+}
+
+.author-info-block .author-name {
+    height: 2rem;
+}
+
+.author-info-block .author-name .username {
+    width: 100%;
+    font-size: 1.333rem;
+    font-weight: 500;
+    color: #515767;
+    line-height: 2rem;
+}
+
+.follow-button .icon.icon-follow {
+    background: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/85a1a2e5c5c07c922317fc603d542aca.svg) 0 0 no-repeat;
+}
+
+.follow-button .icon {
+    margin-right: 4px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+.author-info-block {
+    display: flex;
+    align-items: center;
+}
+
+.author-info-block, .team-follow {
+    margin-bottom: 1.667rem;
+}
+
+.author-info-block .avatar-link {
+    font-size: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .article-suspended-panel, .sidebar, article>.extension-banner {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .main-area {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .main-area>*[data-v-32caa382] {
+        border: none;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .article-area {
+        margin-bottom: 0;
+    }
 }
 

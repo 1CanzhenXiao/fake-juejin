@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block title %}{{ article_inf['title'] }}{% endblock %}
 {% block head %}
 <link rel="stylesheet" href="{{url_for('static',filename='style/main_style/main.css')}}" type="text/css">
 <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
@@ -10,29 +11,29 @@
     <div class="view column-view">
         <div class="main-area article-area">
             <article class="article">
-            <h1 class="article-title"><!--标题--></h1>
+            <h1 class="article-title">{{ article_inf['title'] }}</h1>
             <div class="author-info-block">
-                <a href="" target="_blank" rel="" class="avatar-link"><img loading="eager" src="" alt="" class="lazy avatar avatar"><!--头像--></a>
+                <a href="" target="_blank" rel="" class="avatar-link"><img loading="eager" src="{{ user_inf['avatar_large'] }}" alt="" class="lazy avatar avatar"></a>
                 <div class="author-info-box">
                     <div class="author-name">
                         <a href="" target="_blank" rel="" class="username username ellipsis">
-                            <span class="name" style="max-width: 128px;"><!--名字--></span>
+                            <span class="name" style="max-width: 128px;">{{ user_inf['name'] }}</span>
                             <span blank="true" class="rank">
-                                <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-3.7938ebc.png" alt="lv-3" title="创作等级">
+                                <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-3.7938ebc.png" alt="lv-3" title="创作等级">
                             </span>
                         </a>
                     </div>
                     <div class="meta-box">
                         <time datetime="2022-08-21T15:56:19.000Z" title="Sun Aug 21 2022 23:56:19 GMT+0800 (中国标准时间)" class="time">2022年08月21日 23:56</time>
-                        <span class="views-count">·&nbsp;&nbsp;<!--阅读数--></span>
+                        <span class="views-count">·&nbsp;&nbsp阅读  {{ article_inf['view_count'] }}</span>
                     </div>
-                    <button class="follow-button follow">
-                        <span class="icon icon-follow"></span>
-                        <span data-text="取消关注" class="text">关注</span>
-                    </button>
                 </div>
-                <img loading="eager" src="" alt="" class="lazy article-hero"><!--封面-->
+                <button class="follow-button follow">
+                    <span class="icon icon-follow"></span>
+                    <span data-text="取消关注" class="text">关注</span>
+                </button>
             </div>
+            <img loading="eager" src="{{ article_inf['cover_image'] }}" alt="" class="lazy article-hero">
             <div class="article-content">
                 <div class="markdown-body">
 
@@ -47,7 +48,7 @@
                 <a class="banner-action" href="https://juejin.cn/extension/?utm_source=standalone&amp;utm_medium=post&amp;utm_campaign=extension_promotion" target="_blank">前往安装</a>
             </div>
         </article>
-            <div class="container comment-list-box" id="comment-box" >
+            <div class="container_comm comment-list-box" id="comment-box" >
                 <div class="comment-form">
                     <div class="header">
                         <span class="header-title">评论</span>
@@ -86,6 +87,33 @@
                         <input type="file" class="hidden">
                     </div>
                 </div>
+                <div class="container_comm_1 hot-list">
+                    <div class="title">热门评论
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                            <path d="M12.8 5.2C13.9532 6.46 14.8 8.2 14.8 10C14.7039 12.8937 12.6843 15.1706 9.97973 15.8159C10.359 12.3442 7.77588 9.35406 7.77588 9.35406C7.77588 9.35406 7.99512 13.7064 6.79514 15.8104C4.03715 15.1428 2 12.7806 2 9.8C2 7.776 2.9336 5.9728 4.4 4.8C5.8608 3.7056 6.8 1.9656 6.8 0C9.684 0.4368 11.894 2.9264 11.894 5.932C11.894 6.5012 11.746 7.0652 11.6 7.6C12.1264 6.9024 12.6184 6.0876 12.8 5.2Z" fill="#F53F3F"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="action-box action-bar">
+                <div class="praise-action action">
+                    <div class="action-title-box">
+                        <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/00ba359ecd0075e59ffbc3d810af551d.svg">
+                        <span class="action-title">{{ article_inf['digg_count'] }}</span>
+                    </div>
+                </div>
+                <div class="comment-action action">
+                    <div class="action-title-box">
+                        <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/336af4d1fafabcca3b770c8ad7a50781.svg">
+                        <span class="action-title">{{ article_inf['comment_count'] }}</span>
+                    </div>
+                </div>
+                <div class="collect-action action">
+                    <div class="action-title-box">
+                        <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/3d482c7a948bac826e155953b2a28a9e.svg">
+                        <span class="action-title">收藏</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="main-area recommended-area shadow">
@@ -98,18 +126,18 @@
         </div>
         <div class="sidebar sidebar top" >
             <div class="sidebar-block author-block pure">
-                <a href="/user/3051900007626103" target="_blank" rel="" class="user-item item">
-                    <img src="" alt="" class="lazy avatar avatar" loading="lazy"><!--头像-->
-                    <div class="info-box" >
-                        <a href="/user/3051900007626103" target="_blank" rel="" class="username">
-                            <span class="name" style="max-width: 128px;"><!--名字--></span>
+                <div href="" target="_blank" rel="" class="user-item item">
+                    <img src="{{ user_inf['avatar_large'] }}" alt="" class="lazy avatar avatar" loading="lazy">
+                    <div class="info-box">
+                        <a href="#" target="_blank" rel="" class="username">
+                            <span class="name" style="max-width: 128px;">{{ user_inf['name'] }}</span>
                             <span blank="true" class="rank">
-                                <img src="//lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-3.7938ebc.png" alt="lv-3" title="创作等级">
+                                <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/lv-3.7938ebc.png" alt="lv-3" title="创作等级">
                             </span>
                         </a>
-                        <div title="" class="position"><!--个人简介--></div>
+                        <div title="{{ user_inf['job'] }}" class="position">{{ user_inf['job'] }}</div>
                     </div>
-                </a>
+                </div>
                 <div class="stat-item item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" class="zan">
                         <g fill="none" fill-rule="evenodd" transform="translate(0 .57)">
@@ -117,7 +145,7 @@
                             <path fill="#7BB9FF" d="M8.596 11.238V19H7.033C6.463 19 6 18.465 6 17.807v-5.282c0-.685.483-1.287 1.033-1.287h1.563zm4.275-4.156A1.284 1.284 0 0 1 14.156 6c.885.016 1.412.722 1.595 1.07.334.638.343 1.687.114 2.361-.207.61-.687 1.412-.687 1.412h3.596c.38 0 .733.178.969.488.239.317.318.728.21 1.102l-1.628 5.645a1.245 1.245 0 0 1-1.192.922h-7.068v-7.889c1.624-.336 2.623-2.866 2.806-4.029z" data-v-71f2d09e="" data-v-25b8648c=""></path>
                         </g>
                     </svg>
-                    <span class="content">获得点赞<span class="count">&nbsp;<!--点赞数--></span>
+                    <span class="content">获得点赞<span class="count">&nbsp {{ user_inf['all_get_like'] }}</span>
                     </span>
                 </div>
                 <div class="stat-item item">
@@ -127,7 +155,7 @@
                             <path fill="#7BB9FF" d="M4 12.5S6.917 7 12.75 7s8.75 5.5 8.75 5.5-2.917 5.5-8.75 5.5S4 12.5 4 12.5zm8.75 2.292c1.208 0 2.188-1.026 2.188-2.292 0-1.266-.98-2.292-2.188-2.292-1.208 0-2.188 1.026-2.188 2.292 0 1.266.98 2.292 2.188 2.292z" data-v-71f2d09e="" data-v-25b8648c=""></path>
                         </g>
                     </svg>
-                    <span class="content">文章被阅读<span class="count">&nbsp;<!--阅读数--></span>
+                    <span class="content">文章被阅读<span class="count">&nbsp {{ user_inf['all_views'] }}</span>
                     </span>
                 </div>
             </div>
@@ -194,7 +222,7 @@
                     <path d="M8.87981 4.24829C8.63787 4.24829 8.44226 4.53656 8.44226 4.89174C8.44226 5.24693 8.63787 5.5352 8.87981 5.5352C9.12046 5.5352 9.31736 5.24693 9.31736 4.89174C9.31736 4.53656 9.12046 4.24829 8.87981 4.24829V4.24829ZM12.0997 4.65624C12.0997 4.65624 11.9246 4.41816 11.4819 4.48122C11.0444 4.54428 10.8745 4.83126 10.8423 4.86215C10.8423 4.86215 10.7381 5.0243 10.8115 5.12467C10.8848 5.22505 11.0174 5.06676 11.0174 5.06676C11.0174 5.06676 11.2194 4.78364 11.4806 4.77335C11.6273 4.76349 11.7729 4.80489 11.8925 4.89046C11.8925 4.89046 12.0211 4.99856 12.0984 4.89046C12.1769 4.78364 12.0997 4.65624 12.0997 4.65624V4.65624Z"></path>
                 </symbol>
             </svg>
-            <div badge="" class="panel-btn with-badge">
+            <div badge="{{ article_inf['digg_count'] }}" class="panel-btn with-badge">
                 <svg class="sprite-icon icon-zan">
                     <use xlink:href="#icon-zan">
                         <svg id="icon-zan" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +231,7 @@
                     </use>
                 </svg>
             </div>
-            <div badge="" class="panel-btn">
+            <div badge="{{ article_inf['comment_count'] }}" class="panel-btn with-badge">
                 <svg class="sprite-icon icon-comment">
                     <use xlink:href="#icon-comment">
                         <svg id="icon-comment" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
