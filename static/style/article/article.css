@@ -1,3 +1,7 @@
+body {
+    user-select: text;
+}
+
 .container {
     position: relative;
     margin: 0 auto;
@@ -1067,15 +1071,6 @@ div.byte-tooltip {
     }
 }
 
-.markdown-body {
-    word-break: break-word;
-    line-height: 1.75;
-    font-weight: 400;
-    font-size: 15px;
-    overflow-x: hidden;
-    color: #333;
-}
-
 .avatar {
     margin-right: 16px;
     width: 40px;
@@ -1184,3 +1179,52 @@ div.byte-tooltip {
     }
 }
 
+.markdown-body {
+    word-break: break-word;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.markdown-body embed, .markdown-body iframe, .markdown-body img:not(.equation), .markdown-body video {
+    max-width: 100%!important;
+    margin: 0;
+}
+
+.markdown-body img {
+    max-width: 100%;
+}
+
+.medium-zoom-image {
+    cursor: pointer;
+    cursor: zoom-in;
+    transition: transform .3s cubic-bezier(.2,0,.2,1)!important;
+}
+
+.medium-zoom-image, .medium-zoom-overlay {
+    z-index: 10000;
+}
+
+img {
+    border-style: none;
+}
+
+.lazy.article-hero{
+    max-height: 394px;
+}
+
+.markdown-body pre, .markdown-body pre>code.hljs {
+    color: #abb2bf;
+    background: #282c34;
+}
+
+.markdown-body pre>code {
+    display: block;
+    padding: 16px 12px;
+    margin: 0;
+    font-size: 12px;
+    word-break: normal;
+    overflow-x: auto;
+}

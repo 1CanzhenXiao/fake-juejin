@@ -5,12 +5,14 @@
 <link rel="stylesheet" href="{{url_for('static',filename='style/header/header.css')}}" type="text/css">
 <link rel="stylesheet" href="{{url_for('static',filename='style/global_box/global_box.css')}}" type="text/css">
 <link rel="stylesheet" href="{{url_for('static',filename='style/article/article.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/highlight/atom-one-dark.min.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/article/juejin_style.css')}}" type="text/css">
 {% endblock %}
 {% block body1 %}
 <main class = "container main-container" style="max-width:1140px;">
     <div class="view column-view">
         <div class="main-area article-area">
-            <article class="article" id="{{ article_inf['article_id']}}">
+            <article class="article">
             <h1 class="article-title">{{ article_inf['title'] }}</h1>
             <div class="author-info-block">
                 <a href="" target="_blank" rel="" class="avatar-link"><img loading="eager" src="{{ user_inf['avatar_large'] }}" alt="" class="lazy avatar avatar"></a>
@@ -326,7 +328,43 @@
     <script src="{{ url_for('static', filename='js_package/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js_package/highlight.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
-    <script src="{{ url_for('static', filename='function/article/article.js') }}"></script>
-    <script src="{{ url_for('static', filename='function/header/header.js') }}"> </script>
+    <script>
+        var rendererMD = new marked.Renderer();
+        marked.setOptions({
+            renderer: rendererMD,
+            gfm: true,
+            tables: true,
+            breaks: false,
+            pedantic: false,
+            sanitize: false,
+            smartLists: true,
+            smartypants: false
+        });
+        marked.setOptions({
+            highlight: function (code) {
+                return hljs.highlightAuto(code).value;
+            }
+        });
+
+        function loadMD() {
+            var response;
+            response = new XMLHttpRequest();
+            response.open("GET", "{{ url_for('static', filename='articles_file/'+article_inf['article_id']+'.md') }}", true);
+            response.send();
+            response.onreadystatechange=function() {
+                if (response.readyState===4 && response.status===200) {
+                    $('.markdown-body').append(marked(response.responseText));
+                }
+            };
+        }
+        loadMD();
+        $('code').each((e)=>{
+            let code = $(this).text();
+            let highCode = hljs.highlightAuto(code).value;
+            $(this).html(highCode);
+        });
+    </script>
+    <script></script>
+    <script src="{{ url_for('static', filename='function/header/header_article.js') }}"> </script>
     <script src="{{ url_for('static', filename='function/global_box/global_box.js') }}"></script>
 {% endblock %}

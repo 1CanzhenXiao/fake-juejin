@@ -5,15 +5,15 @@ let sum = 0;
 let article_html = "<li class=\"article_item item\">\n" +
     "        <div class=\"entry\" style=\"margin-bottom: 0px;\" >\n" +
     "            <div class=\"meta-container\">\n" +
-    "                <a href=\"#\" target=\"_blank\" rel=\"\" class=\"user-message\">\n" +
+    "                <a href=\"\" rel=\"\" class=\"user-message\">\n" +
     "                    <div class=\"popover-box user-popover\"><!--作者名字-->\n" +
     "                    </div>\n" +
     "                </a>\n" +
     "                <div class=\"date\"></div>\n" +
     "                <div class=\"tag_list\">\n" +
-    "                    <a href=\"/tag/%E5%89%8D%E7%AB%AF\" target=\"_blank\" rel=\"\" class=\"tag1\"></a>\n" +
-    "                    <a href=\"/tag/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0\" target=\"_blank\" rel=\"\" class=\"tag\"></a>\n" +
-    "                    <a href=\"/tag/%E7%BC%96%E8%AF%91%E5%99%A8\" target=\"_blank\" rel=\"\" class=\"tag\"></a>\n" +
+    "                    <a href=\"\"  rel=\"\" class=\"tag1\"></a>\n" +
+    "                    <a href=\"\"  rel=\"\" class=\"tag\"></a>\n" +
+    "                    <a href=\"\"  rel=\"\" class=\"tag\"></a>\n" +
     "                </div>\n" +
     "            </div>\n" +
     "            <div class=\"content-wrapper\" style=\"border-bottom: 1px solid rgba(228, 230, 235, 0.5);\">\n" +
@@ -22,11 +22,11 @@ let article_html = "<li class=\"article_item item\">\n" +
     "                        <!---->\n" +
     "                        <!---->\n" +
     "                        <!---->\n" +
-    "                        <a href=\"\" target=\"_blank\" rel=\"\" title=\"\" class=\"article_title\">\n" +
+    "                        <a href=\"\" rel=\"\" title=\"\" class=\"article_title\">\n" +
     "                        </a>\n" +
     "                    </div>\n" +
     "                    <div class=\"abstract\">\n" +
-    "                        <a href=\"\" target=\"_blank\" rel=\"\">\n" +
+    "                        <a href=\"\" rel=\"\" title=\"\">\n" +
     "                            <div>\n" +
     "                            </div>\n" +
     "                        </a>\n" +
@@ -87,13 +87,15 @@ function read(i, div1){
 	   let time_count = temp_book["collect_count"];
 	   let time = (new Date().getTime()) - (1000 * 60 * 60 * 24 * Number(time_count));
        let article_title = div1.querySelector('.article_title');
+	   let article_abs = div1.querySelector('.abstract div');
        article_title.innerHTML = temp_book["title"];
        article_title.title = temp_book["title"];
-       div1.querySelector('.date').innerHTML = getDistanceDay(time);
+	   article_abs.innerHTML = temp_book["brief_content"];
+	   article_abs.title = temp_book["brief_content"];
+	   div1.querySelector('.date').innerHTML = getDistanceDay(time);
        div1.querySelector('.view span').innerHTML = temp_book["view_count"];
        div1.querySelector('.like span').innerHTML = temp_book["digg_count"];
        div1.querySelector('.comment span').innerHTML = temp_book["comment_count"];
-       div1.querySelector('.abstract div').innerHTML = temp_book["brief_content"];
        div1.querySelector('.tag_list .tag1').innerHTML = temp_book["category_name"];
 	   div1.addEventListener('click', function (){window.open('/'+article_id, '_blank')});
        if(cover_image!==''){
