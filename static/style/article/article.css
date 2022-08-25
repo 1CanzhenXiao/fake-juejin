@@ -544,7 +544,7 @@ a {
     padding-top: 32px;
 }
 
-.title {
+.title_hot {
     position: relative;
     padding-bottom: 8px;
     font-weight: 600;
@@ -1006,14 +1006,6 @@ div.byte-tooltip {
     background: #fff;
 }
 
-.main-area>* {
-    border-radius: 4px;
-    background-color: #fff;
-    padding-left: 2.67rem;
-    padding-right: 2.67rem;
-    box-sizing: border-box;
-}
-
 @media (max-width: 1000px){
     .main-area.recommended-area .entry-list .entry, .main-area>* {
         padding-left: 2rem;
@@ -1215,7 +1207,7 @@ img {
     max-height: 394px;
 }
 
-.markdown-body pre, .markdown-body pre>code.hljs {
+.markdown-body pre, .markdown-body pre>code {
     color: #abb2bf;
     background: #282c34;
 }
@@ -1227,4 +1219,19 @@ img {
     font-size: 12px;
     word-break: normal;
     overflow-x: auto;
+}
+
+.main-area.recommended-area .recommended-list-title-wrapper .title_xg {
+    border-bottom: 1px solid #e4e6eb;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.main-area.recommended-area .recommended-list-title-wrapper .title_xg .title-content {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #252933;
+    line-height: 30px;
+    padding: 20px 0 16px;
 }
