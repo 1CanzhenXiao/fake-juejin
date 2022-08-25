@@ -85,7 +85,6 @@ $(window).scroll((e) => {
     let windowHeight = $(window).height();
     let scrollTop = $(document).scrollTop();
     let scrollBottom = scrollHeight - scrollTop - windowHeight;
-    console.log(scrollBottom);
     if(scrollBottom < 20 && !requestFlag){
       request();
     }
