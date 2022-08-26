@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="{{url_for('static',filename='style/article_list/article_list_little.css')}}" type="text/css">
 <link rel="stylesheet" href="{{url_for('static',filename='style/highlight/atom-one-dark.min.css')}}" type="text/css">
 <link rel="stylesheet" href="{{url_for('static',filename='style/article/juejin_style.css')}}" type="text/css">
+<link rel="stylesheet" href="{{url_for('static',filename='style/tocify/jquery.tocify.css')}}" type="text/css">
 {% endblock %}
 {% block body1 %}
 <main class = "container main-container" style="max-width:1140px;">
@@ -38,7 +39,7 @@
             </div>
             <img loading="eager" src="{{ article_inf['cover_image'] }}" alt="" class="lazy article-hero">
             <div class="article-content">
-                <div class="markdown-body">
+                <div class="markdown-body" id="content">
 
                 </div>
             </div>
@@ -182,8 +183,8 @@
                 <nav class="article-catalog" style="">
                     <div class="catalog-title">目录</div>
                     <div class="catalog-body">
-                        <ul class="catalog-list" style="margin-top:0px;">
-                        </ul>
+                        <div class="catalog-list" style="margin-top:0px;" id="toc">
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -331,6 +332,9 @@
     <script src="{{ url_for('static', filename='js_package/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js_package/highlight.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='js_package/jquery-1.8.3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js_package/jquery-ui-1.9.1.custom.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js_package/jquery.tocify.min.js') }}"></script>
     <script>
         var rendererMD = new marked.Renderer();
         marked.setOptions({
