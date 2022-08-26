@@ -39,7 +39,7 @@
             </div>
             <img loading="eager" src="{{ article_inf['cover_image'] }}" alt="" class="lazy article-hero">
             <div class="article-content">
-                <div class="markdown-body" id="content">
+                <div id="content" class="markdown-body" >
 
                 </div>
             </div>
@@ -183,7 +183,7 @@
                 <nav class="article-catalog" style="">
                     <div class="catalog-title">目录</div>
                     <div class="catalog-body">
-                        <div class="catalog-list" style="margin-top:0px;" id="toc">
+                        <div class="catalog-list tocify" style="margin-top:0px;" id="toc">
                         </div>
                     </div>
                 </nav>
@@ -329,10 +329,9 @@
 </main>
 {% endblock %}
 {% block body2 %}
-    <script src="{{ url_for('static', filename='js_package/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js_package/jquery-1.8.3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js_package/highlight.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
-    <script src="{{ url_for('static', filename='js_package/jquery-1.8.3.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js_package/jquery-ui-1.9.1.custom.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js_package/jquery.tocify.min.js') }}"></script>
     <script>

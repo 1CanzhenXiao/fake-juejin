@@ -1236,24 +1236,39 @@ img {
     padding: 20px 0 16px;
 }
 
-.tocify-header {
-    font-style: italic;
+.catalog-list .catalog-aTag {
+    color: inherit;
+    display: inline-block;
+    padding: 8px;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.tocify-subheader {
-    font-style: normal;
-    font-size: 90%;
+.catalog-list .item.active>.a-container:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    margin-top: 7px;
+    width: 4px;
+    height: 16px;
+    background: #1e80ff;
+    border-radius: 0 4px 4px 0;
 }
 
-.tocify ul {
-    margin: 0;
- }
-
-.tocify-focus {
-    color: #7a2518;
-    background-color: rgba(0, 0, 0, 0.1);
+.catalog-list .item.d1>.a-container:before {
+    left: 5px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
 }
 
-.tocify-focus > a {
-    color: #7a2518;
+.catalog-list .item.active>.a-container {
+    color: #007fff;
+}
+
+.catalog-list .item.d1:first-child>.a-container {
+    margin-top: 0;
 }
