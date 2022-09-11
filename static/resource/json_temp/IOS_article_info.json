@@ -1,0 +1,333 @@
+[
+    {
+        "user_id": "4353721778057997",
+        "article_id": "7030596634429882398",
+        "brief_content": "如果你从事iOS开发，抑或针对Flutter开发，有需要上架App Store，我建议各位都来了解这3件事情。",
+        "comment_count": 7,
+        "digg_count": 28,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f19a9644d97462e964d9591ff3b169d~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "重要！后面几个月，iOS开发需要注意的3件事情",
+        "view_count": 5867,
+        "tag_ids": [
+            6809640399544516616,
+            6809640426581000206
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "2393011905113783",
+        "article_id": "7021774603873681415",
+        "brief_content": "前言 学如逆水行舟，不进则退。共勉！ 架构引人而异，不同的架构师有不同的看法；架构也因项目而异，不同的项目需求不同，相应的架构也会不同。但是万道不离其宗，有些东西还是通用的，是所有架构师需要掌握的，也",
+        "comment_count": 15,
+        "digg_count": 146,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/363bccb9cd0b48ecb8b0045c5093a2e1~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "作为一名架构师，近来研发APP的一些经验总结。",
+        "view_count": 12106,
+        "tag_ids": [
+            6809640501776482317,
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "1926000101819549",
+        "article_id": "7085578967184310280",
+        "brief_content": "写代码的程序员很多，写好代码的程序员却不是那么多（愿你我都在路上）。今天分享一个避免大量`if-else`的案例，和大家共同进步。",
+        "comment_count": 29,
+        "digg_count": 290,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/78361a6e7ef14ac5ade5b828b22bce7e~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "如何避免大量的if-else？",
+        "view_count": 36388,
+        "tag_ids": [
+            6809640467731316749
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3897092103223517",
+        "article_id": "7130609032447918110",
+        "brief_content": "使用掘金App以来，对于掘金App端的设计风格和交互都是比较满意的。但某一天当我无聊点开“设置”页面的时候，一股浓浓的不协调感”扑面而来。啊这……这也太原始了吧，一点都不优雅......",
+        "comment_count": 3,
+        "digg_count": 30,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1594488c82b044eb899023d448b1e99a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "无人问津的设置页面，如何做到小而精美？",
+        "view_count": 7606,
+        "tag_ids": [
+            6809641204351926286,
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "1583760376077646",
+        "article_id": "7026642329226199070",
+        "brief_content": "UITabview的DataSource没有走cellForRowAtIndexPath方法原因分析",
+        "comment_count": 2,
+        "digg_count": 1,
+        "cover_image": "",
+        "title": "UITableView的cellForRowAtIndexPath方法不走的原因",
+        "view_count": 844,
+        "tag_ids": [
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "1161549029063479",
+        "article_id": "7020746655573999630",
+        "brief_content": "Swift5.0,基于系统API封装的扫描二维码、条形码、等多种条码扫描组件.UI界面可完全自定义;使用简单,犹如芊芊少女般丝滑、流畅.",
+        "comment_count": 0,
+        "digg_count": 2,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/758e2b20886646cca23f794eaaffbbd7~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "(Swift)一个轻量级简单易用、UI可完全自定义的扫码组件",
+        "view_count": 531,
+        "tag_ids": [
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3382566225183191",
+        "article_id": "7130428912416653325",
+        "brief_content": "1.苹果App Store上传应用流程详解，在向AppStore提交应用之前，开发者首先要成为苹果iOS开发者项目的成员，每年向苹果缴纳99美元或199美元的费用（具体申请方法后期更新）。",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e542306fa7f34db2b17b2288a42b8adc~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "                                  iOS app上架app store流程详解",
+        "view_count": 697,
+        "tag_ids": [
+            6809640426581000206
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3897092103223517",
+        "article_id": "7126459967090982920",
+        "brief_content": "无意中在刷视频的时候，看到一些很温馨的颜色搭配，让人充满灵感。以前就很喜欢使用纯色背景，经常会用纯色背景图片作为壁纸。在本章中，你将学会使用SwiftUI搭建一个纯色背景App......",
+        "comment_count": 7,
+        "digg_count": 15,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4695571d5b624ef9af6d85ecff039536~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "让人惊艳的高级配色，让你的色彩灵感爆棚！",
+        "view_count": 6772,
+        "tag_ids": [
+            6809641204351926286,
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "4388906146735864",
+        "article_id": "7115287388678520868",
+        "brief_content": "苹果开放了韩国的第三方支付，开发者们拍手称快、奔走相告，媒体们也大肆宣传”这或将引起蝴蝶效应“。可当初要求开放第三方支付的最大初衷避免苹果抽成的愿望并没有实现。",
+        "comment_count": 9,
+        "digg_count": 4,
+        "cover_image": "",
+        "title": "苹果开放韩国第三方支付，看完实施细则，恐怕你高兴不起来了",
+        "view_count": 6499,
+        "tag_ids": [
+            6809640426581000206,
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3897092103223517",
+        "article_id": "7125268938958569479",
+        "brief_content": "在本章中，你将学会使用SwiftUI搭建一个每日一句App。为了更加熟悉和了解SwiftUI，本系列将从实战角度出发完成100个SwiftUI项目，方便大家更好地学习和掌握SwiftUI......",
+        "comment_count": 5,
+        "digg_count": 8,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/149729b2ca5543feab9eb76dae8896c1~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "SwiftUI100天：使用SwiftUI搭建一个每日一句App",
+        "view_count": 4051,
+        "tag_ids": [
+            6809641204351926286,
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "1292681406327768",
+        "article_id": "7081932582576717831",
+        "brief_content": "Runloop这个算是iOS开发者面试中最常见的问题之一了把，但是每次面试遇到这种问题都会菊花一紧，生怕回答的少了，同时也怕回答的不够全面。所以针对这一问题，总结了下几个级别的开发者需要知道点进行归纳",
+        "comment_count": 23,
+        "digg_count": 134,
+        "cover_image": "",
+        "title": "当面试官问Runloop时，想听到的答案是什么？",
+        "view_count": 11593,
+        "tag_ids": [
+            6809640404791590919
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "588993964541288",
+        "article_id": "7125749140545503240",
+        "brief_content": "前言 Hi Coder，我是 CoderStar！ 距离上一次发技术文已经挺长的一段时间了，这段时间各种各样的事情挺忙的，所以也没有专门抽时间来写文章了。（其实还有一部分原因是心态的变化） 稍微介绍两",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "",
+        "title": "一个框架&一个工具",
+        "view_count": 883,
+        "tag_ids": [
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3096653342972685",
+        "article_id": "7117074340973117477",
+        "brief_content": "话不多说，直接上效果图 使用方法 导入项目 代码地址：https://github.com/shangjie119/SJPopMenu.git 将SJPopMenu文件夹拖入到工程或者使用pod导入工",
+        "comment_count": 1,
+        "digg_count": 8,
+        "cover_image": "",
+        "title": "仿微信消息长按气泡菜单",
+        "view_count": 4450,
+        "tag_ids": [
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3897092103223517",
+        "article_id": "7131215602496045064",
+        "brief_content": "承接上一章的内容，我们完成了一个基本设置页面中的个人信息、账号绑定、通用设置的详情页。这一章节，我们来完成简历管理的页面搭建。我们先来看看最终的效果图。示例......",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0414f70df37246f89c73b6757d704a40~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "颜值即正义，使用SwiftUI搭建简历管理详情页",
+        "view_count": 1935,
+        "tag_ids": [
+            6809641204351926286,
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3897092103223517",
+        "article_id": "7135063367349174303",
+        "brief_content": "在逛某站的时候，看到一个使用HTMLl+CSS构建一个伸缩式导航栏的案例，觉得蛮有意思。在客户端开发中，导航栏是必不可少的设计元素之一。但纵观很多国内的App，基本都是最为基础的导航栏，缺乏.....",
+        "comment_count": 0,
+        "digg_count": 2,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/986c22b0120540f481be63f6084cfd69~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "SwiftUI完成了伸缩式导航栏！好家伙，还不收藏一波～",
+        "view_count": 2519,
+        "tag_ids": [
+            6809641204351926286,
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3104676565757309",
+        "article_id": "7113802054455263268",
+        "brief_content": "原文地址 由于 any 和 some 都适用于协议，因此我想在这篇博文中将它们放在一起比较以便更好地解释它们解决分别解决了什么问题，以及在什么情况下使用 any、some 或其他的。 了解 any 和",
+        "comment_count": 2,
+        "digg_count": 5,
+        "cover_image": "",
+        "title": "Swift 5.7 中的 any 和 some (译)",
+        "view_count": 3374,
+        "tag_ids": [
+            6809640463633481741
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3562073407103511",
+        "article_id": "7128200596183597069",
+        "brief_content": "电脑上的管家或者清理软件大家应该都用过，比如Windows的360、火绒，Mac的CleanMyMac都是不错的清理软件。今天我们给大家介绍的是，腾讯的柠檬Lemon清理工具。 Lemon是腾讯针对中",
+        "comment_count": 15,
+        "digg_count": 20,
+        "cover_image": "",
+        "title": "腾讯开源垃圾清理软件柠檬 Lemon",
+        "view_count": 6324,
+        "tag_ids": [
+            6809640556667338765,
+            6809640399544516616,
+            6809640426581000206
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "2991139467310301",
+        "article_id": "7120894621244194847",
+        "brief_content": "废话开篇：利用 CATransform3D 图形变换及 UIScrollView 的一些方法实现一个六棱柱图片浏览效果 一、效果展示 二、实现原理 1、在一个基础 View 上添加六棱柱的六个侧面视图",
+        "comment_count": 4,
+        "digg_count": 8,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a09ebaa25136459b8f14fd844f26eeac~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "利用 UIScrollView 实现六棱柱图片浏览效果",
+        "view_count": 4696,
+        "tag_ids": [
+            6809640399544516616,
+            6809640410084802573
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "1179140140829335",
+        "article_id": "7013330661196955685",
+        "brief_content": "objc_init 查看源码 environ_init：读取影响运行时的环境变量，如果需要还可以打印环境变量帮助 export OBJC_HELP = 1 tls_init：关于线程key的绑定，比如",
+        "comment_count": 0,
+        "digg_count": 0,
+        "cover_image": "",
+        "title": "iOS14 类加载原理",
+        "view_count": 818,
+        "tag_ids": [
+            6809640399544516616
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    },
+    {
+        "user_id": "3804742656199933",
+        "article_id": "7119858546405195783",
+        "brief_content": "在日常开发中，我们最多遇到的就是UI绘制，内容展示等需求的开发，APP的UI展示是否流畅，也是用户最直接的感受。今天就针对UI界面卡顿原理进行分析，如何优化进行讨论。 一.  卡顿原理 计算机正常的渲",
+        "comment_count": 3,
+        "digg_count": 21,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d6a4f6921bf94a8680ff87f30341c4c2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "iOS界面卡顿原理及优化",
+        "view_count": 7831,
+        "tag_ids": [
+            6809640407484334093
+        ],
+        "category_name": "iOS",
+        "category_id": "6809635626661445640",
+        "category_url": "ios"
+    }
+]

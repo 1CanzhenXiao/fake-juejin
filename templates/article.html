@@ -361,11 +361,11 @@
             };
         }
         loadMD();
-        $('code').each((e)=>{
-            let code = $(this).text();
-            let highCode = hljs.highlightAuto(code).value;
-            $(this).html(highCode);
-        });
+        {#$('code').each((e)=>{#}
+        {#    let code = $(this).text();#}
+        {#    let highCode = hljs.highlightAuto(code).value;#}
+        {#    $(this).html(highCode);#}
+        {# }); #}
     </script>
     <script src="{{ url_for('static', filename='function/header/header_article.js') }}"> </script>
     <script src="{{ url_for('static', filename='function/article_list/article_list_little.js') }}"></script>

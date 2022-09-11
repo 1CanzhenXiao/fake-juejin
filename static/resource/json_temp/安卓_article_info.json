@@ -1,0 +1,329 @@
+[
+    {
+        "user_id": "1099167356171918",
+        "article_id": "7088630212371415076",
+        "brief_content": "想没想过自己做一个APP，自己当自己的产品，想怎么交互就怎么交互的那种。自己做设计，自己定逻辑，自己愉悦自己。",
+        "comment_count": 121,
+        "digg_count": 461,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/42a2c01105bf4f28ac489c4545c4c43f~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "想没想过自己做个APP？来，机会来了",
+        "view_count": 37334,
+        "tag_ids": [
+            6809640400832167949,
+            6809640399544516616
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1556564197255975",
+        "article_id": "7117630529595244558",
+        "brief_content": "一、适配的目的 区别于iOS，android设备有不同的分辨率大小以及不同厂商的系统，目前市场的分辨率可以看下友盟的相关统计。 可以看到主流的分辨率有10多种，当不做适配时，一套代码在不同设备上的效果",
+        "comment_count": 25,
+        "digg_count": 187,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bef9f26cb0654cf0a6945454cf786c2a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "如何让一套代码完美适配各种屏幕？",
+        "view_count": 23981,
+        "tag_ids": [
+            6809640400832167949,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1239904844778711",
+        "article_id": "7119083753376317448",
+        "brief_content": "目前常见的抓包工具有Charles、Fiddler、Wireshark等，这些或多或少都需要一些配置，略显麻烦，只适合开发及测试人员玩，如果其他人也想看数据怎么办，AndroidMonitor来帮你",
+        "comment_count": 34,
+        "digg_count": 95,
+        "cover_image": "",
+        "title": "Android抓包从未如此简单",
+        "view_count": 11679,
+        "tag_ids": [
+            6809640400832167949,
+            6809640419505209358
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "598591926699358",
+        "article_id": "7115224601830883365",
+        "brief_content": "从被误解到 “真香” 的Jetpack DataBinding，如果你还没有了解过，或者不知道如何使用DataBinding，那么就点进来看看吧，我相信你会有收获的🌹",
+        "comment_count": 33,
+        "digg_count": 31,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38996bf9a5ce4cab82abc4a0ff07179e~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "当你真的学会DataBinding后，你会发现“这玩意真香”!",
+        "view_count": 7802,
+        "tag_ids": [
+            6809640400832167949,
+            6809641107346063368,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1468603264407022",
+        "article_id": "7137474859948802055",
+        "brief_content": "为什么要搞屏幕适配 在开发过程中，我们总是需要考虑如何适配各种的屏幕。但是你有没有想过，我们为什么需要适配屏幕呢？为什么需要那么多屏幕适配方案呢？",
+        "comment_count": 1,
+        "digg_count": 3,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7999173ac2d542c7a0b3d1f2ae7dd0a4~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "为什么要搞屏幕适配",
+        "view_count": 345,
+        "tag_ids": [
+            6809640430150352909,
+            6809640400832167949
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "70787819648695",
+        "article_id": "7125029565625270286",
+        "brief_content": "看太多普通的“转圈”加载效果了，是不是觉得太单调？本篇带你实现几个有趣的 loading 动效，做一个有趣味的程序员！",
+        "comment_count": 25,
+        "digg_count": 43,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6c48cf18b2a4a7e9156625bf1e6b450~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "普通的加载千篇一律，有趣的 loading 万里挑一",
+        "view_count": 14590,
+        "tag_ids": [
+            6809641090145058824,
+            6809640399544516616,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "70787819648695",
+        "article_id": "7129071400509243423",
+        "brief_content": "通过绘图和动画实现有趣的loading效果，并完成组件的封装，使得组件可以开箱即用。在实际应用过程中可以根据需要，修改源码实现其他有趣的loading效果。",
+        "comment_count": 2,
+        "digg_count": 27,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c5b55ca35e5c4a03a10e8a7d2dfcb106~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "封装一个有趣的 Loading 组件",
+        "view_count": 6366,
+        "tag_ids": [
+            6809641090145058824,
+            6809640399544516616,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "2277843822969863",
+        "article_id": "7111969945268781063",
+        "brief_content": "作者 / Murat Yener, Android Developer Relations Engineer 在 Android 平台上开发应用蕴藏着许多激动人心的机会: 您可以就此开始一段新的职业生",
+        "comment_count": 0,
+        "digg_count": 10,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/926f3645782844cbb21621a6682360c9~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "官方零基础入门 Jetpack Compose 的中文课程来啦！",
+        "view_count": 3063,
+        "tag_ids": [
+            6809641107346063368
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "659362706101735",
+        "article_id": "7124354102296838151",
+        "brief_content": "配置简单、逻辑解耦、职责分明，并且支持所有的布局方式。 手把手教学，带你深入浅出，还有源码解析...",
+        "comment_count": 13,
+        "digg_count": 63,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efab8aaec61c47168c6bb88180dc513a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "怎么简单实现菜单拖拽排序的功能",
+        "view_count": 3086,
+        "tag_ids": [
+            6809640400832167949,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "3615671881575853",
+        "article_id": "7132438417970823176",
+        "brief_content": "调试与反调试，是一个久经不衰的话题，那么在android开发中，我们能够接触到ptrace带来的很多调试原理知识！",
+        "comment_count": 14,
+        "digg_count": 26,
+        "cover_image": "",
+        "title": "最近很火的反调试，你知道它是什么吗？",
+        "view_count": 5347,
+        "tag_ids": [
+            6809640400832167949,
+            6809640445233070094,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "659362706101735",
+        "article_id": "7126475397645991972",
+        "brief_content": "在开发中，随意拖拽可吸边的悬浮View还是比较常见的，这种功能网上也有各种各样的轮子，其实写起来并不复杂，看完本文，你也可以手写一个，而且不到400行代码就能实现一个通用的随意拖拽可吸边的悬浮View",
+        "comment_count": 8,
+        "digg_count": 53,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/54e6f76b34f44113b57cacef59598f04~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "【造轮子】自定义一个随意拖拽可吸边的悬浮View",
+        "view_count": 7474,
+        "tag_ids": [
+            6809640400832167949,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1218729385924360",
+        "article_id": "7125437147536064525",
+        "brief_content": "其实开发这种事情真的是只有实践才能出真知，如今我在开发中知晓了如何去打断点去debug，如何去利用sp管理，如何去写日志输出让自己知晓代码问题出在哪",
+        "comment_count": 16,
+        "digg_count": 7,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4d745db99f3e4ca7a2f47cba052fb141~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "我奇怪的安卓开发历程（内含本人不太成熟的技术观）（一）",
+        "view_count": 4885,
+        "tag_ids": [
+            6809640400832167949
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "3913917127985240",
+        "article_id": "7125250156194168869",
+        "brief_content": "其实标题有点吹牛逼了，谁也不敢说能完美适配平板，只能说尽力去做，包括显示和使用的各个方面尽力去做，才有可能在更多的平板设备上更加完美的运行起来，因为安卓的设备实在是太多了，之前手机在卷，现在。。。。。",
+        "comment_count": 14,
+        "digg_count": 22,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/35e86b06628b4ce2b9e0ea10446e2d2c~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "让你的应用完美适配平板",
+        "view_count": 4580,
+        "tag_ids": [
+            6809640400832167949,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "114004941350269",
+        "article_id": "7121636526596816933",
+        "brief_content": "前言   App优化，是一个工作、面试或KPI都绕不开的话题，如何让用户使用流畅呢？今天谨以此篇文章总结一下过去两个月我在工作中的优化事项到底有那些，优化方面还算小白，有不对的地方还望指出海涵, 该文",
+        "comment_count": 12,
+        "digg_count": 22,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/748bcddbfdfb4668822d6eebe2a206b2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "移动端页面秒开优化总结",
+        "view_count": 6255,
+        "tag_ids": [
+            6809640400832167949,
+            6809641167680962568
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "598591926699358",
+        "article_id": "7122621956385406990",
+        "brief_content": "在去年的这个时候，谷歌官方推荐使用 Flow 替代LiveData，一年时间过去了，我相信还是有很多android开发的朋友和我一样有以下几个问题：Android开发人员需要从 LiveData",
+        "comment_count": 18,
+        "digg_count": 28,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ed79e9e64bdc46bba657ffc76c153eba~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "一年时间过去了，LiveData真的被Flow代替了吗? LiveData会被废弃吗？",
+        "view_count": 7775,
+        "tag_ids": [
+            6809640400832167949,
+            6809641107346063368,
+            6809640407484334093
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "993614243303053",
+        "article_id": "7121888135599882254",
+        "brief_content": "日益新增的机型，给开发人员带来了很多的适配工作。代码能不能统一、apk能不能统一、物料如何选取、样式怎么展示等等都是困扰开发人员的问题，本方案就是介绍不同机型的共线方案，打消开发人员的疑虑。",
+        "comment_count": 12,
+        "digg_count": 33,
+        "cover_image": "",
+        "title": "vivo官网APP全机型UI适配方案",
+        "view_count": 5897,
+        "tag_ids": [
+            6809640407484334093,
+            6809640400832167949
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1768489241815070",
+        "article_id": "7119662876578545678",
+        "brief_content": "背景 在实际业务中，app中的H5页面使用的场景越来越多，在货拉拉app中也存在大量的H5页面，比如金秋拉货节、余额、车型介绍页等，加载速度成为了困扰用户的一个痛点。为此我们决定引入离线包方案，另外还",
+        "comment_count": 16,
+        "digg_count": 39,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/57a470f38b8c4b6196213a80d0a85cd2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "货拉拉 Android H5离线包原理与实践",
+        "view_count": 5072,
+        "tag_ids": [
+            6809640407484334093,
+            6809640400832167949
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "3087084378135613",
+        "article_id": "7126712379894661151",
+        "brief_content": "这不是一篇面经，而是一篇面试的复习稿。分享了我对面试的思考，破釜沉舟裸辞及潜心闭关复习面试的心路历程。",
+        "comment_count": 48,
+        "digg_count": 211,
+        "cover_image": "",
+        "title": "裸辞-疫情-闭关-复习-大厂offer（一）",
+        "view_count": 11497,
+        "tag_ids": [
+            6809640615584727053,
+            6809640445233070094,
+            6809640404791590919
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    },
+    {
+        "user_id": "1126371661463101",
+        "article_id": "7122645579439538183",
+        "brief_content": "简直没想到啊，作为一个Android开发者，现在借助Compose Desktop开发起桌面端居然能这么的轻车熟路！",
+        "comment_count": 33,
+        "digg_count": 80,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b0dfb3b3b0044bbb9ab6353891971e50~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "使用ComposeDesktop开发一款桌面端多功能APK工具",
+        "view_count": 4182,
+        "tag_ids": [
+            6809640407484334093,
+            6809640400832167949
+        ],
+        "category_name": "Android",
+        "category_id": "6809635626879549454",
+        "category_url": "android"
+    }
+]

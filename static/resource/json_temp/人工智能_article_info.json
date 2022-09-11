@@ -1,0 +1,341 @@
+[
+    {
+        "user_id": "3562073407103511",
+        "article_id": "7122662487354245150",
+        "brief_content": "一、简介 在深度学习方面，TensorFlow 和 PyTorch是绝对的王者。但是，但除了这两个框架之外，一些新生的框架也不容小觑，比如谷歌推出的 JAX深度学习框架。 1.1、快速发展的JAX J",
+        "comment_count": 0,
+        "digg_count": 6,
+        "cover_image": "",
+        "title": "前端如何开始深度学习，那不妨试试JAX",
+        "view_count": 7312,
+        "tag_ids": [
+            6809640670488166407,
+            6809641042971885582
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "3790771823837838",
+        "article_id": "7116558425533710343",
+        "brief_content": "大家好，我是Peter~ 本文是Python爬虫旅游全国的第7个城市：兰州，主要是介绍兰州的景点和美食信息。 之前写过厦门、长沙、西安、大连、苏州、成都等，感兴趣的可以阅读，也可以当做一份旅游指南~ ",
+        "comment_count": 2,
+        "digg_count": 14,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3e2c8a41c5a45efb80d30fa8e8e053b~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Python爬虫周游全国-兰州站",
+        "view_count": 9841,
+        "tag_ids": [
+            6809640700968173576
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "4420508444000711",
+        "article_id": "7123914121539485733",
+        "brief_content": "背景 人脸识别步骤 人脸采集 采集人脸图片的方法多种多样，可以直接从网上下载数据集，可以从视频中提取图片，还可以从摄像头实时的采集图片。 人脸检测方法 人脸检测在实际中主要用于人脸识别的预处理，即在图",
+        "comment_count": 1,
+        "digg_count": 14,
+        "cover_image": "",
+        "title": "基于OpenCv的人脸识别（Python完整代码）",
+        "view_count": 6341,
+        "tag_ids": [
+            6809640642101116936
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "1407003729077214",
+        "article_id": "7130435554906718239",
+        "brief_content": "本文主要介绍PyTorch的基础知识，PyTorch的优点，案例，PyTorch和Tensorflow的对比，让我们对PyTorch的框架有一个基本的了解。",
+        "comment_count": 0,
+        "digg_count": 2,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8012279fd9894d9da53f701b3ecdf91a~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "PyTorch——初识PyTorch框架",
+        "view_count": 1305,
+        "tag_ids": [
+            6809640642101116936,
+            6809641042971885582
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "554605767047053",
+        "article_id": "7119003571885965325",
+        "brief_content": "ShowMeAI资讯日报 2022-07-11 期，罗永浩官宣新创业公司『Thine Red Line』、使用AI辅助生成代码文档、Python 代码混淆工具、杜克大学『数据科学数学技能』、前沿论文",
+        "comment_count": 23,
+        "digg_count": 40,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bdce1cbfcae341009564b7c59b3f8e37~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "罗永浩新公司准备招人，AI写一篇代码文档只需2步，如何优雅地乱搞Python代码、一大波数学资料来袭！AI前沿论文 | ShowMeAI资讯日报",
+        "view_count": 13536,
+        "tag_ids": [
+            6809640642101116936,
+            6809640711177109517,
+            6809641155853025288
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "537016430508302",
+        "article_id": "7130176282427392007",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第14天，点击查看活动详情 卷积神经网络 卷积 卷积的过程可以看作两个矩阵之间特殊的乘法，如下图所示： 一个是输入张量，另一个是卷积",
+        "comment_count": 0,
+        "digg_count": 2,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/05f2e67bba004b1e863686cd07adad26~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "卷积神经网络-基础知识",
+        "view_count": 1510,
+        "tag_ids": [
+            6809640642101116936,
+            6809641023665356814
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "870468939940184",
+        "article_id": "7137192060045492231",
+        "brief_content": "实战目的 根据不同的产品配合接口展示相应的描述。根据选择的场景及其物品实现可视化的产品展示效果。效果展示 实现思路 具体实现 准备vue项目 使用Vite + Vue 搭建 根据自己的环境选择自己的搭",
+        "comment_count": 4,
+        "digg_count": 23,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9a8bf98cd0fc4bd2a265511c1e203837~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Vue+Three.js可视化实战",
+        "view_count": 951,
+        "tag_ids": [
+            6809640407484334093
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "708557910842296",
+        "article_id": "7126828391285653511",
+        "brief_content": "使用python语言，借助阿里云和百度云的免费试用资源搭建自己的聊天机器人，只需安装vscode和anaconda即可成功实现。",
+        "comment_count": 0,
+        "digg_count": 2,
+        "cover_image": "",
+        "title": "七夕，给自己new一个聊天机器人当对象",
+        "view_count": 2561,
+        "tag_ids": [
+            6809640448827588622
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "554605767047053",
+        "article_id": "7125734407754743839",
+        "brief_content": "2022了你还不知道“低代码”？一起看看数据分析、机器学习、深度学习领域最受欢迎的 Python 低代码工具：D-Tale、AutoViz、Lux、Pandas-Profiling、PyCaret等",
+        "comment_count": 1,
+        "digg_count": 9,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dbc7f55019694df3ac10df2ced4ee296~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "2022了你还不会『低代码』？数据科学也能玩转Low-Code啦！⛵",
+        "view_count": 4422,
+        "tag_ids": [
+            6809641053432315911,
+            6809640525595934734,
+            6809640679082295303
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "1165962387930839",
+        "article_id": "7132702168804491301",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天 基于yolo目标检测算法实现的车前道路中的车辆和[行人检测]，并且可以估测出目标与本车之间的距离. 一、视频展示 yolo车",
+        "comment_count": 5,
+        "digg_count": 7,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/73b95ea880cd418da2a821c370acd537~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "yolov5 车辆测距+车辆识别+单目测距（双目测距）",
+        "view_count": 1988,
+        "tag_ids": [
+            6809640642101116936
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "2872395229829784",
+        "article_id": "7124693160952856613",
+        "brief_content": "本文已参与「新人创作礼」活动，一起开启掘金创作之路。 朋友们，今天继续讲解语音识别，前面讲到了进入模型的初步操作，这个模型的层数是非常多的，后面还要经过非常多的层，可以说是一个deep+deep 网络",
+        "comment_count": 0,
+        "digg_count": 0,
+        "cover_image": "",
+        "title": "手把手教你语音识别（四）",
+        "view_count": 321,
+        "tag_ids": [
+            6809640499062767624
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "4213771487417944",
+        "article_id": "7127580052799094798",
+        "brief_content": "我正在参加「创意开发 投稿大赛」详情请看：掘金创意开发大赛来了！ 一、彩虹屁机器人 开心每一天 1.主要功能 1.彩虹屁，不开心哄你开心 2.舔狗日记，舔与被舔是不是都很开心啊哈哈 3.毒鸡汤，兄弟干",
+        "comment_count": 6,
+        "digg_count": 14,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1702cf0fe5c54de2a3e73ba03b4ba286~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "彩虹屁机器人 开心每一天",
+        "view_count": 3166,
+        "tag_ids": [
+            6809640408797167623,
+            6809640642101116936
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "554605767047053",
+        "article_id": "7115624647659356167",
+        "brief_content": "ShowMeAI资讯日报 2022-07-01 期，Web版3D可视化工具、神经网络推理工具包、十分钟入门MLOps、程序员应该知道的97件事、以对象为中心的多视图数据集、8篇前沿论文…",
+        "comment_count": 1,
+        "digg_count": 16,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/264f138e51ca4cf7a8bc817c83418173~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "Web版3D可视化工具，程序员应该知道的97件事，AI前沿论文 | 资讯日报",
+        "view_count": 8540,
+        "tag_ids": [
+            6809640711177109517,
+            6809640930740535303,
+            6809640499062767624
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "3008737754743095",
+        "article_id": "7125673771343544327",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情 1：将两个列表合并成一个字典 假设我们在 Python 中有两个列表，我们希望将它们合并为字典形式，其中一",
+        "comment_count": 1,
+        "digg_count": 5,
+        "cover_image": "",
+        "title": "13个非常有用的Python代码片段",
+        "view_count": 1682,
+        "tag_ids": [
+            6809640448827588622,
+            6809640499062767624
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "1802854802399015",
+        "article_id": "7116804363393171493",
+        "brief_content": "我敢说我的GitHub开源项目，每个README都是十分规范的。 其实做项目是按照整个产品思维来梳理的。 需要在readme中说清楚几件事： 这个项目是什么 跟同类产品/工具有什么独特之处 怎么用，更",
+        "comment_count": 7,
+        "digg_count": 25,
+        "cover_image": "",
+        "title": "有哪些 GitHub 项目的 README 堪称教科书？",
+        "view_count": 11504,
+        "tag_ids": [
+            6809640499062767624,
+            6809640375880253447
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "1802854802665351",
+        "article_id": "7133156220881338404",
+        "brief_content": "前排提示： 阅读本文不需要任何人工智能以及算法相关的知识。 你会任何一种编程语言就行，会python当然那更好。 仅作为NLP扫盲，娱乐，实际算法工作并非这么简单。",
+        "comment_count": 31,
+        "digg_count": 13,
+        "cover_image": "",
+        "title": "草履虫都能上手用的人工智能模型",
+        "view_count": 1201,
+        "tag_ids": [
+            6809640679082295303,
+            6809640930740535303
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "554605767047053",
+        "article_id": "7119770669784498189",
+        "brief_content": "太难了！xdm！哄女朋友太难了！本文手把手带大家构建一个处理和分类语音检测情绪的系统，完成求生欲max的「语音情感识别任务」",
+        "comment_count": 4,
+        "digg_count": 18,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8f1eceeda0174aa49bce01e8dd70895e~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "听音识情绪 | 程序员手把手教你搭建神经网络，更快get女朋友情绪，求生欲max！⛵",
+        "view_count": 8048,
+        "tag_ids": [
+            6809640642101116936,
+            6809640930740535303,
+            6809641023665356814
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "1407003729077214",
+        "article_id": "7125408434719031310",
+        "brief_content": "卷积神经网络的公式：（卷积层+（可选）池化层*N+全连接层*M（N>=1,M>=0)，必须有卷积层，可以没有全连接层",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "",
+        "title": "Tensorflow——卷积神经网络",
+        "view_count": 310,
+        "tag_ids": [
+            6809640670488166407
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "554605767047053",
+        "article_id": "7120842517775384589",
+        "brief_content": "摸鱼专刊！qsv 使用命令行快速处理CSV文件、SEPIA 语音实时转文本、ETNA 时序数据预测超简单工具、YOLOv6 在线Demo能一键完成目标检测、Flutter 技巧合辑…",
+        "comment_count": 2,
+        "digg_count": 12,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ea17fe5c228c47cea82aaeab01f78211~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "嘘！摸鱼神器，别让老板知道！| 语音实时转文本，时序快速出预测，YOLOv6在线就能用，一行命令整理CSV  | ShowMeAI资讯日报",
+        "view_count": 2863,
+        "tag_ids": [
+            6809641053432315911,
+            6809640525595934734,
+            6809640711177109517
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    },
+    {
+        "user_id": "3008737754743095",
+        "article_id": "7126728825274105886",
+        "brief_content": "携手创作，共同成长！这是我参与「掘金日新计划 · 8 月更文挑战」的第1天，点击查看活动详情 1、列表推导 列表的元素可以在一行中进行方便的循环。 输出： 同时，也可以用在字典上。 2、枚举函数 枚举",
+        "comment_count": 1,
+        "digg_count": 4,
+        "cover_image": "",
+        "title": "30个Python操作小技巧",
+        "view_count": 1682,
+        "tag_ids": [
+            6809640404791590919,
+            6809640448827588622,
+            6809640642101116936
+        ],
+        "category_name": "人工智能",
+        "category_id": "6809637773935378440",
+        "category_url": "ai"
+    }
+]

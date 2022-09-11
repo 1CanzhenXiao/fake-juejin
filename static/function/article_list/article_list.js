@@ -141,6 +141,7 @@ function request(){
 // 计算时间
 function getDistanceDay(time) {
 	let stime = new Date().getTime();
+	//其实没必要这样，直接得到记录的天数再去转换成毫秒数也可得到下面的结果
 	let usedTime = stime - time; //两个时间戳相差的毫秒数
 
 	let one_minute = 60 * 1000;

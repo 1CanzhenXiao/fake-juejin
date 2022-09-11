@@ -45,10 +45,11 @@ function getDisparityMonth(disparityDay) {
 
 // 获取当前月
 function getNowMonth() {
+	//获取的月份会减1
 	return new Date().getMonth() + 1;
 }
 
-// 获取当前月有多少天 可以计算前面几个月有多少天 upNum 是前面几个月
+// 获取当前月有多少天 可以计算前面几个月有多少天 ， upNum 是前面几个月
 function getMonthDay(upNum) {
 	let day = 0;
 	let month = getNowMonth();

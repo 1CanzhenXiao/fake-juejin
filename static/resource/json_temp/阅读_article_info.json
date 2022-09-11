@@ -1,0 +1,311 @@
+[
+    {
+        "user_id": "1767670427172280",
+        "article_id": "7025058400157302815",
+        "brief_content": "来源：雷军的博客 blog.sina.com.cn/leijun 这篇文章是在雷总个人博客看到的，里面聊到了他作为程序员的一些经历、初衷以及思考。写的不错，转来给大家看看。 **如果程序",
+        "comment_count": 212,
+        "digg_count": 764,
+        "cover_image": "",
+        "title": "雷军做程序员时写的博客，太牛了。。",
+        "view_count": 220326,
+        "tag_ids": [
+            6809640482725953550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "3438928099549352",
+        "article_id": "7088473126996181028",
+        "brief_content": "分享10个我经常使用、能够提高工作效率、图片美化、绘制流程图、可视化正则表达式的小网站，你一定也用得上...",
+        "comment_count": 123,
+        "digg_count": 1592,
+        "cover_image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e0f9630edc484bfb89643866cee572d9~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "10个我经常逛的“小网站”，嘿嘿嘿！！！",
+        "view_count": 60033,
+        "tag_ids": [
+            6809640482725953550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "2330620380866488",
+        "article_id": "7130137212988948487",
+        "brief_content": "不论做什么产品，界面上几乎都少不了「确定」按钮。例如：操作提示时、进行选择时、填写表单时…… 完成、保存、下单……各种代表“确定某一步骤”的按钮，都可以统称为确定按钮。 以前的产品设计，大量以来确定按",
+        "comment_count": 33,
+        "digg_count": 129,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/439ce0af7d8a4e1ea27fa443a5c09fb7~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "为什么「确定按钮」正在慢慢消失",
+        "view_count": 13941,
+        "tag_ids": [
+            6809640406058270733
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "4455647019545837",
+        "article_id": "7084107328949076004",
+        "brief_content": "技术合伙人（或者我们常说的CTO）被踢出局的确是个常见的现象。根据2014年福布斯杂志统计，世界500强企业CEO的平均在位时间为9.7年，CTO的平均在位时间少过4年。",
+        "comment_count": 2,
+        "digg_count": 19,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b47d8ec2d1394c83b1a3f67f6586bdf2~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "为什么都是技术合伙人被踢出局？",
+        "view_count": 5983,
+        "tag_ids": [
+            6809641183699009550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "3386151546922343",
+        "article_id": "7128213255767457823",
+        "brief_content": "可视化大屏一度是好莱坞科幻片必备，第一次看的时候相当震惊。现在可视化大屏基本上已经应用到了各行各业，像金融行业、制造业、政府等，设计和展现形式也愈发展现科技感。 对于发展迅速的可视化大屏，有数据分析专",
+        "comment_count": 5,
+        "digg_count": 25,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56f7782c7c6341aeb338e7395173aff4~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "不敲一个代码，10分钟做出数据可视化大屏，这个教程太赞了",
+        "view_count": 4645,
+        "tag_ids": [
+            6809640482725953550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "1698109849624061",
+        "article_id": "7119119265847836679",
+        "brief_content": "《代码整洁之道》，最近一次被推荐，是去年的朋友圈，一位只见过一次的程序员老乡发的，他当时推荐两本书，一本《重构》，一本《代码整洁之道》。《重构》已经在萌哥要求下看过，所以当时，只将《代码整洁之道》加入",
+        "comment_count": 5,
+        "digg_count": 11,
+        "cover_image": "",
+        "title": "读《代码整洁之道》",
+        "view_count": 7549,
+        "tag_ids": [
+            6809640456868085768
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "3078274733578168",
+        "article_id": "7118936823782604813",
+        "brief_content": "昨天我在逛知乎的时候，看到了这么一个问题： 我看到了三个非常有意思的回答，分享给大家一看。 首先是这个为了防止项目交付后收不到尾款埋下后门的回答： 这个回答让我想起了多年前我接私活的时候，给别人开发的",
+        "comment_count": 53,
+        "digg_count": 79,
+        "cover_image": "",
+        "title": "我在代码里面故意留个漏洞，违法吗？",
+        "view_count": 15901,
+        "tag_ids": [
+            6809640445233070094
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "1099933190469368",
+        "article_id": "7115625702476972063",
+        "brief_content": "大家好，我是对白。 前两天刚好刷到KDD2022的一篇文章，是介绍快手在它们短视频上的一项推荐重排新算法，不仅在用户观看时长和视频播放量都有了较大提升外，用户观看视频的标签数也有了显著增长，这说明该算",
+        "comment_count": 7,
+        "digg_count": 7,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/156dc63a0af54556825b5197b48b7829~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "快手这款推荐新算法，我爱了~",
+        "view_count": 6935,
+        "tag_ids": [
+            6809640642101116936
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "888061125203271",
+        "article_id": "7091606409208397854",
+        "brief_content": "说到 web3，很多人觉得这是骗局，是割韭菜。是因为大部分介绍 web3 的文章都离不开 NFT、数字货币、区块链、比特币、以太坊、元宇宙等概念，玄之又玄，脱离我们的生活，没解决我们的痛点。",
+        "comment_count": 43,
+        "digg_count": 106,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/643a7b25a70e40abb84981d1c330d9ec~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "我认为 web3 是什么（大白话 web3）",
+        "view_count": 10831,
+        "tag_ids": [
+            6809640638045224973
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "4406498333825357",
+        "article_id": "7067707781716901901",
+        "brief_content": "马上进入三月份，各个大厂的春招也陆续开了，正是大家所谓的“金三银四”的时期。 想进入大厂必不可少的就是面试了，面试就是一个让面试官快速的了解你，并相信你有足够的能力可以胜任这份工作的过程，一份好的自我",
+        "comment_count": 25,
+        "digg_count": 364,
+        "cover_image": "",
+        "title": "面试自我介绍5句话公式",
+        "view_count": 50775,
+        "tag_ids": [
+            6809640404791590919,
+            6809640482725953550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "3087084381013869",
+        "article_id": "7122040417008222244",
+        "brief_content": "web3.0 会是下一代互联网的风口么 web1.0 静态互联网时代 所见即所得 这个时代大部分人都经历过，国内外代表为谷歌，亚马逊，新浪，网易等等 web1.0它的主要特点: 所见即所得，用户只能",
+        "comment_count": 39,
+        "digg_count": 51,
+        "cover_image": "",
+        "title": "web3.0 会是下一代互联网的风口么？",
+        "view_count": 6341,
+        "tag_ids": [
+            6809640407484334093
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "2330620380866488",
+        "article_id": "7112707639749902343",
+        "brief_content": "一、前言 自2020年新冠疫情爆发以来，近3年的就业形势并不乐观，热火朝天的互联网行业一夕降温，社招名额关闭、高龄人员优化、Offer待遇缩水，屏幕前的各位小伙伴不仅工作难找，加薪升职也不敢奢望。 但",
+        "comment_count": 6,
+        "digg_count": 8,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b6752b1068ba4bd4b3fa3bec7a1e62dc~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "工作6年，月薪3W，1名PM的奋斗史",
+        "view_count": 4863,
+        "tag_ids": [
+            6809640462614265863,
+            6809640621406421006,
+            6809640406058270733
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "1390236459600743",
+        "article_id": "7116151052746883080",
+        "brief_content": "5月运动打卡 6月运动打卡 运动详情如下 总运动量 运动时间：7890分钟 行走距离：647.18km 个人状态变化 总结 瘦的还是挺明显的，继续加油！努力+坚持一定可以，身材以后还是要好好管理的，纪",
+        "comment_count": 2,
+        "digg_count": 3,
+        "cover_image": "https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/483d8b482de847ef8f63a4f229dd7000~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "运动两个月打卡瘦身41斤记录一下",
+        "view_count": 1745,
+        "tag_ids": [
+            6809640621406421006
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "2875978146128984",
+        "article_id": "7112371420000157733",
+        "brief_content": "简介： 一段糟糕的代码，往往大家最低的预期是把注释写清楚，最合理的做法通常应该对代码做优化。如果我们将代码真正做到了优秀，我们是否还需要注释？",
+        "comment_count": 2,
+        "digg_count": 5,
+        "cover_image": "",
+        "title": "代码注释的艺术，优秀代码真的不需要注释吗？",
+        "view_count": 2892,
+        "tag_ids": [
+            6809640482725953550
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "1464977951037127",
+        "article_id": "7111637093452873741",
+        "brief_content": "「时光不负，创作不停，本文正在参加2022年中总结征文大赛」 1.面试投递 投递的企业主要以私企为主，包含了：小红书、陌陌、斗鱼、字节、爱奇艺、华为、同花顺、美团、京东、百度、快手、顺丰科技、贝壳等等",
+        "comment_count": 1,
+        "digg_count": 11,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d92a982e263e4271b7f3cb0340946172~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "2022届艰难秋招（已逝）面试总结！",
+        "view_count": 1791,
+        "tag_ids": [
+            6809640404791590919
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "2330620380866488",
+        "article_id": "7137174800279027720",
+        "brief_content": "设计界面时，页面中都会有操作按钮。 不同的使用场景，对应的按钮位置布局不同。按钮位置如果放错，会导致用户操作不畅，甚至操作失败。 本篇文章就讲讲这个知识点，让平时没注意的人彻底掌握按钮的位置逻辑。本篇",
+        "comment_count": 0,
+        "digg_count": 7,
+        "cover_image": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/09c77ea0104241278af242e696d2cb86~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "按钮位置如何设计？看这篇足够了",
+        "view_count": 651,
+        "tag_ids": [
+            6809640406058270733,
+            6809640621406421006
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "4051058594955160",
+        "article_id": "7135764801791197197",
+        "brief_content": "万年历是中国古代传说中最古老的一部太阳历。万年历的名称来源于商朝一位名叫万年的人，他是这部历法的编撰者。为纪念他的功绩便将这部历法命名为“万年历”。万年历是记录一定时间范围内的具体阳历与阴历的日期的年",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "",
+        "title": "好用的万年历API推荐",
+        "view_count": 628,
+        "tag_ids": [
+            6809640403516522504
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "4420506171217143",
+        "article_id": "7124212024266981390",
+        "brief_content": "万邦京东获取商品历史价格信息 API 返回值说明 item_history_price-获取商品历史价格信息 注册免费测试API",
+        "comment_count": 0,
+        "digg_count": 1,
+        "cover_image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/406e97efa1aa4b72a2479b1947c97317~tplv-k3u1fbpfcp-watermark.image?",
+        "title": "京东API接口：item_history_price-获取商品历史价格信息",
+        "view_count": 612,
+        "tag_ids": [
+            6809640403516522504,
+            6809641053432315911
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    },
+    {
+        "user_id": "1926000099730701",
+        "article_id": "7125709717480931341",
+        "brief_content": "2019年从Windows切换到macOS后，我也把我的默认笔记应用程序从OneNote换成了macOS内置的Notes.app。我不确定这是一个正确的举动，所以我逐渐切换，只仔细选择了一些主题。但在",
+        "comment_count": 1,
+        "digg_count": 4,
+        "cover_image": "https://lh3.googleusercontent.com/blogger_img_proxy/ABLy4EzB87QIMdqa3pAA9K4q7VaFit1ar3dfBQIG7oXBpaexPuix_TS8lx65yE598e0INg1oHsEWkDLTFwjh5iVLIAnLel6q_L0MIdEKFsNjyV7EBaGS3-V-OENEkmfDkiYmN1zkHGc=w1200-h630-p-k-no-nu",
+        "title": "macOS：可能改善你日常工作流程的笔记应用技巧",
+        "view_count": 1949,
+        "tag_ids": [
+            6809640445233070094
+        ],
+        "category_name": "阅读",
+        "category_id": "6809637772874219534",
+        "category_url": "article"
+    }
+]
